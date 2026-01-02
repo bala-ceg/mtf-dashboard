@@ -1,0 +1,526 @@
+2025-12-21 13:34:05,507 | INFO | Processing 2025-10-01
+2025-12-21 13:34:05,752 | INFO | SUCCESS: 2025-10-01
+2025-12-21 13:34:05,752 | INFO | Processing 2025-10-02
+2025-12-21 13:34:05,868 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_021025.zip | Reason: HTTP 404
+2025-12-21 13:34:05,868 | INFO | Processing 2025-10-03
+2025-12-21 13:34:06,004 | INFO | SUCCESS: 2025-10-03
+2025-12-21 13:34:06,004 | INFO | Processing 2025-10-04
+2025-12-21 13:34:06,165 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_041025.zip | Reason: HTTP 404
+2025-12-21 13:34:06,165 | INFO | Processing 2025-10-05
+2025-12-21 13:34:06,312 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_051025.zip | Reason: HTTP 404
+2025-12-21 13:34:06,312 | INFO | Processing 2025-10-06
+2025-12-21 13:34:06,466 | INFO | SUCCESS: 2025-10-06
+2025-12-21 13:34:06,466 | INFO | Processing 2025-10-07
+2025-12-21 13:34:06,590 | INFO | SUCCESS: 2025-10-07
+2025-12-21 13:34:06,590 | INFO | Processing 2025-10-08
+2025-12-21 13:34:06,710 | INFO | SUCCESS: 2025-10-08
+2025-12-21 13:34:06,710 | INFO | Processing 2025-10-09
+2025-12-21 13:34:06,823 | INFO | SUCCESS: 2025-10-09
+2025-12-21 13:34:06,823 | INFO | Processing 2025-10-10
+2025-12-21 13:34:06,947 | INFO | SUCCESS: 2025-10-10
+2025-12-21 13:34:06,947 | INFO | Processing 2025-10-11
+2025-12-21 13:34:07,102 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_111025.zip | Reason: HTTP 404
+2025-12-21 13:34:07,103 | INFO | Processing 2025-10-12
+2025-12-21 13:34:07,231 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_121025.zip | Reason: HTTP 404
+2025-12-21 13:34:07,231 | INFO | Processing 2025-10-13
+2025-12-21 13:34:07,356 | INFO | SUCCESS: 2025-10-13
+2025-12-21 13:34:07,356 | INFO | Processing 2025-10-14
+2025-12-21 13:34:07,461 | INFO | SUCCESS: 2025-10-14
+2025-12-21 13:34:07,461 | INFO | Processing 2025-10-15
+2025-12-21 13:34:07,609 | INFO | SUCCESS: 2025-10-15
+2025-12-21 13:34:07,609 | INFO | Processing 2025-10-16
+2025-12-21 13:34:07,731 | INFO | SUCCESS: 2025-10-16
+2025-12-21 13:34:07,731 | INFO | Processing 2025-10-17
+2025-12-21 13:34:07,866 | INFO | SUCCESS: 2025-10-17
+2025-12-21 13:34:07,867 | INFO | Processing 2025-10-18
+2025-12-21 13:34:08,115 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_181025.zip | Reason: HTTP 404
+2025-12-21 13:34:08,115 | INFO | Processing 2025-10-19
+2025-12-21 13:34:08,186 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_191025.zip | Reason: HTTP 404
+2025-12-21 13:34:08,186 | INFO | Processing 2025-10-20
+2025-12-21 13:34:08,286 | INFO | SUCCESS: 2025-10-20
+2025-12-21 13:34:08,286 | INFO | Processing 2025-10-21
+2025-12-21 13:34:08,445 | INFO | SUCCESS: 2025-10-21
+2025-12-21 13:34:08,445 | INFO | Processing 2025-10-22
+2025-12-21 13:34:08,516 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_221025.zip | Reason: HTTP 404
+2025-12-21 13:34:08,516 | INFO | Processing 2025-10-23
+2025-12-21 13:34:08,714 | INFO | SUCCESS: 2025-10-23
+2025-12-21 13:34:08,714 | INFO | Processing 2025-10-24
+2025-12-21 13:34:08,825 | INFO | SUCCESS: 2025-10-24
+2025-12-21 13:34:08,825 | INFO | Processing 2025-10-25
+2025-12-21 13:34:08,894 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251025.zip | Reason: HTTP 404
+2025-12-21 13:34:08,894 | INFO | Processing 2025-10-26
+2025-12-21 13:34:08,955 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_261025.zip | Reason: HTTP 404
+2025-12-21 13:34:08,955 | INFO | Processing 2025-10-27
+2025-12-21 13:34:09,081 | INFO | SUCCESS: 2025-10-27
+2025-12-21 13:34:09,081 | INFO | Processing 2025-10-28
+2025-12-21 13:34:09,178 | INFO | SUCCESS: 2025-10-28
+2025-12-21 13:34:09,178 | INFO | Processing 2025-10-29
+2025-12-21 13:34:09,330 | INFO | SUCCESS: 2025-10-29
+2025-12-21 13:34:09,331 | INFO | Processing 2025-10-30
+2025-12-21 13:34:09,455 | INFO | SUCCESS: 2025-10-30
+2025-12-21 13:34:09,455 | INFO | Processing 2025-10-31
+2025-12-21 13:34:09,577 | INFO | SUCCESS: 2025-10-31
+2025-12-21 13:34:09,577 | INFO | Processing 2025-11-01
+2025-12-21 13:34:09,701 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_011125.zip | Reason: HTTP 404
+2025-12-21 13:34:09,701 | INFO | Processing 2025-11-02
+2025-12-21 13:34:09,805 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_021125.zip | Reason: HTTP 404
+2025-12-21 13:34:09,805 | INFO | Processing 2025-11-03
+2025-12-21 13:34:09,919 | INFO | SUCCESS: 2025-11-03
+2025-12-21 13:34:09,919 | INFO | Processing 2025-11-04
+2025-12-21 13:34:10,017 | INFO | SUCCESS: 2025-11-04
+2025-12-21 13:34:10,017 | INFO | Processing 2025-11-05
+2025-12-21 13:34:10,098 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_051125.zip | Reason: HTTP 404
+2025-12-21 13:34:10,098 | INFO | Processing 2025-11-06
+2025-12-21 13:34:10,202 | INFO | SUCCESS: 2025-11-06
+2025-12-21 13:34:10,202 | INFO | Processing 2025-11-07
+2025-12-21 13:34:10,289 | INFO | SUCCESS: 2025-11-07
+2025-12-21 13:34:10,289 | INFO | Processing 2025-11-08
+2025-12-21 13:34:10,360 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_081125.zip | Reason: HTTP 404
+2025-12-21 13:34:10,360 | INFO | Processing 2025-11-09
+2025-12-21 13:34:10,422 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_091125.zip | Reason: HTTP 404
+2025-12-21 13:34:10,422 | INFO | Processing 2025-11-10
+2025-12-21 13:34:10,534 | INFO | SUCCESS: 2025-11-10
+2025-12-21 13:34:10,534 | INFO | Processing 2025-11-11
+2025-12-21 13:34:10,643 | INFO | SUCCESS: 2025-11-11
+2025-12-21 13:34:10,644 | INFO | Processing 2025-11-12
+2025-12-21 13:34:10,756 | INFO | SUCCESS: 2025-11-12
+2025-12-21 13:34:10,756 | INFO | Processing 2025-11-13
+2025-12-21 13:34:10,873 | INFO | SUCCESS: 2025-11-13
+2025-12-21 13:34:10,873 | INFO | Processing 2025-11-14
+2025-12-21 13:34:10,961 | INFO | SUCCESS: 2025-11-14
+2025-12-21 13:34:10,961 | INFO | Processing 2025-11-15
+2025-12-21 13:34:11,036 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_151125.zip | Reason: HTTP 404
+2025-12-21 13:34:11,036 | INFO | Processing 2025-11-16
+2025-12-21 13:34:11,109 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_161125.zip | Reason: HTTP 404
+2025-12-21 13:34:11,109 | INFO | Processing 2025-11-17
+2025-12-21 13:34:11,219 | INFO | SUCCESS: 2025-11-17
+2025-12-21 13:34:11,219 | INFO | Processing 2025-11-18
+2025-12-21 13:34:11,337 | INFO | SUCCESS: 2025-11-18
+2025-12-21 13:34:11,337 | INFO | Processing 2025-11-19
+2025-12-21 13:34:11,475 | INFO | SUCCESS: 2025-11-19
+2025-12-21 13:34:11,475 | INFO | Processing 2025-11-20
+2025-12-21 13:34:11,573 | INFO | SUCCESS: 2025-11-20
+2025-12-21 13:34:11,574 | INFO | Processing 2025-11-21
+2025-12-21 13:34:11,678 | INFO | SUCCESS: 2025-11-21
+2025-12-21 13:34:11,678 | INFO | Processing 2025-11-22
+2025-12-21 13:34:11,768 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_221125.zip | Reason: HTTP 404
+2025-12-21 13:34:11,769 | INFO | Processing 2025-11-23
+2025-12-21 13:34:11,861 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231125.zip | Reason: HTTP 404
+2025-12-21 13:34:11,862 | INFO | Processing 2025-11-24
+2025-12-21 13:34:12,018 | INFO | SUCCESS: 2025-11-24
+2025-12-21 13:34:12,018 | INFO | Processing 2025-11-25
+2025-12-21 13:34:12,123 | INFO | SUCCESS: 2025-11-25
+2025-12-21 13:34:12,123 | INFO | Processing 2025-11-26
+2025-12-21 13:34:12,247 | INFO | SUCCESS: 2025-11-26
+2025-12-21 13:34:12,247 | INFO | Processing 2025-11-27
+2025-12-21 13:34:12,362 | INFO | SUCCESS: 2025-11-27
+2025-12-21 13:34:12,363 | INFO | Processing 2025-11-28
+2025-12-21 13:34:12,473 | INFO | SUCCESS: 2025-11-28
+2025-12-21 13:34:12,473 | INFO | Processing 2025-11-29
+2025-12-21 13:34:12,549 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-21 13:34:12,549 | INFO | Processing 2025-11-30
+2025-12-21 13:34:12,635 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-21 13:34:12,635 | INFO | Processing 2025-12-01
+2025-12-21 13:34:12,735 | INFO | SUCCESS: 2025-12-01
+2025-12-21 13:34:12,735 | INFO | Processing 2025-12-02
+2025-12-21 13:34:12,867 | INFO | SUCCESS: 2025-12-02
+2025-12-21 13:34:12,867 | INFO | Processing 2025-12-03
+2025-12-21 13:34:13,060 | INFO | SUCCESS: 2025-12-03
+2025-12-21 13:34:13,060 | INFO | Processing 2025-12-04
+2025-12-21 13:34:13,173 | INFO | SUCCESS: 2025-12-04
+2025-12-21 13:34:13,173 | INFO | Processing 2025-12-05
+2025-12-21 13:34:13,374 | INFO | SUCCESS: 2025-12-05
+2025-12-21 13:34:13,374 | INFO | Processing 2025-12-06
+2025-12-21 13:34:13,448 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-21 13:34:13,449 | INFO | Processing 2025-12-07
+2025-12-21 13:34:13,517 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-21 13:34:13,517 | INFO | Processing 2025-12-08
+2025-12-21 13:34:13,658 | INFO | SUCCESS: 2025-12-08
+2025-12-21 13:34:13,658 | INFO | Processing 2025-12-09
+2025-12-21 13:34:13,773 | INFO | SUCCESS: 2025-12-09
+2025-12-21 13:34:13,773 | INFO | Processing 2025-12-10
+2025-12-21 13:34:13,857 | INFO | SUCCESS: 2025-12-10
+2025-12-21 13:34:13,857 | INFO | Processing 2025-12-11
+2025-12-21 13:34:13,979 | INFO | SUCCESS: 2025-12-11
+2025-12-21 13:34:13,979 | INFO | Processing 2025-12-12
+2025-12-21 13:34:14,056 | INFO | SUCCESS: 2025-12-12
+2025-12-21 13:34:14,057 | INFO | Processing 2025-12-13
+2025-12-21 13:34:14,162 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-21 13:34:14,162 | INFO | Processing 2025-12-14
+2025-12-21 13:34:14,239 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-21 13:34:14,239 | INFO | Processing 2025-12-15
+2025-12-21 13:34:14,325 | INFO | SUCCESS: 2025-12-15
+2025-12-21 13:34:14,325 | INFO | Processing 2025-12-16
+2025-12-21 13:34:14,441 | INFO | SUCCESS: 2025-12-16
+2025-12-21 13:34:14,441 | INFO | Processing 2025-12-17
+2025-12-21 13:34:14,524 | INFO | SUCCESS: 2025-12-17
+2025-12-21 13:34:14,524 | INFO | Processing 2025-12-18
+2025-12-21 13:34:14,620 | INFO | SUCCESS: 2025-12-18
+2025-12-21 13:34:14,620 | INFO | MTF historical download completed
+2025-12-23 11:25:17,438 | INFO | Processing 2025-12-23
+2025-12-23 11:25:17,495 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231225.zip | Reason: HTTP 404
+2025-12-23 11:25:17,495 | INFO | MTF download completed. Success: 0
+2025-12-23 11:28:13,664 | INFO | Processing 2025-12-19
+2025-12-23 11:28:16,611 | INFO | SUCCESS: 2025-12-19
+2025-12-23 11:28:16,611 | INFO | Processing 2025-12-20
+2025-12-23 11:28:16,695 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-23 11:28:16,696 | INFO | Processing 2025-12-21
+2025-12-23 11:28:16,760 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-23 11:28:16,760 | INFO | Processing 2025-12-22
+2025-12-23 11:28:16,821 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_221225.zip | Reason: HTTP 404
+2025-12-23 11:28:16,821 | INFO | Processing 2025-12-23
+2025-12-23 11:28:16,942 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231225.zip | Reason: HTTP 404
+2025-12-23 11:28:16,943 | INFO | MTF download completed. Success: 1
+2025-12-23 11:28:30,493 | INFO | Processing 2025-11-23
+2025-12-23 11:28:30,545 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231125.zip | Reason: HTTP 404
+2025-12-23 11:28:30,545 | INFO | File already exists: mrg_trading_241125.csv
+2025-12-23 11:28:30,545 | INFO | File already exists: mrg_trading_251125.csv
+2025-12-23 11:28:30,545 | INFO | File already exists: mrg_trading_261125.csv
+2025-12-23 11:28:30,545 | INFO | File already exists: mrg_trading_271125.csv
+2025-12-23 11:28:30,545 | INFO | File already exists: mrg_trading_281125.csv
+2025-12-23 11:28:30,545 | INFO | Processing 2025-11-29
+2025-12-23 11:28:30,597 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-23 11:28:30,597 | INFO | Processing 2025-11-30
+2025-12-23 11:28:30,633 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-23 11:28:30,633 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-23 11:28:30,634 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-23 11:28:30,634 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-23 11:28:30,634 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-23 11:28:30,634 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-23 11:28:30,634 | INFO | Processing 2025-12-06
+2025-12-23 11:28:30,670 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,670 | INFO | Processing 2025-12-07
+2025-12-23 11:28:30,734 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,734 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-23 11:28:30,734 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-23 11:28:30,734 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-23 11:28:30,734 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-23 11:28:30,734 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-23 11:28:30,734 | INFO | Processing 2025-12-13
+2025-12-23 11:28:30,777 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,778 | INFO | Processing 2025-12-14
+2025-12-23 11:28:30,816 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,816 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-23 11:28:30,816 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-23 11:28:30,816 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-23 11:28:30,816 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-23 11:28:30,816 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-23 11:28:30,816 | INFO | Processing 2025-12-20
+2025-12-23 11:28:30,864 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,864 | INFO | Processing 2025-12-21
+2025-12-23 11:28:30,920 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,920 | INFO | Processing 2025-12-22
+2025-12-23 11:28:30,965 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_221225.zip | Reason: HTTP 404
+2025-12-23 11:28:30,965 | INFO | Processing 2025-12-23
+2025-12-23 11:28:31,001 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231225.zip | Reason: HTTP 404
+2025-12-23 11:28:31,001 | INFO | MTF download completed. Success: 20
+2025-12-24 14:04:07,462 | INFO | File already exists: mrg_trading_241125.csv
+2025-12-24 14:04:07,462 | INFO | File already exists: mrg_trading_251125.csv
+2025-12-24 14:04:07,462 | INFO | File already exists: mrg_trading_261125.csv
+2025-12-24 14:04:07,462 | INFO | File already exists: mrg_trading_271125.csv
+2025-12-24 14:04:07,462 | INFO | File already exists: mrg_trading_281125.csv
+2025-12-24 14:04:07,462 | INFO | Processing 2025-11-29
+2025-12-24 14:04:07,809 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-24 14:04:07,810 | INFO | Processing 2025-11-30
+2025-12-24 14:04:07,974 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-24 14:04:07,975 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-24 14:04:07,975 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-24 14:04:07,976 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-24 14:04:07,976 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-24 14:04:07,976 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-24 14:04:07,976 | INFO | Processing 2025-12-06
+2025-12-24 14:04:08,059 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,059 | INFO | Processing 2025-12-07
+2025-12-24 14:04:08,158 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,159 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-24 14:04:08,160 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-24 14:04:08,160 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-24 14:04:08,160 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-24 14:04:08,160 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-24 14:04:08,160 | INFO | Processing 2025-12-13
+2025-12-24 14:04:08,249 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,249 | INFO | Processing 2025-12-14
+2025-12-24 14:04:08,336 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,337 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-24 14:04:08,337 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-24 14:04:08,338 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-24 14:04:08,338 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-24 14:04:08,338 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-24 14:04:08,339 | INFO | Processing 2025-12-20
+2025-12-24 14:04:08,401 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,401 | INFO | Processing 2025-12-21
+2025-12-24 14:04:08,455 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,456 | INFO | Processing 2025-12-22
+2025-12-24 14:04:08,589 | INFO | SUCCESS: 2025-12-22
+2025-12-24 14:04:08,590 | INFO | Processing 2025-12-23
+2025-12-24 14:04:08,704 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_231225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,705 | INFO | Processing 2025-12-24
+2025-12-24 14:04:08,777 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_241225.zip | Reason: HTTP 404
+2025-12-24 14:04:08,777 | INFO | MTF download completed. Success: 21
+2025-12-25 08:25:46,373 | INFO | File already exists: mrg_trading_251125.csv
+2025-12-25 08:25:46,374 | INFO | File already exists: mrg_trading_261125.csv
+2025-12-25 08:25:46,374 | INFO | File already exists: mrg_trading_271125.csv
+2025-12-25 08:25:46,374 | INFO | File already exists: mrg_trading_281125.csv
+2025-12-25 08:25:46,374 | INFO | Processing 2025-11-29
+2025-12-25 08:25:46,491 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-25 08:25:46,491 | INFO | Processing 2025-11-30
+2025-12-25 08:25:46,533 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-25 08:25:46,534 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-25 08:25:46,534 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-25 08:25:46,535 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-25 08:25:46,535 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-25 08:25:46,535 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-25 08:25:46,535 | INFO | Processing 2025-12-06
+2025-12-25 08:25:46,571 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,571 | INFO | Processing 2025-12-07
+2025-12-25 08:25:46,615 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,616 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-25 08:25:46,617 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-25 08:25:46,617 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-25 08:25:46,617 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-25 08:25:46,618 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-25 08:25:46,618 | INFO | Processing 2025-12-13
+2025-12-25 08:25:46,656 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,656 | INFO | Processing 2025-12-14
+2025-12-25 08:25:46,694 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,695 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-25 08:25:46,695 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-25 08:25:46,696 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-25 08:25:46,696 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-25 08:25:46,696 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-25 08:25:46,697 | INFO | Processing 2025-12-20
+2025-12-25 08:25:46,741 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,741 | INFO | Processing 2025-12-21
+2025-12-25 08:25:46,788 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-25 08:25:46,789 | INFO | File already exists: mrg_trading_221225.csv
+2025-12-25 08:25:46,789 | INFO | Processing 2025-12-23
+2025-12-25 08:25:47,017 | INFO | SUCCESS: 2025-12-23
+2025-12-25 08:25:47,017 | INFO | Processing 2025-12-24
+2025-12-25 08:25:47,055 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_241225.zip | Reason: HTTP 404
+2025-12-25 08:25:47,055 | INFO | Processing 2025-12-25
+2025-12-25 08:25:47,097 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2025-12-25 08:25:47,097 | INFO | MTF download completed. Success: 21
+2025-12-26 11:33:22,559 | INFO | File already exists: mrg_trading_261125.csv
+2025-12-26 11:33:22,559 | INFO | File already exists: mrg_trading_271125.csv
+2025-12-26 11:33:22,560 | INFO | File already exists: mrg_trading_281125.csv
+2025-12-26 11:33:22,560 | INFO | Processing 2025-11-29
+2025-12-26 11:33:22,843 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-26 11:33:22,843 | INFO | Processing 2025-11-30
+2025-12-26 11:33:22,888 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-26 11:33:22,889 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-26 11:33:22,889 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-26 11:33:22,889 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-26 11:33:22,889 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-26 11:33:22,890 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-26 11:33:22,890 | INFO | Processing 2025-12-06
+2025-12-26 11:33:22,959 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-26 11:33:22,959 | INFO | Processing 2025-12-07
+2025-12-26 11:33:23,015 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,015 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-26 11:33:23,016 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-26 11:33:23,016 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-26 11:33:23,016 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-26 11:33:23,017 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-26 11:33:23,017 | INFO | Processing 2025-12-13
+2025-12-26 11:33:23,073 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,073 | INFO | Processing 2025-12-14
+2025-12-26 11:33:23,121 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,121 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-26 11:33:23,121 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-26 11:33:23,122 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-26 11:33:23,122 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-26 11:33:23,122 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-26 11:33:23,122 | INFO | Processing 2025-12-20
+2025-12-26 11:33:23,197 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,197 | INFO | Processing 2025-12-21
+2025-12-26 11:33:23,236 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,236 | INFO | File already exists: mrg_trading_221225.csv
+2025-12-26 11:33:23,236 | INFO | File already exists: mrg_trading_231225.csv
+2025-12-26 11:33:23,237 | INFO | Processing 2025-12-24
+2025-12-26 11:33:23,277 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_241225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,277 | INFO | Processing 2025-12-25
+2025-12-26 11:33:23,322 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,323 | INFO | Processing 2025-12-26
+2025-12-26 11:33:23,452 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_261225.zip | Reason: HTTP 404
+2025-12-26 11:33:23,452 | INFO | MTF download completed. Success: 20
+2025-12-27 21:37:54,228 | INFO | File already exists: mrg_trading_271125.csv
+2025-12-27 21:37:54,229 | INFO | File already exists: mrg_trading_281125.csv
+2025-12-27 21:37:54,229 | INFO | Processing 2025-11-29
+2025-12-27 21:37:55,662 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291125.zip | Reason: HTTP 404
+2025-12-27 21:37:55,662 | INFO | Processing 2025-11-30
+2025-12-27 21:37:56,239 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-27 21:37:56,240 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-27 21:37:56,241 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-27 21:37:56,241 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-27 21:37:56,242 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-27 21:37:56,242 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-27 21:37:56,242 | INFO | Processing 2025-12-06
+2025-12-27 21:37:56,874 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-27 21:37:56,875 | INFO | Processing 2025-12-07
+2025-12-27 21:37:57,552 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-27 21:37:57,553 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-27 21:37:57,554 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-27 21:37:57,555 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-27 21:37:57,555 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-27 21:37:57,556 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-27 21:37:57,556 | INFO | Processing 2025-12-13
+2025-12-27 21:37:58,186 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-27 21:37:58,187 | INFO | Processing 2025-12-14
+2025-12-27 21:37:58,758 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-27 21:37:58,759 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-27 21:37:58,759 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-27 21:37:58,760 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-27 21:37:58,760 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-27 21:37:58,760 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-27 21:37:58,761 | INFO | Processing 2025-12-20
+2025-12-27 21:37:59,324 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-27 21:37:59,324 | INFO | Processing 2025-12-21
+2025-12-27 21:38:00,007 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-27 21:38:00,008 | INFO | File already exists: mrg_trading_221225.csv
+2025-12-27 21:38:00,009 | INFO | File already exists: mrg_trading_231225.csv
+2025-12-27 21:38:00,009 | INFO | Processing 2025-12-24
+2025-12-27 21:38:00,970 | INFO | SUCCESS: 2025-12-24
+2025-12-27 21:38:00,970 | INFO | Processing 2025-12-25
+2025-12-27 21:38:01,587 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2025-12-27 21:38:01,588 | INFO | Processing 2025-12-26
+2025-12-27 21:38:02,262 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_261225.zip | Reason: HTTP 404
+2025-12-27 21:38:02,262 | INFO | Processing 2025-12-27
+2025-12-27 21:38:02,874 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_271225.zip | Reason: HTTP 404
+2025-12-27 21:38:02,874 | INFO | MTF download completed. Success: 20
+2025-12-30 09:35:24,784 | INFO | Processing 2025-11-30
+2025-12-30 09:35:24,852 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-30 09:35:24,853 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-30 09:35:24,853 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-30 09:35:24,853 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-30 09:35:24,854 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-30 09:35:24,854 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-30 09:35:24,854 | INFO | Processing 2025-12-06
+2025-12-30 09:35:24,913 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-30 09:35:24,913 | INFO | Processing 2025-12-07
+2025-12-30 09:35:24,958 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-30 09:35:24,959 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-30 09:35:24,960 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-30 09:35:24,960 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-30 09:35:24,960 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-30 09:35:24,961 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-30 09:35:24,961 | INFO | Processing 2025-12-13
+2025-12-30 09:35:25,000 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,001 | INFO | Processing 2025-12-14
+2025-12-30 09:35:25,063 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,063 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-30 09:35:25,064 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-30 09:35:25,065 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-30 09:35:25,065 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-30 09:35:25,065 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-30 09:35:25,065 | INFO | Processing 2025-12-20
+2025-12-30 09:35:25,116 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,116 | INFO | Processing 2025-12-21
+2025-12-30 09:35:25,155 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,157 | INFO | File already exists: mrg_trading_221225.csv
+2025-12-30 09:35:25,158 | INFO | File already exists: mrg_trading_231225.csv
+2025-12-30 09:35:25,158 | INFO | File already exists: mrg_trading_241225.csv
+2025-12-30 09:35:25,158 | INFO | Processing 2025-12-25
+2025-12-30 09:35:25,230 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,230 | INFO | Processing 2025-12-26
+2025-12-30 09:35:25,303 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_261225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,304 | INFO | Processing 2025-12-27
+2025-12-30 09:35:25,379 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_271225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,380 | INFO | Processing 2025-12-28
+2025-12-30 09:35:25,417 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_281225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,417 | INFO | Processing 2025-12-29
+2025-12-30 09:35:25,464 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,464 | INFO | Processing 2025-12-30
+2025-12-30 09:35:25,539 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301225.zip | Reason: HTTP 404
+2025-12-30 09:35:25,539 | INFO | MTF download completed. Success: 18
+2025-12-30 19:22:20,773 | INFO | Processing 2025-11-30
+2025-12-30 19:22:21,215 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301125.zip | Reason: HTTP 404
+2025-12-30 19:22:21,217 | INFO | File already exists: mrg_trading_011225.csv
+2025-12-30 19:22:21,217 | INFO | File already exists: mrg_trading_021225.csv
+2025-12-30 19:22:21,218 | INFO | File already exists: mrg_trading_031225.csv
+2025-12-30 19:22:21,218 | INFO | File already exists: mrg_trading_041225.csv
+2025-12-30 19:22:21,219 | INFO | File already exists: mrg_trading_051225.csv
+2025-12-30 19:22:21,219 | INFO | Processing 2025-12-06
+2025-12-30 19:22:21,286 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,286 | INFO | Processing 2025-12-07
+2025-12-30 19:22:21,324 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,324 | INFO | File already exists: mrg_trading_081225.csv
+2025-12-30 19:22:21,325 | INFO | File already exists: mrg_trading_091225.csv
+2025-12-30 19:22:21,325 | INFO | File already exists: mrg_trading_101225.csv
+2025-12-30 19:22:21,325 | INFO | File already exists: mrg_trading_111225.csv
+2025-12-30 19:22:21,326 | INFO | File already exists: mrg_trading_121225.csv
+2025-12-30 19:22:21,326 | INFO | Processing 2025-12-13
+2025-12-30 19:22:21,375 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,376 | INFO | Processing 2025-12-14
+2025-12-30 19:22:21,433 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,433 | INFO | File already exists: mrg_trading_151225.csv
+2025-12-30 19:22:21,433 | INFO | File already exists: mrg_trading_161225.csv
+2025-12-30 19:22:21,434 | INFO | File already exists: mrg_trading_171225.csv
+2025-12-30 19:22:21,435 | INFO | File already exists: mrg_trading_181225.csv
+2025-12-30 19:22:21,435 | INFO | File already exists: mrg_trading_191225.csv
+2025-12-30 19:22:21,435 | INFO | Processing 2025-12-20
+2025-12-30 19:22:21,557 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,558 | INFO | Processing 2025-12-21
+2025-12-30 19:22:21,630 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,632 | INFO | File already exists: mrg_trading_221225.csv
+2025-12-30 19:22:21,633 | INFO | File already exists: mrg_trading_231225.csv
+2025-12-30 19:22:21,634 | INFO | File already exists: mrg_trading_241225.csv
+2025-12-30 19:22:21,634 | INFO | Processing 2025-12-25
+2025-12-30 19:22:21,691 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,692 | INFO | Processing 2025-12-26
+2025-12-30 19:22:21,755 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_261225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,756 | INFO | Processing 2025-12-27
+2025-12-30 19:22:21,825 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_271225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,826 | INFO | Processing 2025-12-28
+2025-12-30 19:22:21,931 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_281225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,932 | INFO | Processing 2025-12-29
+2025-12-30 19:22:21,990 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_291225.zip | Reason: HTTP 404
+2025-12-30 19:22:21,990 | INFO | Processing 2025-12-30
+2025-12-30 19:22:22,059 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_301225.zip | Reason: HTTP 404
+2025-12-30 19:22:22,059 | INFO | MTF download completed. Success: 18
+2026-01-02 08:59:49,060 | INFO | File already exists: mrg_trading_031225.csv
+2026-01-02 08:59:49,060 | INFO | File already exists: mrg_trading_041225.csv
+2026-01-02 08:59:49,060 | INFO | File already exists: mrg_trading_051225.csv
+2026-01-02 08:59:49,060 | INFO | Processing 2025-12-06
+2026-01-02 08:59:49,209 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_061225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,210 | INFO | Processing 2025-12-07
+2026-01-02 08:59:49,309 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_071225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,309 | INFO | File already exists: mrg_trading_081225.csv
+2026-01-02 08:59:49,309 | INFO | File already exists: mrg_trading_091225.csv
+2026-01-02 08:59:49,309 | INFO | File already exists: mrg_trading_101225.csv
+2026-01-02 08:59:49,310 | INFO | File already exists: mrg_trading_111225.csv
+2026-01-02 08:59:49,310 | INFO | File already exists: mrg_trading_121225.csv
+2026-01-02 08:59:49,310 | INFO | Processing 2025-12-13
+2026-01-02 08:59:49,389 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_131225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,389 | INFO | Processing 2025-12-14
+2026-01-02 08:59:49,458 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_141225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,458 | INFO | File already exists: mrg_trading_151225.csv
+2026-01-02 08:59:49,458 | INFO | File already exists: mrg_trading_161225.csv
+2026-01-02 08:59:49,458 | INFO | File already exists: mrg_trading_171225.csv
+2026-01-02 08:59:49,458 | INFO | File already exists: mrg_trading_181225.csv
+2026-01-02 08:59:49,458 | INFO | File already exists: mrg_trading_191225.csv
+2026-01-02 08:59:49,459 | INFO | Processing 2025-12-20
+2026-01-02 08:59:49,524 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_201225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,524 | INFO | Processing 2025-12-21
+2026-01-02 08:59:49,589 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_211225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,590 | INFO | File already exists: mrg_trading_221225.csv
+2026-01-02 08:59:49,590 | INFO | File already exists: mrg_trading_231225.csv
+2026-01-02 08:59:49,590 | INFO | File already exists: mrg_trading_241225.csv
+2026-01-02 08:59:49,590 | INFO | Processing 2025-12-25
+2026-01-02 08:59:49,677 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_251225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,678 | INFO | Processing 2025-12-26
+2026-01-02 08:59:49,796 | INFO | SUCCESS: 2025-12-26
+2026-01-02 08:59:49,797 | INFO | Processing 2025-12-27
+2026-01-02 08:59:49,867 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_271225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,867 | INFO | Processing 2025-12-28
+2026-01-02 08:59:49,983 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_281225.zip | Reason: HTTP 404
+2026-01-02 08:59:49,983 | INFO | Processing 2025-12-29
+2026-01-02 08:59:50,101 | INFO | SUCCESS: 2025-12-29
+2026-01-02 08:59:50,101 | INFO | Processing 2025-12-30
+2026-01-02 08:59:50,196 | INFO | SUCCESS: 2025-12-30
+2026-01-02 08:59:50,196 | INFO | Processing 2025-12-31
+2026-01-02 08:59:50,323 | INFO | SUCCESS: 2025-12-31
+2026-01-02 08:59:50,323 | INFO | Processing 2026-01-01
+2026-01-02 08:59:50,392 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_010126.zip | Reason: HTTP 404
+2026-01-02 08:59:50,392 | INFO | Processing 2026-01-02
+2026-01-02 08:59:50,461 | WARNING | SKIPPED: https://nsearchives.nseindia.com/content/equities/mrg_trading_020126.zip | Reason: HTTP 404
+2026-01-02 08:59:50,462 | INFO | MTF download completed. Success: 20

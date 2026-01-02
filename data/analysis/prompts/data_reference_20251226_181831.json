@@ -1,0 +1,48 @@
+{
+  "export_timestamp": "2025-12-26T18:18:30.861109",
+  "export_date": "2025-12-26",
+  "data_summary": {
+    "total_mtf_outstanding": 0,
+    "active_stocks": 2103,
+    "trade_date": "2025-12-23",
+    "market_regime": "N/A",
+    "days_in_regime": 0,
+    "risk_level": "N/A",
+    "top_gainers_count": 1059,
+    "top_losers_count": 729,
+    "continuous_movers_count": 72,
+    "volume_shockers_count": 671
+  },
+  "data_keys": [
+    "market_overview",
+    "market_flow",
+    "market_regime",
+    "risk_regime",
+    "top_gainers",
+    "top_losers",
+    "concentration",
+    "concentration_by_market_cap",
+    "continuous_movers",
+    "volume_shockers",
+    "active_stock_trend",
+    "top_mtf_by_index",
+    "recent_daily_data",
+    "stock_master"
+  ],
+  "record_counts": {
+    "market_overview": 1,
+    "market_flow": 57,
+    "market_regime": 1,
+    "risk_regime": 57,
+    "top_gainers": 1059,
+    "top_losers": 729,
+    "concentration": 50,
+    "concentration_by_market_cap": 2087,
+    "continuous_movers": 72,
+    "volume_shockers": 671,
+    "active_stock_trend": 57,
+    "top_mtf_by_index": 40,
+    "recent_daily_data": 4400,
+    "stock_master": 2174
+  }
+}

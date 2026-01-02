@@ -1,0 +1,9 @@
+backend/.env
+frontend/.env
+CRON.md
+ANALYSIS_GUIDE.md
+INDEX_MTF_FEATURE.md
+NGROK_SETUP.md
+QUICK_START_ANALYSIS.md
+VERCEL_DEPLOYMENT.md
+start_with_ngrok.sh

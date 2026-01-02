@@ -1,0 +1,5 @@
+ trade_date | opening_outstanding_cr | closing_outstanding_cr | fresh_exposure_cr | liquidated_exposure_cr | net_flow_cr 
+------------+------------------------+------------------------+-------------------+------------------------+-------------
+ 2025-12-18 |              112542.39 |              112049.31 |           2174.76 |                2667.84 |     -493.08
+(1 row)
+
