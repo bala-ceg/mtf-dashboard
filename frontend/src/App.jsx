@@ -6,6 +6,7 @@ import ConcentrationByCategoryTable from './components/ConcentrationByCategoryTa
 import ContinuousMoversTable from './components/ContinuousMoversTable';
 import ShockersTable from './components/ShockersTable';
 import IndexMTFHoldings from './components/IndexMTFHoldings';
+import MTFPriceCorrelation from './components/MTFPriceCorrelation';
 import { formatDate } from './utils/formatters';
 import './App.css';
 
@@ -150,6 +151,9 @@ function App() {
 
         {/* Continuous Movers */}
         <ContinuousMoversTable movers={continuousMovers} />
+
+        {/* MTF vs Price Correlation Analysis */}
+        <MTFPriceCorrelation />
 
         {/* Volume Shockers */}
         <ShockersTable shockers={volumeShockers} type="volume" />

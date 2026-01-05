@@ -64,7 +64,7 @@ streaks AS (
         ROW_NUMBER() OVER (PARTITION BY symbol, market_cap_category ORDER BY trade_date) -
         ROW_NUMBER() OVER (PARTITION BY symbol, market_cap_category, direction ORDER BY trade_date) AS streak_id
     FROM direction_marked
-    WHERE direction IN ('positive', 'negative')
+    WHERE direction = 'positive'  -- Only buy direction stocks
 ),
 
 -- Count continuous occurrences

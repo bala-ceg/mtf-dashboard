@@ -15,9 +15,11 @@ export default function ContinuousMoversTable({ movers }) {
 
   const [activeCategory, setActiveCategory] = useState('Large-High');
   
-  // Group by market cap category
+  // Group by market cap category and sort by total_change_cr descending
   const groupedMovers = categories.reduce((acc, category) => {
-    acc[category] = movers?.filter(m => m.market_cap_category === category) || [];
+    const filtered = movers?.filter(m => m.market_cap_category === category) || [];
+    // Sort by total_change_cr in descending order (highest first)
+    acc[category] = filtered.sort((a, b) => b.total_change_cr - a.total_change_cr);
     return acc;
   }, {});
 
@@ -37,7 +39,7 @@ export default function ContinuousMoversTable({ movers }) {
   return (
     <div className="section">
       <div className="section-header">
-        <h2 className="section-title">Continuous MTF Movers (≥3 Days)</h2>
+        <h2 className="section-title">Continuous MTF Movers (≥3 Days) - Buy Direction</h2>
       </div>
 
       {/* Category Tabs */}

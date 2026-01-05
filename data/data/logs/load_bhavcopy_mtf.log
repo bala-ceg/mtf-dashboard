@@ -1,0 +1,591 @@
+2026-01-04 22:54:53,089 | INFO | Found 2215 unique MTF symbols
+2026-01-04 22:54:53,182 | ERROR | Error loading sec_bhavdata_full_01012026.csv: bigint out of range
+
+2026-01-04 22:54:53,247 | ERROR | Error loading sec_bhavdata_full_02122025.csv: bigint out of range
+
+2026-01-04 22:54:53,313 | ERROR | Error loading sec_bhavdata_full_03122025.csv: bigint out of range
+
+2026-01-04 22:54:53,381 | ERROR | Error loading sec_bhavdata_full_04122025.csv: bigint out of range
+
+2026-01-04 22:54:53,447 | ERROR | Error loading sec_bhavdata_full_05122025.csv: bigint out of range
+
+2026-01-04 22:54:53,511 | ERROR | Error loading sec_bhavdata_full_07122025.csv: bigint out of range
+
+2026-01-04 22:54:53,579 | ERROR | Error loading sec_bhavdata_full_08122025.csv: bigint out of range
+
+2026-01-04 22:54:53,646 | ERROR | Error loading sec_bhavdata_full_09122025.csv: bigint out of range
+
+2026-01-04 22:54:53,715 | ERROR | Error loading sec_bhavdata_full_10122025.csv: bigint out of range
+
+2026-01-04 22:54:53,782 | ERROR | Error loading sec_bhavdata_full_11122025.csv: bigint out of range
+
+2026-01-04 22:54:53,848 | ERROR | Error loading sec_bhavdata_full_12122025.csv: bigint out of range
+
+2026-01-04 22:54:53,911 | ERROR | Error loading sec_bhavdata_full_14122025.csv: bigint out of range
+
+2026-01-04 22:54:53,977 | ERROR | Error loading sec_bhavdata_full_15122025.csv: bigint out of range
+
+2026-01-04 22:54:54,041 | ERROR | Error loading sec_bhavdata_full_16122025.csv: bigint out of range
+
+2026-01-04 22:54:54,110 | ERROR | Error loading sec_bhavdata_full_17122025.csv: bigint out of range
+
+2026-01-04 22:54:54,191 | ERROR | Error loading sec_bhavdata_full_18122025.csv: bigint out of range
+
+2026-01-04 22:54:54,261 | ERROR | Error loading sec_bhavdata_full_19122025.csv: bigint out of range
+
+2026-01-04 22:54:54,330 | ERROR | Error loading sec_bhavdata_full_21122025.csv: bigint out of range
+
+2026-01-04 22:54:54,396 | ERROR | Error loading sec_bhavdata_full_22122025.csv: bigint out of range
+
+2026-01-04 22:54:54,476 | ERROR | Error loading sec_bhavdata_full_23122025.csv: bigint out of range
+
+2026-01-04 22:54:54,542 | ERROR | Error loading sec_bhavdata_full_24122025.csv: bigint out of range
+
+2026-01-04 22:54:54,603 | ERROR | Error loading sec_bhavdata_full_25122025.csv: bigint out of range
+
+2026-01-04 22:54:54,668 | ERROR | Error loading sec_bhavdata_full_26122025.csv: bigint out of range
+
+2026-01-04 22:54:54,733 | ERROR | Error loading sec_bhavdata_full_28122025.csv: bigint out of range
+
+2026-01-04 22:54:54,799 | ERROR | Error loading sec_bhavdata_full_29122025.csv: bigint out of range
+
+2026-01-04 22:54:54,868 | ERROR | Error loading sec_bhavdata_full_30122025.csv: bigint out of range
+
+2026-01-04 22:54:54,934 | ERROR | Error loading sec_bhavdata_full_31122025.csv: bigint out of range
+
+2026-01-04 22:54:54,934 | INFO | Batch load completed: 0 total records from 0 files
+2026-01-04 22:57:18,076 | INFO | Found 2214 unique MTF symbols
+2026-01-04 22:57:18,104 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 22:57:18,104 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,107 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 22:57:18,194 | ERROR | Error loading sec_bhavdata_full_01012026.csv: bigint out of range
+
+2026-01-04 22:57:18,201 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 22:57:18,201 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,201 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 22:57:18,265 | ERROR | Error loading sec_bhavdata_full_02122025.csv: bigint out of range
+
+2026-01-04 22:57:18,272 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 22:57:18,272 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,273 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 22:57:18,333 | ERROR | Error loading sec_bhavdata_full_03122025.csv: bigint out of range
+
+2026-01-04 22:57:18,341 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 22:57:18,341 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,342 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 22:57:18,401 | ERROR | Error loading sec_bhavdata_full_04122025.csv: bigint out of range
+
+2026-01-04 22:57:18,407 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 22:57:18,407 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,408 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 22:57:18,464 | ERROR | Error loading sec_bhavdata_full_05122025.csv: bigint out of range
+
+2026-01-04 22:57:18,471 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 22:57:18,471 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,471 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 22:57:18,530 | ERROR | Error loading sec_bhavdata_full_07122025.csv: bigint out of range
+
+2026-01-04 22:57:18,536 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 22:57:18,536 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,537 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 22:57:18,596 | ERROR | Error loading sec_bhavdata_full_08122025.csv: bigint out of range
+
+2026-01-04 22:57:18,602 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 22:57:18,602 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,602 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 22:57:18,663 | ERROR | Error loading sec_bhavdata_full_09122025.csv: bigint out of range
+
+2026-01-04 22:57:18,669 | INFO | Read 3054 rows from sec_bhavdata_full_10122025.csv
+2026-01-04 22:57:18,669 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,670 | INFO | Filtered from 3054 to 2172 MTF stocks
+2026-01-04 22:57:18,728 | ERROR | Error loading sec_bhavdata_full_10122025.csv: bigint out of range
+
+2026-01-04 22:57:18,735 | INFO | Read 3053 rows from sec_bhavdata_full_11122025.csv
+2026-01-04 22:57:18,735 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,735 | INFO | Filtered from 3053 to 2172 MTF stocks
+2026-01-04 22:57:18,794 | ERROR | Error loading sec_bhavdata_full_11122025.csv: bigint out of range
+
+2026-01-04 22:57:18,801 | INFO | Read 3056 rows from sec_bhavdata_full_12122025.csv
+2026-01-04 22:57:18,801 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,801 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 22:57:18,861 | ERROR | Error loading sec_bhavdata_full_12122025.csv: bigint out of range
+
+2026-01-04 22:57:18,868 | INFO | Read 3056 rows from sec_bhavdata_full_14122025.csv
+2026-01-04 22:57:18,868 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,868 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 22:57:18,929 | ERROR | Error loading sec_bhavdata_full_14122025.csv: bigint out of range
+
+2026-01-04 22:57:18,935 | INFO | Read 3080 rows from sec_bhavdata_full_15122025.csv
+2026-01-04 22:57:18,935 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:18,936 | INFO | Filtered from 3080 to 2174 MTF stocks
+2026-01-04 22:57:18,993 | ERROR | Error loading sec_bhavdata_full_15122025.csv: bigint out of range
+
+2026-01-04 22:57:19,000 | INFO | Read 3063 rows from sec_bhavdata_full_16122025.csv
+2026-01-04 22:57:19,000 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,000 | INFO | Filtered from 3063 to 2174 MTF stocks
+2026-01-04 22:57:19,059 | ERROR | Error loading sec_bhavdata_full_16122025.csv: bigint out of range
+
+2026-01-04 22:57:19,066 | INFO | Read 3073 rows from sec_bhavdata_full_17122025.csv
+2026-01-04 22:57:19,066 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,067 | INFO | Filtered from 3073 to 2174 MTF stocks
+2026-01-04 22:57:19,126 | ERROR | Error loading sec_bhavdata_full_17122025.csv: bigint out of range
+
+2026-01-04 22:57:19,132 | INFO | Read 3061 rows from sec_bhavdata_full_18122025.csv
+2026-01-04 22:57:19,132 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,133 | INFO | Filtered from 3061 to 2175 MTF stocks
+2026-01-04 22:57:19,191 | ERROR | Error loading sec_bhavdata_full_18122025.csv: bigint out of range
+
+2026-01-04 22:57:19,198 | INFO | Read 3064 rows from sec_bhavdata_full_19122025.csv
+2026-01-04 22:57:19,198 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,198 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 22:57:19,257 | ERROR | Error loading sec_bhavdata_full_19122025.csv: bigint out of range
+
+2026-01-04 22:57:19,265 | INFO | Read 3064 rows from sec_bhavdata_full_21122025.csv
+2026-01-04 22:57:19,265 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,266 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 22:57:19,324 | ERROR | Error loading sec_bhavdata_full_21122025.csv: bigint out of range
+
+2026-01-04 22:57:19,331 | INFO | Read 3107 rows from sec_bhavdata_full_22122025.csv
+2026-01-04 22:57:19,331 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,332 | INFO | Filtered from 3107 to 2174 MTF stocks
+2026-01-04 22:57:19,391 | ERROR | Error loading sec_bhavdata_full_22122025.csv: bigint out of range
+
+2026-01-04 22:57:19,397 | INFO | Read 3094 rows from sec_bhavdata_full_23122025.csv
+2026-01-04 22:57:19,397 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,397 | INFO | Filtered from 3094 to 2176 MTF stocks
+2026-01-04 22:57:19,456 | ERROR | Error loading sec_bhavdata_full_23122025.csv: bigint out of range
+
+2026-01-04 22:57:19,464 | INFO | Read 3090 rows from sec_bhavdata_full_24122025.csv
+2026-01-04 22:57:19,464 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,464 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 22:57:19,525 | ERROR | Error loading sec_bhavdata_full_24122025.csv: bigint out of range
+
+2026-01-04 22:57:19,531 | INFO | Read 3090 rows from sec_bhavdata_full_25122025.csv
+2026-01-04 22:57:19,531 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,532 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 22:57:19,594 | ERROR | Error loading sec_bhavdata_full_25122025.csv: bigint out of range
+
+2026-01-04 22:57:19,600 | INFO | Read 3092 rows from sec_bhavdata_full_26122025.csv
+2026-01-04 22:57:19,600 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,601 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 22:57:19,662 | ERROR | Error loading sec_bhavdata_full_26122025.csv: bigint out of range
+
+2026-01-04 22:57:19,668 | INFO | Read 3092 rows from sec_bhavdata_full_28122025.csv
+2026-01-04 22:57:19,669 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,669 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 22:57:19,733 | ERROR | Error loading sec_bhavdata_full_28122025.csv: bigint out of range
+
+2026-01-04 22:57:19,740 | INFO | Read 3123 rows from sec_bhavdata_full_29122025.csv
+2026-01-04 22:57:19,740 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,740 | INFO | Filtered from 3123 to 2176 MTF stocks
+2026-01-04 22:57:19,803 | ERROR | Error loading sec_bhavdata_full_29122025.csv: bigint out of range
+
+2026-01-04 22:57:19,811 | INFO | Read 3091 rows from sec_bhavdata_full_30122025.csv
+2026-01-04 22:57:19,811 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,811 | INFO | Filtered from 3091 to 2174 MTF stocks
+2026-01-04 22:57:19,877 | ERROR | Error loading sec_bhavdata_full_30122025.csv: bigint out of range
+
+2026-01-04 22:57:19,885 | INFO | Read 3088 rows from sec_bhavdata_full_31122025.csv
+2026-01-04 22:57:19,885 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:57:19,886 | INFO | Filtered from 3088 to 2174 MTF stocks
+2026-01-04 22:57:19,951 | ERROR | Error loading sec_bhavdata_full_31122025.csv: bigint out of range
+
+2026-01-04 22:57:19,951 | INFO | Batch load completed: 0 total records from 0 files
+2026-01-04 22:59:16,950 | INFO | Found 2214 unique MTF symbols
+2026-01-04 22:59:16,958 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 22:59:16,958 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:16,960 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 22:59:17,025 | ERROR | Error loading sec_bhavdata_full_01012026.csv: bigint out of range
+
+2026-01-04 22:59:17,029 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 22:59:17,029 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,029 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 22:59:17,090 | ERROR | Error loading sec_bhavdata_full_02122025.csv: bigint out of range
+
+2026-01-04 22:59:17,094 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 22:59:17,094 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,095 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 22:59:17,161 | ERROR | Error loading sec_bhavdata_full_03122025.csv: bigint out of range
+
+2026-01-04 22:59:17,165 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 22:59:17,165 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,166 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 22:59:17,229 | ERROR | Error loading sec_bhavdata_full_04122025.csv: bigint out of range
+
+2026-01-04 22:59:17,233 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 22:59:17,233 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,233 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 22:59:17,296 | ERROR | Error loading sec_bhavdata_full_05122025.csv: bigint out of range
+
+2026-01-04 22:59:17,300 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 22:59:17,300 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,301 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 22:59:17,365 | ERROR | Error loading sec_bhavdata_full_07122025.csv: bigint out of range
+
+2026-01-04 22:59:17,369 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 22:59:17,369 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,370 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 22:59:17,433 | ERROR | Error loading sec_bhavdata_full_08122025.csv: bigint out of range
+
+2026-01-04 22:59:17,437 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 22:59:17,437 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,438 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 22:59:17,500 | ERROR | Error loading sec_bhavdata_full_09122025.csv: bigint out of range
+
+2026-01-04 22:59:17,504 | INFO | Read 3054 rows from sec_bhavdata_full_10122025.csv
+2026-01-04 22:59:17,504 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,504 | INFO | Filtered from 3054 to 2172 MTF stocks
+2026-01-04 22:59:17,570 | ERROR | Error loading sec_bhavdata_full_10122025.csv: bigint out of range
+
+2026-01-04 22:59:17,574 | INFO | Read 3053 rows from sec_bhavdata_full_11122025.csv
+2026-01-04 22:59:17,574 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,575 | INFO | Filtered from 3053 to 2172 MTF stocks
+2026-01-04 22:59:17,639 | ERROR | Error loading sec_bhavdata_full_11122025.csv: bigint out of range
+
+2026-01-04 22:59:17,644 | INFO | Read 3056 rows from sec_bhavdata_full_12122025.csv
+2026-01-04 22:59:17,644 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,645 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 22:59:17,711 | ERROR | Error loading sec_bhavdata_full_12122025.csv: bigint out of range
+
+2026-01-04 22:59:17,715 | INFO | Read 3056 rows from sec_bhavdata_full_14122025.csv
+2026-01-04 22:59:17,715 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,715 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 22:59:17,780 | ERROR | Error loading sec_bhavdata_full_14122025.csv: bigint out of range
+
+2026-01-04 22:59:17,784 | INFO | Read 3080 rows from sec_bhavdata_full_15122025.csv
+2026-01-04 22:59:17,784 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,784 | INFO | Filtered from 3080 to 2174 MTF stocks
+2026-01-04 22:59:17,850 | ERROR | Error loading sec_bhavdata_full_15122025.csv: bigint out of range
+
+2026-01-04 22:59:17,854 | INFO | Read 3063 rows from sec_bhavdata_full_16122025.csv
+2026-01-04 22:59:17,854 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,855 | INFO | Filtered from 3063 to 2174 MTF stocks
+2026-01-04 22:59:17,917 | ERROR | Error loading sec_bhavdata_full_16122025.csv: bigint out of range
+
+2026-01-04 22:59:17,920 | INFO | Read 3073 rows from sec_bhavdata_full_17122025.csv
+2026-01-04 22:59:17,920 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,921 | INFO | Filtered from 3073 to 2174 MTF stocks
+2026-01-04 22:59:17,983 | ERROR | Error loading sec_bhavdata_full_17122025.csv: bigint out of range
+
+2026-01-04 22:59:17,987 | INFO | Read 3061 rows from sec_bhavdata_full_18122025.csv
+2026-01-04 22:59:17,987 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:17,987 | INFO | Filtered from 3061 to 2175 MTF stocks
+2026-01-04 22:59:18,049 | ERROR | Error loading sec_bhavdata_full_18122025.csv: bigint out of range
+
+2026-01-04 22:59:18,053 | INFO | Read 3064 rows from sec_bhavdata_full_19122025.csv
+2026-01-04 22:59:18,053 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,053 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 22:59:18,116 | ERROR | Error loading sec_bhavdata_full_19122025.csv: bigint out of range
+
+2026-01-04 22:59:18,120 | INFO | Read 3064 rows from sec_bhavdata_full_21122025.csv
+2026-01-04 22:59:18,120 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,120 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 22:59:18,183 | ERROR | Error loading sec_bhavdata_full_21122025.csv: bigint out of range
+
+2026-01-04 22:59:18,187 | INFO | Read 3107 rows from sec_bhavdata_full_22122025.csv
+2026-01-04 22:59:18,187 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,187 | INFO | Filtered from 3107 to 2174 MTF stocks
+2026-01-04 22:59:18,251 | ERROR | Error loading sec_bhavdata_full_22122025.csv: bigint out of range
+
+2026-01-04 22:59:18,255 | INFO | Read 3094 rows from sec_bhavdata_full_23122025.csv
+2026-01-04 22:59:18,255 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,256 | INFO | Filtered from 3094 to 2176 MTF stocks
+2026-01-04 22:59:18,322 | ERROR | Error loading sec_bhavdata_full_23122025.csv: bigint out of range
+
+2026-01-04 22:59:18,325 | INFO | Read 3090 rows from sec_bhavdata_full_24122025.csv
+2026-01-04 22:59:18,325 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,326 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 22:59:18,390 | ERROR | Error loading sec_bhavdata_full_24122025.csv: bigint out of range
+
+2026-01-04 22:59:18,393 | INFO | Read 3090 rows from sec_bhavdata_full_25122025.csv
+2026-01-04 22:59:18,393 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,394 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 22:59:18,458 | ERROR | Error loading sec_bhavdata_full_25122025.csv: bigint out of range
+
+2026-01-04 22:59:18,462 | INFO | Read 3092 rows from sec_bhavdata_full_26122025.csv
+2026-01-04 22:59:18,462 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,462 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 22:59:18,526 | ERROR | Error loading sec_bhavdata_full_26122025.csv: bigint out of range
+
+2026-01-04 22:59:18,530 | INFO | Read 3092 rows from sec_bhavdata_full_28122025.csv
+2026-01-04 22:59:18,530 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,530 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 22:59:18,593 | ERROR | Error loading sec_bhavdata_full_28122025.csv: bigint out of range
+
+2026-01-04 22:59:18,597 | INFO | Read 3123 rows from sec_bhavdata_full_29122025.csv
+2026-01-04 22:59:18,597 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,598 | INFO | Filtered from 3123 to 2176 MTF stocks
+2026-01-04 22:59:18,661 | ERROR | Error loading sec_bhavdata_full_29122025.csv: bigint out of range
+
+2026-01-04 22:59:18,665 | INFO | Read 3091 rows from sec_bhavdata_full_30122025.csv
+2026-01-04 22:59:18,665 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,666 | INFO | Filtered from 3091 to 2174 MTF stocks
+2026-01-04 22:59:18,728 | ERROR | Error loading sec_bhavdata_full_30122025.csv: bigint out of range
+
+2026-01-04 22:59:18,732 | INFO | Read 3088 rows from sec_bhavdata_full_31122025.csv
+2026-01-04 22:59:18,732 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 22:59:18,733 | INFO | Filtered from 3088 to 2174 MTF stocks
+2026-01-04 22:59:18,797 | ERROR | Error loading sec_bhavdata_full_31122025.csv: bigint out of range
+
+2026-01-04 22:59:18,797 | INFO | Batch load completed: 0 total records from 0 files
+2026-01-04 23:00:04,844 | INFO | Found 2214 unique MTF symbols
+2026-01-04 23:00:04,851 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 23:00:04,851 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:04,854 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 23:00:04,917 | ERROR | Error loading sec_bhavdata_full_01012026.csv: bigint out of range
+
+2026-01-04 23:00:04,922 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 23:00:04,922 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:04,922 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 23:00:04,984 | ERROR | Error loading sec_bhavdata_full_02122025.csv: bigint out of range
+
+2026-01-04 23:00:04,988 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 23:00:04,988 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:04,988 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 23:00:05,053 | ERROR | Error loading sec_bhavdata_full_03122025.csv: bigint out of range
+
+2026-01-04 23:00:05,057 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 23:00:05,057 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:05,058 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 23:00:05,120 | ERROR | Error loading sec_bhavdata_full_04122025.csv: bigint out of range
+
+2026-01-04 23:00:05,124 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 23:00:05,124 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:05,125 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:00:05,199 | ERROR | Error loading sec_bhavdata_full_05122025.csv: bigint out of range
+
+2026-01-04 23:00:05,203 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 23:00:05,203 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:05,204 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:00:05,268 | ERROR | Error loading sec_bhavdata_full_07122025.csv: bigint out of range
+
+2026-01-04 23:00:05,272 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 23:00:05,272 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:05,273 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 23:00:05,337 | ERROR | Error loading sec_bhavdata_full_08122025.csv: bigint out of range
+
+2026-01-04 23:00:05,341 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 23:00:05,341 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:00:05,342 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 23:00:05,409 | ERROR | Error loading sec_bhavdata_full_09122025.csv: bigint out of range
+
+2026-01-04 23:02:31,943 | INFO | Found 2214 unique MTF symbols
+2026-01-04 23:02:31,951 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 23:02:31,951 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:31,953 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 23:02:32,274 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_01012026.csv for 2026-01-01
+2026-01-04 23:02:32,278 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 23:02:32,278 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:32,278 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 23:02:32,560 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_02122025.csv for 2025-12-02
+2026-01-04 23:02:32,564 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 23:02:32,564 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:32,564 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 23:02:32,860 | INFO | Loaded 2167 MTF stock records from sec_bhavdata_full_03122025.csv for 2025-12-03
+2026-01-04 23:02:32,864 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 23:02:32,864 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:32,864 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 23:02:33,150 | INFO | Loaded 2168 MTF stock records from sec_bhavdata_full_04122025.csv for 2025-12-04
+2026-01-04 23:02:33,154 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 23:02:33,154 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:33,155 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:02:33,461 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_05122025.csv for 2025-12-05
+2026-01-04 23:02:33,465 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 23:02:33,465 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:33,466 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:02:33,873 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_07122025.csv for 2025-12-07
+2026-01-04 23:02:33,876 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 23:02:33,876 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:33,877 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 23:02:34,175 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_08122025.csv for 2025-12-08
+2026-01-04 23:02:34,179 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 23:02:34,179 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:34,179 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 23:02:34,464 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_09122025.csv for 2025-12-09
+2026-01-04 23:02:34,468 | INFO | Read 3054 rows from sec_bhavdata_full_10122025.csv
+2026-01-04 23:02:34,468 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:34,468 | INFO | Filtered from 3054 to 2172 MTF stocks
+2026-01-04 23:02:34,750 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_10122025.csv for 2025-12-10
+2026-01-04 23:02:34,754 | INFO | Read 3053 rows from sec_bhavdata_full_11122025.csv
+2026-01-04 23:02:34,755 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:34,755 | INFO | Filtered from 3053 to 2172 MTF stocks
+2026-01-04 23:02:35,037 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_11122025.csv for 2025-12-11
+2026-01-04 23:02:35,041 | INFO | Read 3056 rows from sec_bhavdata_full_12122025.csv
+2026-01-04 23:02:35,041 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:35,041 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:02:35,371 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_12122025.csv for 2025-12-12
+2026-01-04 23:02:35,375 | INFO | Read 3056 rows from sec_bhavdata_full_14122025.csv
+2026-01-04 23:02:35,375 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:35,375 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:02:35,657 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_14122025.csv for 2025-12-14
+2026-01-04 23:02:35,662 | INFO | Read 3080 rows from sec_bhavdata_full_15122025.csv
+2026-01-04 23:02:35,662 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:35,662 | INFO | Filtered from 3080 to 2174 MTF stocks
+2026-01-04 23:02:36,029 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_15122025.csv for 2025-12-15
+2026-01-04 23:02:36,034 | INFO | Read 3063 rows from sec_bhavdata_full_16122025.csv
+2026-01-04 23:02:36,034 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:36,034 | INFO | Filtered from 3063 to 2174 MTF stocks
+2026-01-04 23:02:36,331 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_16122025.csv for 2025-12-16
+2026-01-04 23:02:36,335 | INFO | Read 3073 rows from sec_bhavdata_full_17122025.csv
+2026-01-04 23:02:36,335 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:36,336 | INFO | Filtered from 3073 to 2174 MTF stocks
+2026-01-04 23:02:36,605 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_17122025.csv for 2025-12-17
+2026-01-04 23:02:36,609 | INFO | Read 3061 rows from sec_bhavdata_full_18122025.csv
+2026-01-04 23:02:36,609 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:36,610 | INFO | Filtered from 3061 to 2175 MTF stocks
+2026-01-04 23:02:36,896 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_18122025.csv for 2025-12-18
+2026-01-04 23:02:36,900 | INFO | Read 3064 rows from sec_bhavdata_full_19122025.csv
+2026-01-04 23:02:36,900 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:36,901 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:02:37,186 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_19122025.csv for 2025-12-19
+2026-01-04 23:02:37,190 | INFO | Read 3064 rows from sec_bhavdata_full_21122025.csv
+2026-01-04 23:02:37,190 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:37,191 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:02:37,474 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_21122025.csv for 2025-12-21
+2026-01-04 23:02:37,479 | INFO | Read 3107 rows from sec_bhavdata_full_22122025.csv
+2026-01-04 23:02:37,479 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:37,479 | INFO | Filtered from 3107 to 2174 MTF stocks
+2026-01-04 23:02:37,758 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_22122025.csv for 2025-12-22
+2026-01-04 23:02:37,762 | INFO | Read 3094 rows from sec_bhavdata_full_23122025.csv
+2026-01-04 23:02:37,762 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:37,763 | INFO | Filtered from 3094 to 2176 MTF stocks
+2026-01-04 23:02:38,042 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_23122025.csv for 2025-12-23
+2026-01-04 23:02:38,046 | INFO | Read 3090 rows from sec_bhavdata_full_24122025.csv
+2026-01-04 23:02:38,046 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:38,046 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:02:38,326 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_24122025.csv for 2025-12-24
+2026-01-04 23:02:38,330 | INFO | Read 3090 rows from sec_bhavdata_full_25122025.csv
+2026-01-04 23:02:38,330 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:38,331 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:02:38,722 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_25122025.csv for 2025-12-25
+2026-01-04 23:02:38,726 | INFO | Read 3092 rows from sec_bhavdata_full_26122025.csv
+2026-01-04 23:02:38,726 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:38,726 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:02:39,111 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_26122025.csv for 2025-12-26
+2026-01-04 23:02:39,115 | INFO | Read 3092 rows from sec_bhavdata_full_28122025.csv
+2026-01-04 23:02:39,115 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:39,116 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:02:39,397 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_28122025.csv for 2025-12-28
+2026-01-04 23:02:39,401 | INFO | Read 3123 rows from sec_bhavdata_full_29122025.csv
+2026-01-04 23:02:39,401 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:39,402 | INFO | Filtered from 3123 to 2176 MTF stocks
+2026-01-04 23:02:39,802 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_29122025.csv for 2025-12-29
+2026-01-04 23:02:39,807 | INFO | Read 3091 rows from sec_bhavdata_full_30122025.csv
+2026-01-04 23:02:39,807 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:39,807 | INFO | Filtered from 3091 to 2174 MTF stocks
+2026-01-04 23:02:40,091 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_30122025.csv for 2025-12-30
+2026-01-04 23:02:40,095 | INFO | Read 3088 rows from sec_bhavdata_full_31122025.csv
+2026-01-04 23:02:40,095 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:02:40,096 | INFO | Filtered from 3088 to 2174 MTF stocks
+2026-01-04 23:02:40,416 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_31122025.csv for 2025-12-31
+2026-01-04 23:02:40,416 | INFO | Batch load completed: 58666 total records from 27 files
+2026-01-04 23:03:00,048 | INFO | Found 2214 unique MTF symbols
+2026-01-04 23:03:00,053 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 23:03:00,053 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:00,053 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 23:03:00,386 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_01012026.csv for 2026-01-01
+2026-01-04 23:03:00,391 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 23:03:00,391 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:00,391 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 23:03:00,677 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_02122025.csv for 2025-12-02
+2026-01-04 23:03:00,681 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 23:03:00,681 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:00,682 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 23:03:00,960 | INFO | Loaded 2167 MTF stock records from sec_bhavdata_full_03122025.csv for 2025-12-03
+2026-01-04 23:03:00,964 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 23:03:00,964 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:00,965 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 23:03:01,311 | INFO | Loaded 2168 MTF stock records from sec_bhavdata_full_04122025.csv for 2025-12-04
+2026-01-04 23:03:01,318 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 23:03:01,318 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:01,319 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:03:01,623 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_05122025.csv for 2025-12-05
+2026-01-04 23:03:01,627 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 23:03:01,627 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:01,627 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:03:01,909 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_07122025.csv for 2025-12-07
+2026-01-04 23:03:01,913 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 23:03:01,913 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:01,914 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 23:03:02,182 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_08122025.csv for 2025-12-08
+2026-01-04 23:03:02,186 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 23:03:02,186 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:02,187 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 23:03:02,491 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_09122025.csv for 2025-12-09
+2026-01-04 23:03:02,495 | INFO | Read 3054 rows from sec_bhavdata_full_10122025.csv
+2026-01-04 23:03:02,495 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:02,496 | INFO | Filtered from 3054 to 2172 MTF stocks
+2026-01-04 23:03:02,769 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_10122025.csv for 2025-12-10
+2026-01-04 23:03:02,773 | INFO | Read 3053 rows from sec_bhavdata_full_11122025.csv
+2026-01-04 23:03:02,773 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:02,773 | INFO | Filtered from 3053 to 2172 MTF stocks
+2026-01-04 23:03:03,047 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_11122025.csv for 2025-12-11
+2026-01-04 23:03:03,051 | INFO | Read 3056 rows from sec_bhavdata_full_12122025.csv
+2026-01-04 23:03:03,051 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:03,052 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:03:03,359 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_12122025.csv for 2025-12-12
+2026-01-04 23:03:03,363 | INFO | Read 3056 rows from sec_bhavdata_full_14122025.csv
+2026-01-04 23:03:03,363 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:03,364 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:03:03,640 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_14122025.csv for 2025-12-14
+2026-01-04 23:03:03,644 | INFO | Read 3080 rows from sec_bhavdata_full_15122025.csv
+2026-01-04 23:03:03,644 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:03,645 | INFO | Filtered from 3080 to 2174 MTF stocks
+2026-01-04 23:03:03,931 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_15122025.csv for 2025-12-15
+2026-01-04 23:03:03,935 | INFO | Read 3063 rows from sec_bhavdata_full_16122025.csv
+2026-01-04 23:03:03,935 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:03,935 | INFO | Filtered from 3063 to 2174 MTF stocks
+2026-01-04 23:03:04,219 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_16122025.csv for 2025-12-16
+2026-01-04 23:03:04,223 | INFO | Read 3073 rows from sec_bhavdata_full_17122025.csv
+2026-01-04 23:03:04,223 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:04,223 | INFO | Filtered from 3073 to 2174 MTF stocks
+2026-01-04 23:03:04,627 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_17122025.csv for 2025-12-17
+2026-01-04 23:03:04,630 | INFO | Read 3061 rows from sec_bhavdata_full_18122025.csv
+2026-01-04 23:03:04,630 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:04,631 | INFO | Filtered from 3061 to 2175 MTF stocks
+2026-01-04 23:03:04,918 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_18122025.csv for 2025-12-18
+2026-01-04 23:03:04,922 | INFO | Read 3064 rows from sec_bhavdata_full_19122025.csv
+2026-01-04 23:03:04,922 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:04,923 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:03:05,194 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_19122025.csv for 2025-12-19
+2026-01-04 23:03:05,198 | INFO | Read 3064 rows from sec_bhavdata_full_21122025.csv
+2026-01-04 23:03:05,198 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:05,198 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:03:05,488 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_21122025.csv for 2025-12-21
+2026-01-04 23:03:05,492 | INFO | Read 3107 rows from sec_bhavdata_full_22122025.csv
+2026-01-04 23:03:05,492 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:05,492 | INFO | Filtered from 3107 to 2174 MTF stocks
+2026-01-04 23:03:05,771 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_22122025.csv for 2025-12-22
+2026-01-04 23:03:05,774 | INFO | Read 3094 rows from sec_bhavdata_full_23122025.csv
+2026-01-04 23:03:05,774 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:05,775 | INFO | Filtered from 3094 to 2176 MTF stocks
+2026-01-04 23:03:06,167 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_23122025.csv for 2025-12-23
+2026-01-04 23:03:06,171 | INFO | Read 3090 rows from sec_bhavdata_full_24122025.csv
+2026-01-04 23:03:06,171 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:06,172 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:03:06,472 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_24122025.csv for 2025-12-24
+2026-01-04 23:03:06,476 | INFO | Read 3090 rows from sec_bhavdata_full_25122025.csv
+2026-01-04 23:03:06,476 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:06,477 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:03:06,761 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_25122025.csv for 2025-12-25
+2026-01-04 23:03:06,764 | INFO | Read 3092 rows from sec_bhavdata_full_26122025.csv
+2026-01-04 23:03:06,764 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:06,765 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:03:07,039 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_26122025.csv for 2025-12-26
+2026-01-04 23:03:07,043 | INFO | Read 3092 rows from sec_bhavdata_full_28122025.csv
+2026-01-04 23:03:07,043 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:07,043 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:03:07,316 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_28122025.csv for 2025-12-28
+2026-01-04 23:03:07,319 | INFO | Read 3123 rows from sec_bhavdata_full_29122025.csv
+2026-01-04 23:03:07,319 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:07,320 | INFO | Filtered from 3123 to 2176 MTF stocks
+2026-01-04 23:03:07,625 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_29122025.csv for 2025-12-29
+2026-01-04 23:03:07,629 | INFO | Read 3091 rows from sec_bhavdata_full_30122025.csv
+2026-01-04 23:03:07,629 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:07,629 | INFO | Filtered from 3091 to 2174 MTF stocks
+2026-01-04 23:03:07,901 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_30122025.csv for 2025-12-30
+2026-01-04 23:03:07,905 | INFO | Read 3088 rows from sec_bhavdata_full_31122025.csv
+2026-01-04 23:03:07,905 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:03:07,905 | INFO | Filtered from 3088 to 2174 MTF stocks
+2026-01-04 23:03:08,176 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_31122025.csv for 2025-12-31
+2026-01-04 23:03:08,177 | INFO | Batch load completed: 58666 total records from 27 files

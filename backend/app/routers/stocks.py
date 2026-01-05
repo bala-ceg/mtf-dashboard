@@ -91,11 +91,13 @@ async def get_continuous_movers(
     market_cap_category: Optional[str] = Query(None)
 ):
     """
-    Get stocks with continuous MTF buying/selling streaks
+    Get stocks with continuous MTF buying streaks (positive direction only)
+    
+    Note: Query now filters for buy direction stocks only at SQL level
     
     Filters:
     - min_days: Minimum consecutive days (default: 3)
-    - direction: "positive" or "negative"
+    - direction: "positive" or "negative" (query default: positive only)
     - market_cap_category: e.g., "Large-High", "Mid-Low", etc.
     """
     query = load_sql_query("continuous_movers")
@@ -143,3 +145,58 @@ async def get_concentration_by_category(
             grouped[category].append(row)
     
     return grouped
+
+
+@router.get("/mtf-price-correlation")
+async def get_mtf_price_correlation(
+    limit: int = Query(50, ge=10, le=200, description="Number of stocks to return"),
+    market_cap_category: Optional[str] = Query(None, description="Filter by market cap category")
+):
+    """
+    Get MTF-Price correlation analysis for continuous movers
+    
+    Returns stocks with detailed correlation between MTF changes and price movements:
+    - Daily MTF value and quantity changes
+    - Daily price changes and percentages
+    - Correlation score (% of days where MTF and price moved in same direction)
+    - Complete time series data for charting
+    
+    Use this to identify stocks where MTF buying/selling strongly correlates with price action
+    """
+    query = load_sql_query("mtf_price_correlation")
+    results = await execute_query(query)
+    
+    # Apply filters
+    if market_cap_category:
+        results = [r for r in results if r.get("market_cap_category") == market_cap_category]
+    
+    # Limit results
+    results = results[:limit]
+    
+    return results
+
+
+@router.get("/top-correlated-stocks")
+async def get_top_correlated_stocks(
+    limit: int = Query(10, ge=5, le=50, description="Number of stocks to return")
+):
+    """
+    Get top 10 stocks across all market cap ranges where MTF buying/selling
+    and price movements are most closely correlated
+    
+    Returns stocks with highest correlation scores, showing:
+    - Strong MTF-price relationship
+    - Total MTF and price changes during the streak
+    - Correlation score (higher = stronger relationship)
+    """
+    query = load_sql_query("mtf_price_correlation")
+    results = await execute_query(query)
+    
+    # Sort by correlation_score and total_change_cr
+    sorted_results = sorted(
+        results,
+        key=lambda x: (x.get("correlation_score", 0), abs(x.get("total_change_cr", 0))),
+        reverse=True
+    )
+    
+    return sorted_results[:limit]

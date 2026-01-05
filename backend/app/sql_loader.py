@@ -19,6 +19,8 @@ SQL_QUERIES = {
     "value_shockers": SQL_DIR / "13_mtf_volume_value_shockers.sql",
     "concentration_by_market_cap": SQL_DIR / "14_mtf_concentration_by_market_cap.sql",
     "top_mtf_by_index": SQL_DIR / "16_top_mtf_by_index.sql",
+    "mtf_price_correlation": SQL_DIR / "18_mtf_price_correlation.sql",
+    "index_stock_history": SQL_DIR / "19_index_stock_history.sql",
 }
 
 

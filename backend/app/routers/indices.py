@@ -95,3 +95,45 @@ async def get_available_indices():
     results = await execute_query(query)
     
     return [row["index_name"] for row in results] if results else []
+
+
+@router.get("/stock-history/{index_name}", response_model=List[Dict[str, Any]])
+async def get_index_stock_history(index_name: str):
+    """
+    Get 30-day historical MTF and price data for all stocks in a specific index.
+    Returns daily MTF values, price changes, and correlation data.
+    
+    Parameters:
+    - index_name: One of NIFTY50, NIFTY_NEXT50, NIFTY_MIDCAP50, NIFTY_SMALLCAP50
+    """
+    query = load_sql_query("index_stock_history")
+    results = await execute_query(query, (index_name.upper(),))
+    
+    if not results:
+        raise HTTPException(
+            status_code=404, 
+            detail=f"No historical data available for index: {index_name}"
+        )
+    
+    return results
+
+
+@router.get("/stock-history/{index_name}", response_model=List[Dict[str, Any]])
+async def get_index_stock_history(index_name: str):
+    """
+    Get 30-day historical MTF and price data for all stocks in a specific index.
+    Returns daily MTF values, price changes, and correlation data.
+    
+    Parameters:
+    - index_name: One of NIFTY50, NIFTY_NEXT50, NIFTY_MIDCAP50, NIFTY_SMALLCAP50
+    """
+    query = load_sql_query("index_stock_history")
+    results = await execute_query(query, (index_name.upper(),))
+    
+    if not results:
+        raise HTTPException(
+            status_code=404, 
+            detail=f"No historical data available for index: {index_name}"
+        )
+    
+    return results

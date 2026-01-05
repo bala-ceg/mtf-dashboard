@@ -1,0 +1,895 @@
+2026-01-04 22:50:34,245 | INFO | Maximum MTF date found: 2026-01-01
+2026-01-04 22:51:27,284 | INFO | Maximum MTF date found: 2026-01-01
+2026-01-04 22:51:27,414 | INFO | Processing bhavcopy for 2025-12-02
+2026-01-04 22:51:27,595 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_02122025.csv (3050 rows)
+2026-01-04 22:51:27,595 | INFO | SUCCESS: 2025-12-02
+2026-01-04 22:51:27,595 | INFO | Processing bhavcopy for 2025-12-03
+2026-01-04 22:51:27,699 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03122025.csv (3070 rows)
+2026-01-04 22:51:27,699 | INFO | SUCCESS: 2025-12-03
+2026-01-04 22:51:27,699 | INFO | Processing bhavcopy for 2025-12-04
+2026-01-04 22:51:27,794 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_04122025.csv (3062 rows)
+2026-01-04 22:51:27,794 | INFO | SUCCESS: 2025-12-04
+2026-01-04 22:51:27,794 | INFO | Processing bhavcopy for 2025-12-05
+2026-01-04 22:51:27,885 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05122025.csv (3039 rows)
+2026-01-04 22:51:27,885 | INFO | SUCCESS: 2025-12-05
+2026-01-04 22:51:27,885 | INFO | Processing bhavcopy for 2025-12-06
+2026-01-04 22:51:27,938 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06122025.csv | Reason: HTTP 404
+2026-01-04 22:51:27,938 | INFO | Processing bhavcopy for 2025-12-07
+2026-01-04 22:51:28,065 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07122025.csv (3039 rows)
+2026-01-04 22:51:28,065 | INFO | SUCCESS: 2025-12-07
+2026-01-04 22:51:28,065 | INFO | Processing bhavcopy for 2025-12-08
+2026-01-04 22:51:28,178 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_08122025.csv (3101 rows)
+2026-01-04 22:51:28,178 | INFO | SUCCESS: 2025-12-08
+2026-01-04 22:51:28,178 | INFO | Processing bhavcopy for 2025-12-09
+2026-01-04 22:51:28,278 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09122025.csv (3066 rows)
+2026-01-04 22:51:28,278 | INFO | SUCCESS: 2025-12-09
+2026-01-04 22:51:28,278 | INFO | Processing bhavcopy for 2025-12-10
+2026-01-04 22:51:28,355 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10122025.csv (3054 rows)
+2026-01-04 22:51:28,355 | INFO | SUCCESS: 2025-12-10
+2026-01-04 22:51:28,355 | INFO | Processing bhavcopy for 2025-12-11
+2026-01-04 22:51:28,447 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_11122025.csv (3053 rows)
+2026-01-04 22:51:28,447 | INFO | SUCCESS: 2025-12-11
+2026-01-04 22:51:28,447 | INFO | Processing bhavcopy for 2025-12-12
+2026-01-04 22:51:28,542 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12122025.csv (3056 rows)
+2026-01-04 22:51:28,542 | INFO | SUCCESS: 2025-12-12
+2026-01-04 22:51:28,542 | INFO | Processing bhavcopy for 2025-12-13
+2026-01-04 22:51:28,580 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_13122025.csv | Reason: HTTP 404
+2026-01-04 22:51:28,580 | INFO | Processing bhavcopy for 2025-12-14
+2026-01-04 22:51:28,665 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14122025.csv (3056 rows)
+2026-01-04 22:51:28,665 | INFO | SUCCESS: 2025-12-14
+2026-01-04 22:51:28,665 | INFO | Processing bhavcopy for 2025-12-15
+2026-01-04 22:51:28,766 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_15122025.csv (3080 rows)
+2026-01-04 22:51:28,766 | INFO | SUCCESS: 2025-12-15
+2026-01-04 22:51:28,766 | INFO | Processing bhavcopy for 2025-12-16
+2026-01-04 22:51:28,848 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16122025.csv (3063 rows)
+2026-01-04 22:51:28,848 | INFO | SUCCESS: 2025-12-16
+2026-01-04 22:51:28,848 | INFO | Processing bhavcopy for 2025-12-17
+2026-01-04 22:51:28,950 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17122025.csv (3073 rows)
+2026-01-04 22:51:28,950 | INFO | SUCCESS: 2025-12-17
+2026-01-04 22:51:28,951 | INFO | Processing bhavcopy for 2025-12-18
+2026-01-04 22:51:29,052 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_18122025.csv (3061 rows)
+2026-01-04 22:51:29,053 | INFO | SUCCESS: 2025-12-18
+2026-01-04 22:51:29,053 | INFO | Processing bhavcopy for 2025-12-19
+2026-01-04 22:51:29,151 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19122025.csv (3064 rows)
+2026-01-04 22:51:29,151 | INFO | SUCCESS: 2025-12-19
+2026-01-04 22:51:29,151 | INFO | Processing bhavcopy for 2025-12-20
+2026-01-04 22:51:29,204 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_20122025.csv | Reason: HTTP 404
+2026-01-04 22:51:29,205 | INFO | Processing bhavcopy for 2025-12-21
+2026-01-04 22:51:29,289 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21122025.csv (3064 rows)
+2026-01-04 22:51:29,290 | INFO | SUCCESS: 2025-12-21
+2026-01-04 22:51:29,290 | INFO | Processing bhavcopy for 2025-12-22
+2026-01-04 22:51:29,371 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_22122025.csv (3107 rows)
+2026-01-04 22:51:29,371 | INFO | SUCCESS: 2025-12-22
+2026-01-04 22:51:29,371 | INFO | Processing bhavcopy for 2025-12-23
+2026-01-04 22:51:29,451 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23122025.csv (3094 rows)
+2026-01-04 22:51:29,451 | INFO | SUCCESS: 2025-12-23
+2026-01-04 22:51:29,451 | INFO | Processing bhavcopy for 2025-12-24
+2026-01-04 22:51:29,528 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24122025.csv (3090 rows)
+2026-01-04 22:51:29,528 | INFO | SUCCESS: 2025-12-24
+2026-01-04 22:51:29,528 | INFO | Processing bhavcopy for 2025-12-25
+2026-01-04 22:51:29,657 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_25122025.csv (3090 rows)
+2026-01-04 22:51:29,657 | INFO | SUCCESS: 2025-12-25
+2026-01-04 22:51:29,657 | INFO | Processing bhavcopy for 2025-12-26
+2026-01-04 22:51:29,742 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26122025.csv (3092 rows)
+2026-01-04 22:51:29,742 | INFO | SUCCESS: 2025-12-26
+2026-01-04 22:51:29,742 | INFO | Processing bhavcopy for 2025-12-27
+2026-01-04 22:51:29,779 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_27122025.csv | Reason: HTTP 404
+2026-01-04 22:51:29,779 | INFO | Processing bhavcopy for 2025-12-28
+2026-01-04 22:51:29,871 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28122025.csv (3092 rows)
+2026-01-04 22:51:29,871 | INFO | SUCCESS: 2025-12-28
+2026-01-04 22:51:29,872 | INFO | Processing bhavcopy for 2025-12-29
+2026-01-04 22:51:29,959 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_29122025.csv (3123 rows)
+2026-01-04 22:51:29,959 | INFO | SUCCESS: 2025-12-29
+2026-01-04 22:51:29,959 | INFO | Processing bhavcopy for 2025-12-30
+2026-01-04 22:51:30,048 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30122025.csv (3091 rows)
+2026-01-04 22:51:30,048 | INFO | SUCCESS: 2025-12-30
+2026-01-04 22:51:30,048 | INFO | Processing bhavcopy for 2025-12-31
+2026-01-04 22:51:30,160 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_31122025.csv (3088 rows)
+2026-01-04 22:51:30,160 | INFO | SUCCESS: 2025-12-31
+2026-01-04 22:51:30,160 | INFO | Processing bhavcopy for 2026-01-01
+2026-01-04 22:51:30,235 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01012026.csv (3078 rows)
+2026-01-04 22:51:30,235 | INFO | SUCCESS: 2026-01-01
+2026-01-04 22:51:30,235 | INFO | Bhavcopy download completed. Success: 27
+2026-01-04 23:05:48,705 | INFO | Maximum MTF date found: 2026-01-01
+2026-01-04 23:05:48,894 | INFO | Processing bhavcopy for 2025-10-01
+2026-01-04 23:05:49,085 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01102025.csv (3008 rows)
+2026-01-04 23:05:49,085 | INFO | SUCCESS: 2025-10-01
+2026-01-04 23:05:49,085 | INFO | Processing bhavcopy for 2025-10-02
+2026-01-04 23:05:49,142 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_02102025.csv | Reason: HTTP 404
+2026-01-04 23:05:49,142 | INFO | Processing bhavcopy for 2025-10-03
+2026-01-04 23:05:49,293 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03102025.csv (3036 rows)
+2026-01-04 23:05:49,293 | INFO | SUCCESS: 2025-10-03
+2026-01-04 23:05:49,293 | INFO | Processing bhavcopy for 2025-10-04
+2026-01-04 23:05:49,354 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_04102025.csv | Reason: HTTP 404
+2026-01-04 23:05:49,354 | INFO | Processing bhavcopy for 2025-10-05
+2026-01-04 23:05:49,492 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05102025.csv (3036 rows)
+2026-01-04 23:05:49,492 | INFO | SUCCESS: 2025-10-05
+2026-01-04 23:05:49,492 | INFO | Processing bhavcopy for 2025-10-06
+2026-01-04 23:05:49,611 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_06102025.csv (3045 rows)
+2026-01-04 23:05:49,611 | INFO | SUCCESS: 2025-10-06
+2026-01-04 23:05:49,611 | INFO | Processing bhavcopy for 2025-10-07
+2026-01-04 23:05:49,748 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07102025.csv (3020 rows)
+2026-01-04 23:05:49,748 | INFO | SUCCESS: 2025-10-07
+2026-01-04 23:05:49,748 | INFO | Processing bhavcopy for 2025-10-08
+2026-01-04 23:05:49,858 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_08102025.csv (3026 rows)
+2026-01-04 23:05:49,858 | INFO | SUCCESS: 2025-10-08
+2026-01-04 23:05:49,858 | INFO | Processing bhavcopy for 2025-10-09
+2026-01-04 23:05:49,986 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09102025.csv (3026 rows)
+2026-01-04 23:05:49,986 | INFO | SUCCESS: 2025-10-09
+2026-01-04 23:05:49,986 | INFO | Processing bhavcopy for 2025-10-10
+2026-01-04 23:05:50,119 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10102025.csv (3019 rows)
+2026-01-04 23:05:50,119 | INFO | SUCCESS: 2025-10-10
+2026-01-04 23:05:50,119 | INFO | Processing bhavcopy for 2025-10-11
+2026-01-04 23:05:50,170 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_11102025.csv | Reason: HTTP 404
+2026-01-04 23:05:50,170 | INFO | Processing bhavcopy for 2025-10-12
+2026-01-04 23:05:50,369 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12102025.csv (3019 rows)
+2026-01-04 23:05:50,370 | INFO | SUCCESS: 2025-10-12
+2026-01-04 23:05:50,370 | INFO | Processing bhavcopy for 2025-10-13
+2026-01-04 23:05:50,476 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_13102025.csv (3038 rows)
+2026-01-04 23:05:50,476 | INFO | SUCCESS: 2025-10-13
+2026-01-04 23:05:50,476 | INFO | Processing bhavcopy for 2025-10-14
+2026-01-04 23:05:50,604 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14102025.csv (3044 rows)
+2026-01-04 23:05:50,604 | INFO | SUCCESS: 2025-10-14
+2026-01-04 23:05:50,604 | INFO | Processing bhavcopy for 2025-10-15
+2026-01-04 23:05:50,705 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_15102025.csv (3035 rows)
+2026-01-04 23:05:50,705 | INFO | SUCCESS: 2025-10-15
+2026-01-04 23:05:50,705 | INFO | Processing bhavcopy for 2025-10-16
+2026-01-04 23:05:50,807 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16102025.csv (3045 rows)
+2026-01-04 23:05:50,807 | INFO | SUCCESS: 2025-10-16
+2026-01-04 23:05:50,807 | INFO | Processing bhavcopy for 2025-10-17
+2026-01-04 23:05:50,910 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17102025.csv (3019 rows)
+2026-01-04 23:05:50,911 | INFO | SUCCESS: 2025-10-17
+2026-01-04 23:05:50,911 | INFO | Processing bhavcopy for 2025-10-18
+2026-01-04 23:05:50,974 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_18102025.csv | Reason: HTTP 404
+2026-01-04 23:05:50,975 | INFO | Processing bhavcopy for 2025-10-19
+2026-01-04 23:05:51,084 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19102025.csv (3019 rows)
+2026-01-04 23:05:51,084 | INFO | SUCCESS: 2025-10-19
+2026-01-04 23:05:51,084 | INFO | Processing bhavcopy for 2025-10-20
+2026-01-04 23:05:51,202 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_20102025.csv (3066 rows)
+2026-01-04 23:05:51,202 | INFO | SUCCESS: 2025-10-20
+2026-01-04 23:05:51,202 | INFO | Processing bhavcopy for 2025-10-21
+2026-01-04 23:05:51,306 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21102025.csv (2953 rows)
+2026-01-04 23:05:51,306 | INFO | SUCCESS: 2025-10-21
+2026-01-04 23:05:51,306 | INFO | Processing bhavcopy for 2025-10-22
+2026-01-04 23:05:51,418 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_22102025.csv (2953 rows)
+2026-01-04 23:05:51,419 | INFO | SUCCESS: 2025-10-22
+2026-01-04 23:05:51,419 | INFO | Processing bhavcopy for 2025-10-23
+2026-01-04 23:05:51,523 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23102025.csv (3048 rows)
+2026-01-04 23:05:51,523 | INFO | SUCCESS: 2025-10-23
+2026-01-04 23:05:51,523 | INFO | Processing bhavcopy for 2025-10-24
+2026-01-04 23:05:51,655 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24102025.csv (3036 rows)
+2026-01-04 23:05:51,655 | INFO | SUCCESS: 2025-10-24
+2026-01-04 23:05:51,655 | INFO | Processing bhavcopy for 2025-10-25
+2026-01-04 23:05:51,708 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_25102025.csv | Reason: HTTP 404
+2026-01-04 23:05:51,708 | INFO | Processing bhavcopy for 2025-10-26
+2026-01-04 23:05:51,843 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26102025.csv (3036 rows)
+2026-01-04 23:05:51,843 | INFO | SUCCESS: 2025-10-26
+2026-01-04 23:05:51,843 | INFO | Processing bhavcopy for 2025-10-27
+2026-01-04 23:05:51,974 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_27102025.csv (3080 rows)
+2026-01-04 23:05:51,974 | INFO | SUCCESS: 2025-10-27
+2026-01-04 23:05:51,974 | INFO | Processing bhavcopy for 2025-10-28
+2026-01-04 23:05:52,079 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28102025.csv (3052 rows)
+2026-01-04 23:05:52,079 | INFO | SUCCESS: 2025-10-28
+2026-01-04 23:05:52,079 | INFO | Processing bhavcopy for 2025-10-29
+2026-01-04 23:05:52,191 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_29102025.csv (3035 rows)
+2026-01-04 23:05:52,192 | INFO | SUCCESS: 2025-10-29
+2026-01-04 23:05:52,192 | INFO | Processing bhavcopy for 2025-10-30
+2026-01-04 23:05:52,297 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30102025.csv (3035 rows)
+2026-01-04 23:05:52,298 | INFO | SUCCESS: 2025-10-30
+2026-01-04 23:05:52,298 | INFO | Processing bhavcopy for 2025-10-31
+2026-01-04 23:05:52,413 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_31102025.csv (3038 rows)
+2026-01-04 23:05:52,413 | INFO | SUCCESS: 2025-10-31
+2026-01-04 23:05:52,413 | INFO | Processing bhavcopy for 2025-11-01
+2026-01-04 23:05:52,475 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_01112025.csv | Reason: HTTP 404
+2026-01-04 23:05:52,475 | INFO | Processing bhavcopy for 2025-11-02
+2026-01-04 23:05:52,622 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_02112025.csv (3038 rows)
+2026-01-04 23:05:52,623 | INFO | SUCCESS: 2025-11-02
+2026-01-04 23:05:52,623 | INFO | Processing bhavcopy for 2025-11-03
+2026-01-04 23:05:52,844 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03112025.csv (3053 rows)
+2026-01-04 23:05:52,844 | INFO | SUCCESS: 2025-11-03
+2026-01-04 23:05:52,844 | INFO | Processing bhavcopy for 2025-11-04
+2026-01-04 23:05:52,962 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_04112025.csv (3039 rows)
+2026-01-04 23:05:52,962 | INFO | SUCCESS: 2025-11-04
+2026-01-04 23:05:52,962 | INFO | Processing bhavcopy for 2025-11-05
+2026-01-04 23:05:53,085 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05112025.csv (3039 rows)
+2026-01-04 23:05:53,085 | INFO | SUCCESS: 2025-11-05
+2026-01-04 23:05:53,086 | INFO | Processing bhavcopy for 2025-11-06
+2026-01-04 23:05:53,223 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_06112025.csv (3043 rows)
+2026-01-04 23:05:53,223 | INFO | SUCCESS: 2025-11-06
+2026-01-04 23:05:53,223 | INFO | Processing bhavcopy for 2025-11-07
+2026-01-04 23:05:53,348 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07112025.csv (3033 rows)
+2026-01-04 23:05:53,348 | INFO | SUCCESS: 2025-11-07
+2026-01-04 23:05:53,348 | INFO | Processing bhavcopy for 2025-11-08
+2026-01-04 23:05:53,415 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_08112025.csv | Reason: HTTP 404
+2026-01-04 23:05:53,415 | INFO | Processing bhavcopy for 2025-11-09
+2026-01-04 23:05:53,525 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09112025.csv (3033 rows)
+2026-01-04 23:05:53,525 | INFO | SUCCESS: 2025-11-09
+2026-01-04 23:05:53,525 | INFO | Processing bhavcopy for 2025-11-10
+2026-01-04 23:05:53,631 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10112025.csv (3065 rows)
+2026-01-04 23:05:53,631 | INFO | SUCCESS: 2025-11-10
+2026-01-04 23:05:53,631 | INFO | Processing bhavcopy for 2025-11-11
+2026-01-04 23:05:53,739 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_11112025.csv (3048 rows)
+2026-01-04 23:05:53,739 | INFO | SUCCESS: 2025-11-11
+2026-01-04 23:05:53,739 | INFO | Processing bhavcopy for 2025-11-12
+2026-01-04 23:05:53,848 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12112025.csv (3048 rows)
+2026-01-04 23:05:53,848 | INFO | SUCCESS: 2025-11-12
+2026-01-04 23:05:53,848 | INFO | Processing bhavcopy for 2025-11-13
+2026-01-04 23:05:53,982 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_13112025.csv (3041 rows)
+2026-01-04 23:05:53,982 | INFO | SUCCESS: 2025-11-13
+2026-01-04 23:05:53,982 | INFO | Processing bhavcopy for 2025-11-14
+2026-01-04 23:05:54,160 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14112025.csv (3050 rows)
+2026-01-04 23:05:54,160 | INFO | SUCCESS: 2025-11-14
+2026-01-04 23:05:54,160 | INFO | Processing bhavcopy for 2025-11-15
+2026-01-04 23:05:54,287 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_15112025.csv | Reason: HTTP 404
+2026-01-04 23:05:54,288 | INFO | Processing bhavcopy for 2025-11-16
+2026-01-04 23:05:54,423 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16112025.csv (3050 rows)
+2026-01-04 23:05:54,423 | INFO | SUCCESS: 2025-11-16
+2026-01-04 23:05:54,423 | INFO | Processing bhavcopy for 2025-11-17
+2026-01-04 23:05:54,571 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17112025.csv (3087 rows)
+2026-01-04 23:05:54,571 | INFO | SUCCESS: 2025-11-17
+2026-01-04 23:05:54,571 | INFO | Processing bhavcopy for 2025-11-18
+2026-01-04 23:05:54,682 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_18112025.csv (3048 rows)
+2026-01-04 23:05:54,682 | INFO | SUCCESS: 2025-11-18
+2026-01-04 23:05:54,682 | INFO | Processing bhavcopy for 2025-11-19
+2026-01-04 23:05:54,811 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19112025.csv (3049 rows)
+2026-01-04 23:05:54,811 | INFO | SUCCESS: 2025-11-19
+2026-01-04 23:05:54,811 | INFO | Processing bhavcopy for 2025-11-20
+2026-01-04 23:05:54,926 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_20112025.csv (3046 rows)
+2026-01-04 23:05:54,926 | INFO | SUCCESS: 2025-11-20
+2026-01-04 23:05:54,927 | INFO | Processing bhavcopy for 2025-11-21
+2026-01-04 23:05:55,038 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21112025.csv (3038 rows)
+2026-01-04 23:05:55,038 | INFO | SUCCESS: 2025-11-21
+2026-01-04 23:05:55,038 | INFO | Processing bhavcopy for 2025-11-22
+2026-01-04 23:05:55,104 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_22112025.csv | Reason: HTTP 404
+2026-01-04 23:05:55,104 | INFO | Processing bhavcopy for 2025-11-23
+2026-01-04 23:05:55,226 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23112025.csv (3038 rows)
+2026-01-04 23:05:55,226 | INFO | SUCCESS: 2025-11-23
+2026-01-04 23:05:55,226 | INFO | Processing bhavcopy for 2025-11-24
+2026-01-04 23:05:55,351 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24112025.csv (3070 rows)
+2026-01-04 23:05:55,351 | INFO | SUCCESS: 2025-11-24
+2026-01-04 23:05:55,351 | INFO | Processing bhavcopy for 2025-11-25
+2026-01-04 23:05:55,468 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_25112025.csv (3052 rows)
+2026-01-04 23:05:55,468 | INFO | SUCCESS: 2025-11-25
+2026-01-04 23:05:55,468 | INFO | Processing bhavcopy for 2025-11-26
+2026-01-04 23:05:55,605 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26112025.csv (3046 rows)
+2026-01-04 23:05:55,605 | INFO | SUCCESS: 2025-11-26
+2026-01-04 23:05:55,605 | INFO | Processing bhavcopy for 2025-11-27
+2026-01-04 23:05:55,715 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_27112025.csv (3050 rows)
+2026-01-04 23:05:55,715 | INFO | SUCCESS: 2025-11-27
+2026-01-04 23:05:55,715 | INFO | Processing bhavcopy for 2025-11-28
+2026-01-04 23:05:55,821 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28112025.csv (3052 rows)
+2026-01-04 23:05:55,821 | INFO | SUCCESS: 2025-11-28
+2026-01-04 23:05:55,821 | INFO | Processing bhavcopy for 2025-11-29
+2026-01-04 23:05:55,884 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_29112025.csv | Reason: HTTP 404
+2026-01-04 23:05:55,884 | INFO | Processing bhavcopy for 2025-11-30
+2026-01-04 23:05:55,988 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30112025.csv (3052 rows)
+2026-01-04 23:05:55,988 | INFO | SUCCESS: 2025-11-30
+2026-01-04 23:05:55,988 | INFO | Processing bhavcopy for 2025-12-01
+2026-01-04 23:05:56,102 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01122025.csv (3086 rows)
+2026-01-04 23:05:56,102 | INFO | SUCCESS: 2025-12-01
+2026-01-04 23:05:56,102 | INFO | File already exists: sec_bhavdata_full_02122025.csv
+2026-01-04 23:05:56,102 | INFO | File already exists: sec_bhavdata_full_03122025.csv
+2026-01-04 23:05:56,102 | INFO | File already exists: sec_bhavdata_full_04122025.csv
+2026-01-04 23:05:56,102 | INFO | File already exists: sec_bhavdata_full_05122025.csv
+2026-01-04 23:05:56,102 | INFO | Processing bhavcopy for 2025-12-06
+2026-01-04 23:05:56,154 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06122025.csv | Reason: HTTP 404
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_07122025.csv
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_08122025.csv
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_09122025.csv
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_10122025.csv
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_11122025.csv
+2026-01-04 23:05:56,154 | INFO | File already exists: sec_bhavdata_full_12122025.csv
+2026-01-04 23:05:56,154 | INFO | Processing bhavcopy for 2025-12-13
+2026-01-04 23:05:56,224 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_13122025.csv | Reason: HTTP 404
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_14122025.csv
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_15122025.csv
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_16122025.csv
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_17122025.csv
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_18122025.csv
+2026-01-04 23:05:56,224 | INFO | File already exists: sec_bhavdata_full_19122025.csv
+2026-01-04 23:05:56,225 | INFO | Processing bhavcopy for 2025-12-20
+2026-01-04 23:05:56,290 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_20122025.csv | Reason: HTTP 404
+2026-01-04 23:05:56,291 | INFO | File already exists: sec_bhavdata_full_21122025.csv
+2026-01-04 23:05:56,291 | INFO | File already exists: sec_bhavdata_full_22122025.csv
+2026-01-04 23:05:56,291 | INFO | File already exists: sec_bhavdata_full_23122025.csv
+2026-01-04 23:05:56,291 | INFO | File already exists: sec_bhavdata_full_24122025.csv
+2026-01-04 23:05:56,291 | INFO | File already exists: sec_bhavdata_full_25122025.csv
+2026-01-04 23:05:56,292 | INFO | File already exists: sec_bhavdata_full_26122025.csv
+2026-01-04 23:05:56,292 | INFO | Processing bhavcopy for 2025-12-27
+2026-01-04 23:05:56,374 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_27122025.csv | Reason: HTTP 404
+2026-01-04 23:05:56,374 | INFO | File already exists: sec_bhavdata_full_28122025.csv
+2026-01-04 23:05:56,374 | INFO | File already exists: sec_bhavdata_full_29122025.csv
+2026-01-04 23:05:56,375 | INFO | File already exists: sec_bhavdata_full_30122025.csv
+2026-01-04 23:05:56,375 | INFO | File already exists: sec_bhavdata_full_31122025.csv
+2026-01-04 23:05:56,375 | INFO | File already exists: sec_bhavdata_full_01012026.csv
+2026-01-04 23:05:56,375 | INFO | Bhavcopy download completed. Success: 79
+2026-01-04 23:05:56,441 | INFO | Found 2214 unique MTF symbols
+2026-01-04 23:05:56,447 | INFO | Read 3008 rows from sec_bhavdata_full_01102025.csv
+2026-01-04 23:05:56,447 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:05:56,449 | INFO | Filtered from 3008 to 2127 MTF stocks
+2026-01-04 23:05:56,753 | INFO | Loaded 2127 MTF stock records from sec_bhavdata_full_01102025.csv for 2025-10-01
+2026-01-04 23:05:56,753 | ERROR | Auto-load failed: name 'timedelta' is not defined
+2026-01-04 23:08:06,016 | INFO | Maximum MTF date found: 2026-01-01
+2026-01-04 23:08:06,108 | INFO | Processing bhavcopy for 2025-10-01
+2026-01-04 23:08:06,222 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01102025.csv (3008 rows)
+2026-01-04 23:08:06,222 | INFO | SUCCESS: 2025-10-01
+2026-01-04 23:08:06,222 | INFO | Processing bhavcopy for 2025-10-02
+2026-01-04 23:08:06,268 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_02102025.csv | Reason: HTTP 404
+2026-01-04 23:08:06,268 | INFO | Processing bhavcopy for 2025-10-03
+2026-01-04 23:08:06,343 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03102025.csv (3036 rows)
+2026-01-04 23:08:06,343 | INFO | SUCCESS: 2025-10-03
+2026-01-04 23:08:06,344 | INFO | Processing bhavcopy for 2025-10-04
+2026-01-04 23:08:06,419 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_04102025.csv | Reason: HTTP 404
+2026-01-04 23:08:06,419 | INFO | Processing bhavcopy for 2025-10-05
+2026-01-04 23:08:06,498 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05102025.csv (3036 rows)
+2026-01-04 23:08:06,498 | INFO | SUCCESS: 2025-10-05
+2026-01-04 23:08:06,498 | INFO | Processing bhavcopy for 2025-10-06
+2026-01-04 23:08:06,571 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_06102025.csv (3045 rows)
+2026-01-04 23:08:06,571 | INFO | SUCCESS: 2025-10-06
+2026-01-04 23:08:06,571 | INFO | Processing bhavcopy for 2025-10-07
+2026-01-04 23:08:06,640 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07102025.csv (3020 rows)
+2026-01-04 23:08:06,640 | INFO | SUCCESS: 2025-10-07
+2026-01-04 23:08:06,640 | INFO | Processing bhavcopy for 2025-10-08
+2026-01-04 23:08:06,720 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_08102025.csv (3026 rows)
+2026-01-04 23:08:06,720 | INFO | SUCCESS: 2025-10-08
+2026-01-04 23:08:06,720 | INFO | Processing bhavcopy for 2025-10-09
+2026-01-04 23:08:06,793 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09102025.csv (3026 rows)
+2026-01-04 23:08:06,793 | INFO | SUCCESS: 2025-10-09
+2026-01-04 23:08:06,793 | INFO | Processing bhavcopy for 2025-10-10
+2026-01-04 23:08:06,864 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10102025.csv (3019 rows)
+2026-01-04 23:08:06,864 | INFO | SUCCESS: 2025-10-10
+2026-01-04 23:08:06,864 | INFO | Processing bhavcopy for 2025-10-11
+2026-01-04 23:08:06,978 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_11102025.csv | Reason: HTTP 404
+2026-01-04 23:08:06,978 | INFO | Processing bhavcopy for 2025-10-12
+2026-01-04 23:08:07,049 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12102025.csv (3019 rows)
+2026-01-04 23:08:07,049 | INFO | SUCCESS: 2025-10-12
+2026-01-04 23:08:07,049 | INFO | Processing bhavcopy for 2025-10-13
+2026-01-04 23:08:07,122 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_13102025.csv (3038 rows)
+2026-01-04 23:08:07,122 | INFO | SUCCESS: 2025-10-13
+2026-01-04 23:08:07,122 | INFO | Processing bhavcopy for 2025-10-14
+2026-01-04 23:08:07,191 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14102025.csv (3044 rows)
+2026-01-04 23:08:07,191 | INFO | SUCCESS: 2025-10-14
+2026-01-04 23:08:07,191 | INFO | Processing bhavcopy for 2025-10-15
+2026-01-04 23:08:07,261 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_15102025.csv (3035 rows)
+2026-01-04 23:08:07,262 | INFO | SUCCESS: 2025-10-15
+2026-01-04 23:08:07,262 | INFO | Processing bhavcopy for 2025-10-16
+2026-01-04 23:08:07,334 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16102025.csv (3045 rows)
+2026-01-04 23:08:07,334 | INFO | SUCCESS: 2025-10-16
+2026-01-04 23:08:07,334 | INFO | Processing bhavcopy for 2025-10-17
+2026-01-04 23:08:07,405 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17102025.csv (3019 rows)
+2026-01-04 23:08:07,406 | INFO | SUCCESS: 2025-10-17
+2026-01-04 23:08:07,406 | INFO | Processing bhavcopy for 2025-10-18
+2026-01-04 23:08:07,485 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_18102025.csv | Reason: HTTP 404
+2026-01-04 23:08:07,485 | INFO | Processing bhavcopy for 2025-10-19
+2026-01-04 23:08:07,551 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19102025.csv (3019 rows)
+2026-01-04 23:08:07,551 | INFO | SUCCESS: 2025-10-19
+2026-01-04 23:08:07,551 | INFO | Processing bhavcopy for 2025-10-20
+2026-01-04 23:08:07,624 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_20102025.csv (3066 rows)
+2026-01-04 23:08:07,625 | INFO | SUCCESS: 2025-10-20
+2026-01-04 23:08:07,625 | INFO | Processing bhavcopy for 2025-10-21
+2026-01-04 23:08:07,707 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21102025.csv (2953 rows)
+2026-01-04 23:08:07,707 | INFO | SUCCESS: 2025-10-21
+2026-01-04 23:08:07,707 | INFO | Processing bhavcopy for 2025-10-22
+2026-01-04 23:08:07,762 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_22102025.csv (2953 rows)
+2026-01-04 23:08:07,762 | INFO | SUCCESS: 2025-10-22
+2026-01-04 23:08:07,762 | INFO | Processing bhavcopy for 2025-10-23
+2026-01-04 23:08:07,826 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23102025.csv (3048 rows)
+2026-01-04 23:08:07,826 | INFO | SUCCESS: 2025-10-23
+2026-01-04 23:08:07,826 | INFO | Processing bhavcopy for 2025-10-24
+2026-01-04 23:08:07,895 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24102025.csv (3036 rows)
+2026-01-04 23:08:07,895 | INFO | SUCCESS: 2025-10-24
+2026-01-04 23:08:07,895 | INFO | Processing bhavcopy for 2025-10-25
+2026-01-04 23:08:07,956 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_25102025.csv | Reason: HTTP 404
+2026-01-04 23:08:07,956 | INFO | Processing bhavcopy for 2025-10-26
+2026-01-04 23:08:08,022 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26102025.csv (3036 rows)
+2026-01-04 23:08:08,022 | INFO | SUCCESS: 2025-10-26
+2026-01-04 23:08:08,022 | INFO | Processing bhavcopy for 2025-10-27
+2026-01-04 23:08:08,092 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_27102025.csv (3080 rows)
+2026-01-04 23:08:08,092 | INFO | SUCCESS: 2025-10-27
+2026-01-04 23:08:08,092 | INFO | Processing bhavcopy for 2025-10-28
+2026-01-04 23:08:08,179 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28102025.csv (3052 rows)
+2026-01-04 23:08:08,179 | INFO | SUCCESS: 2025-10-28
+2026-01-04 23:08:08,179 | INFO | Processing bhavcopy for 2025-10-29
+2026-01-04 23:08:08,249 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_29102025.csv (3035 rows)
+2026-01-04 23:08:08,249 | INFO | SUCCESS: 2025-10-29
+2026-01-04 23:08:08,249 | INFO | Processing bhavcopy for 2025-10-30
+2026-01-04 23:08:08,323 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30102025.csv (3035 rows)
+2026-01-04 23:08:08,323 | INFO | SUCCESS: 2025-10-30
+2026-01-04 23:08:08,323 | INFO | Processing bhavcopy for 2025-10-31
+2026-01-04 23:08:08,396 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_31102025.csv (3038 rows)
+2026-01-04 23:08:08,396 | INFO | SUCCESS: 2025-10-31
+2026-01-04 23:08:08,396 | INFO | Processing bhavcopy for 2025-11-01
+2026-01-04 23:08:08,528 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_01112025.csv | Reason: HTTP 404
+2026-01-04 23:08:08,528 | INFO | Processing bhavcopy for 2025-11-02
+2026-01-04 23:08:08,599 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_02112025.csv (3038 rows)
+2026-01-04 23:08:08,600 | INFO | SUCCESS: 2025-11-02
+2026-01-04 23:08:08,600 | INFO | Processing bhavcopy for 2025-11-03
+2026-01-04 23:08:08,670 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03112025.csv (3053 rows)
+2026-01-04 23:08:08,671 | INFO | SUCCESS: 2025-11-03
+2026-01-04 23:08:08,671 | INFO | Processing bhavcopy for 2025-11-04
+2026-01-04 23:08:08,739 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_04112025.csv (3039 rows)
+2026-01-04 23:08:08,740 | INFO | SUCCESS: 2025-11-04
+2026-01-04 23:08:08,740 | INFO | Processing bhavcopy for 2025-11-05
+2026-01-04 23:08:08,811 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05112025.csv (3039 rows)
+2026-01-04 23:08:08,811 | INFO | SUCCESS: 2025-11-05
+2026-01-04 23:08:08,811 | INFO | Processing bhavcopy for 2025-11-06
+2026-01-04 23:08:08,890 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_06112025.csv (3043 rows)
+2026-01-04 23:08:08,890 | INFO | SUCCESS: 2025-11-06
+2026-01-04 23:08:08,890 | INFO | Processing bhavcopy for 2025-11-07
+2026-01-04 23:08:08,963 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07112025.csv (3033 rows)
+2026-01-04 23:08:08,963 | INFO | SUCCESS: 2025-11-07
+2026-01-04 23:08:08,963 | INFO | Processing bhavcopy for 2025-11-08
+2026-01-04 23:08:09,015 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_08112025.csv | Reason: HTTP 404
+2026-01-04 23:08:09,015 | INFO | Processing bhavcopy for 2025-11-09
+2026-01-04 23:08:09,091 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09112025.csv (3033 rows)
+2026-01-04 23:08:09,091 | INFO | SUCCESS: 2025-11-09
+2026-01-04 23:08:09,091 | INFO | Processing bhavcopy for 2025-11-10
+2026-01-04 23:08:09,173 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10112025.csv (3065 rows)
+2026-01-04 23:08:09,173 | INFO | SUCCESS: 2025-11-10
+2026-01-04 23:08:09,173 | INFO | Processing bhavcopy for 2025-11-11
+2026-01-04 23:08:09,246 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_11112025.csv (3048 rows)
+2026-01-04 23:08:09,246 | INFO | SUCCESS: 2025-11-11
+2026-01-04 23:08:09,246 | INFO | Processing bhavcopy for 2025-11-12
+2026-01-04 23:08:09,319 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12112025.csv (3048 rows)
+2026-01-04 23:08:09,319 | INFO | SUCCESS: 2025-11-12
+2026-01-04 23:08:09,319 | INFO | Processing bhavcopy for 2025-11-13
+2026-01-04 23:08:09,402 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_13112025.csv (3041 rows)
+2026-01-04 23:08:09,402 | INFO | SUCCESS: 2025-11-13
+2026-01-04 23:08:09,402 | INFO | Processing bhavcopy for 2025-11-14
+2026-01-04 23:08:09,471 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14112025.csv (3050 rows)
+2026-01-04 23:08:09,471 | INFO | SUCCESS: 2025-11-14
+2026-01-04 23:08:09,471 | INFO | Processing bhavcopy for 2025-11-15
+2026-01-04 23:08:09,520 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_15112025.csv | Reason: HTTP 404
+2026-01-04 23:08:09,520 | INFO | Processing bhavcopy for 2025-11-16
+2026-01-04 23:08:09,591 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16112025.csv (3050 rows)
+2026-01-04 23:08:09,592 | INFO | SUCCESS: 2025-11-16
+2026-01-04 23:08:09,592 | INFO | Processing bhavcopy for 2025-11-17
+2026-01-04 23:08:09,670 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17112025.csv (3087 rows)
+2026-01-04 23:08:09,670 | INFO | SUCCESS: 2025-11-17
+2026-01-04 23:08:09,670 | INFO | Processing bhavcopy for 2025-11-18
+2026-01-04 23:08:09,739 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_18112025.csv (3048 rows)
+2026-01-04 23:08:09,739 | INFO | SUCCESS: 2025-11-18
+2026-01-04 23:08:09,739 | INFO | Processing bhavcopy for 2025-11-19
+2026-01-04 23:08:09,814 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19112025.csv (3049 rows)
+2026-01-04 23:08:09,814 | INFO | SUCCESS: 2025-11-19
+2026-01-04 23:08:09,815 | INFO | Processing bhavcopy for 2025-11-20
+2026-01-04 23:08:09,876 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_20112025.csv (3046 rows)
+2026-01-04 23:08:09,876 | INFO | SUCCESS: 2025-11-20
+2026-01-04 23:08:09,876 | INFO | Processing bhavcopy for 2025-11-21
+2026-01-04 23:08:09,944 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21112025.csv (3038 rows)
+2026-01-04 23:08:09,944 | INFO | SUCCESS: 2025-11-21
+2026-01-04 23:08:09,944 | INFO | Processing bhavcopy for 2025-11-22
+2026-01-04 23:08:09,979 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_22112025.csv | Reason: HTTP 404
+2026-01-04 23:08:09,979 | INFO | Processing bhavcopy for 2025-11-23
+2026-01-04 23:08:10,049 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23112025.csv (3038 rows)
+2026-01-04 23:08:10,049 | INFO | SUCCESS: 2025-11-23
+2026-01-04 23:08:10,049 | INFO | Processing bhavcopy for 2025-11-24
+2026-01-04 23:08:10,128 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24112025.csv (3070 rows)
+2026-01-04 23:08:10,128 | INFO | SUCCESS: 2025-11-24
+2026-01-04 23:08:10,128 | INFO | Processing bhavcopy for 2025-11-25
+2026-01-04 23:08:10,198 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_25112025.csv (3052 rows)
+2026-01-04 23:08:10,198 | INFO | SUCCESS: 2025-11-25
+2026-01-04 23:08:10,198 | INFO | Processing bhavcopy for 2025-11-26
+2026-01-04 23:08:10,273 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26112025.csv (3046 rows)
+2026-01-04 23:08:10,273 | INFO | SUCCESS: 2025-11-26
+2026-01-04 23:08:10,273 | INFO | Processing bhavcopy for 2025-11-27
+2026-01-04 23:08:10,340 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_27112025.csv (3050 rows)
+2026-01-04 23:08:10,340 | INFO | SUCCESS: 2025-11-27
+2026-01-04 23:08:10,340 | INFO | Processing bhavcopy for 2025-11-28
+2026-01-04 23:08:10,415 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28112025.csv (3052 rows)
+2026-01-04 23:08:10,415 | INFO | SUCCESS: 2025-11-28
+2026-01-04 23:08:10,415 | INFO | Processing bhavcopy for 2025-11-29
+2026-01-04 23:08:10,460 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_29112025.csv | Reason: HTTP 404
+2026-01-04 23:08:10,460 | INFO | Processing bhavcopy for 2025-11-30
+2026-01-04 23:08:10,529 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30112025.csv (3052 rows)
+2026-01-04 23:08:10,529 | INFO | SUCCESS: 2025-11-30
+2026-01-04 23:08:10,529 | INFO | Processing bhavcopy for 2025-12-01
+2026-01-04 23:08:10,600 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01122025.csv (3086 rows)
+2026-01-04 23:08:10,600 | INFO | SUCCESS: 2025-12-01
+2026-01-04 23:08:10,600 | INFO | Processing bhavcopy for 2025-12-02
+2026-01-04 23:08:10,727 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_02122025.csv (3050 rows)
+2026-01-04 23:08:10,728 | INFO | SUCCESS: 2025-12-02
+2026-01-04 23:08:10,728 | INFO | Processing bhavcopy for 2025-12-03
+2026-01-04 23:08:10,842 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_03122025.csv (3070 rows)
+2026-01-04 23:08:10,842 | INFO | SUCCESS: 2025-12-03
+2026-01-04 23:08:10,842 | INFO | Processing bhavcopy for 2025-12-04
+2026-01-04 23:08:10,959 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_04122025.csv (3062 rows)
+2026-01-04 23:08:10,959 | INFO | SUCCESS: 2025-12-04
+2026-01-04 23:08:10,960 | INFO | Processing bhavcopy for 2025-12-05
+2026-01-04 23:08:11,057 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_05122025.csv (3039 rows)
+2026-01-04 23:08:11,057 | INFO | SUCCESS: 2025-12-05
+2026-01-04 23:08:11,057 | INFO | Processing bhavcopy for 2025-12-06
+2026-01-04 23:08:11,111 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_06122025.csv | Reason: HTTP 404
+2026-01-04 23:08:11,111 | INFO | Processing bhavcopy for 2025-12-07
+2026-01-04 23:08:11,222 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_07122025.csv (3039 rows)
+2026-01-04 23:08:11,222 | INFO | SUCCESS: 2025-12-07
+2026-01-04 23:08:11,222 | INFO | Processing bhavcopy for 2025-12-08
+2026-01-04 23:08:11,326 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_08122025.csv (3101 rows)
+2026-01-04 23:08:11,326 | INFO | SUCCESS: 2025-12-08
+2026-01-04 23:08:11,326 | INFO | Processing bhavcopy for 2025-12-09
+2026-01-04 23:08:11,417 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_09122025.csv (3066 rows)
+2026-01-04 23:08:11,417 | INFO | SUCCESS: 2025-12-09
+2026-01-04 23:08:11,417 | INFO | Processing bhavcopy for 2025-12-10
+2026-01-04 23:08:11,506 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_10122025.csv (3054 rows)
+2026-01-04 23:08:11,506 | INFO | SUCCESS: 2025-12-10
+2026-01-04 23:08:11,506 | INFO | Processing bhavcopy for 2025-12-11
+2026-01-04 23:08:11,634 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_11122025.csv (3053 rows)
+2026-01-04 23:08:11,634 | INFO | SUCCESS: 2025-12-11
+2026-01-04 23:08:11,634 | INFO | Processing bhavcopy for 2025-12-12
+2026-01-04 23:08:11,752 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_12122025.csv (3056 rows)
+2026-01-04 23:08:11,752 | INFO | SUCCESS: 2025-12-12
+2026-01-04 23:08:11,752 | INFO | Processing bhavcopy for 2025-12-13
+2026-01-04 23:08:11,802 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_13122025.csv | Reason: HTTP 404
+2026-01-04 23:08:11,802 | INFO | Processing bhavcopy for 2025-12-14
+2026-01-04 23:08:11,966 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_14122025.csv (3056 rows)
+2026-01-04 23:08:11,966 | INFO | SUCCESS: 2025-12-14
+2026-01-04 23:08:11,966 | INFO | Processing bhavcopy for 2025-12-15
+2026-01-04 23:08:12,080 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_15122025.csv (3080 rows)
+2026-01-04 23:08:12,080 | INFO | SUCCESS: 2025-12-15
+2026-01-04 23:08:12,080 | INFO | Processing bhavcopy for 2025-12-16
+2026-01-04 23:08:12,219 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_16122025.csv (3063 rows)
+2026-01-04 23:08:12,220 | INFO | SUCCESS: 2025-12-16
+2026-01-04 23:08:12,220 | INFO | Processing bhavcopy for 2025-12-17
+2026-01-04 23:08:12,306 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_17122025.csv (3073 rows)
+2026-01-04 23:08:12,306 | INFO | SUCCESS: 2025-12-17
+2026-01-04 23:08:12,306 | INFO | Processing bhavcopy for 2025-12-18
+2026-01-04 23:08:12,404 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_18122025.csv (3061 rows)
+2026-01-04 23:08:12,404 | INFO | SUCCESS: 2025-12-18
+2026-01-04 23:08:12,404 | INFO | Processing bhavcopy for 2025-12-19
+2026-01-04 23:08:12,511 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_19122025.csv (3064 rows)
+2026-01-04 23:08:12,511 | INFO | SUCCESS: 2025-12-19
+2026-01-04 23:08:12,511 | INFO | Processing bhavcopy for 2025-12-20
+2026-01-04 23:08:12,578 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_20122025.csv | Reason: HTTP 404
+2026-01-04 23:08:12,578 | INFO | Processing bhavcopy for 2025-12-21
+2026-01-04 23:08:12,678 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_21122025.csv (3064 rows)
+2026-01-04 23:08:12,679 | INFO | SUCCESS: 2025-12-21
+2026-01-04 23:08:12,679 | INFO | Processing bhavcopy for 2025-12-22
+2026-01-04 23:08:12,794 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_22122025.csv (3107 rows)
+2026-01-04 23:08:12,794 | INFO | SUCCESS: 2025-12-22
+2026-01-04 23:08:12,794 | INFO | Processing bhavcopy for 2025-12-23
+2026-01-04 23:08:12,911 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_23122025.csv (3094 rows)
+2026-01-04 23:08:12,911 | INFO | SUCCESS: 2025-12-23
+2026-01-04 23:08:12,911 | INFO | Processing bhavcopy for 2025-12-24
+2026-01-04 23:08:13,019 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_24122025.csv (3090 rows)
+2026-01-04 23:08:13,019 | INFO | SUCCESS: 2025-12-24
+2026-01-04 23:08:13,019 | INFO | Processing bhavcopy for 2025-12-25
+2026-01-04 23:08:13,116 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_25122025.csv (3090 rows)
+2026-01-04 23:08:13,116 | INFO | SUCCESS: 2025-12-25
+2026-01-04 23:08:13,116 | INFO | Processing bhavcopy for 2025-12-26
+2026-01-04 23:08:13,211 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_26122025.csv (3092 rows)
+2026-01-04 23:08:13,211 | INFO | SUCCESS: 2025-12-26
+2026-01-04 23:08:13,211 | INFO | Processing bhavcopy for 2025-12-27
+2026-01-04 23:08:13,247 | WARNING | SKIPPED: https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_27122025.csv | Reason: HTTP 404
+2026-01-04 23:08:13,247 | INFO | Processing bhavcopy for 2025-12-28
+2026-01-04 23:08:13,368 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_28122025.csv (3092 rows)
+2026-01-04 23:08:13,368 | INFO | SUCCESS: 2025-12-28
+2026-01-04 23:08:13,368 | INFO | Processing bhavcopy for 2025-12-29
+2026-01-04 23:08:13,496 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_29122025.csv (3123 rows)
+2026-01-04 23:08:13,496 | INFO | SUCCESS: 2025-12-29
+2026-01-04 23:08:13,496 | INFO | Processing bhavcopy for 2025-12-30
+2026-01-04 23:08:13,641 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_30122025.csv (3091 rows)
+2026-01-04 23:08:13,641 | INFO | SUCCESS: 2025-12-30
+2026-01-04 23:08:13,641 | INFO | Processing bhavcopy for 2025-12-31
+2026-01-04 23:08:13,731 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_31122025.csv (3088 rows)
+2026-01-04 23:08:13,731 | INFO | SUCCESS: 2025-12-31
+2026-01-04 23:08:13,732 | INFO | Processing bhavcopy for 2026-01-01
+2026-01-04 23:08:13,845 | INFO | Cleaned bhavcopy saved: sec_bhavdata_full_01012026.csv (3078 rows)
+2026-01-04 23:08:13,845 | INFO | SUCCESS: 2026-01-01
+2026-01-04 23:08:13,845 | INFO | Bhavcopy download completed. Success: 79
+2026-01-04 23:08:13,918 | INFO | Found 2214 unique MTF symbols
+2026-01-04 23:08:13,926 | INFO | Read 3008 rows from sec_bhavdata_full_01102025.csv
+2026-01-04 23:08:13,926 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:13,928 | INFO | Filtered from 3008 to 2127 MTF stocks
+2026-01-04 23:08:14,235 | INFO | Loaded 2127 MTF stock records from sec_bhavdata_full_01102025.csv for 2025-10-01
+2026-01-04 23:08:14,245 | INFO | Read 3036 rows from sec_bhavdata_full_03102025.csv
+2026-01-04 23:08:14,245 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:14,245 | INFO | Filtered from 3036 to 2126 MTF stocks
+2026-01-04 23:08:14,511 | INFO | Loaded 2126 MTF stock records from sec_bhavdata_full_03102025.csv for 2025-10-03
+2026-01-04 23:08:14,521 | INFO | Read 3036 rows from sec_bhavdata_full_05102025.csv
+2026-01-04 23:08:14,521 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:14,522 | INFO | Filtered from 3036 to 2126 MTF stocks
+2026-01-04 23:08:14,795 | INFO | Loaded 2126 MTF stock records from sec_bhavdata_full_05102025.csv for 2025-10-05
+2026-01-04 23:08:14,805 | INFO | Read 3045 rows from sec_bhavdata_full_06102025.csv
+2026-01-04 23:08:14,805 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:14,805 | INFO | Filtered from 3045 to 2131 MTF stocks
+2026-01-04 23:08:15,102 | INFO | Loaded 2131 MTF stock records from sec_bhavdata_full_06102025.csv for 2025-10-06
+2026-01-04 23:08:15,109 | INFO | Read 3020 rows from sec_bhavdata_full_07102025.csv
+2026-01-04 23:08:15,109 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:15,109 | INFO | Filtered from 3020 to 2131 MTF stocks
+2026-01-04 23:08:15,385 | INFO | Loaded 2131 MTF stock records from sec_bhavdata_full_07102025.csv for 2025-10-07
+2026-01-04 23:08:15,391 | INFO | Read 3026 rows from sec_bhavdata_full_08102025.csv
+2026-01-04 23:08:15,391 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:15,392 | INFO | Filtered from 3026 to 2132 MTF stocks
+2026-01-04 23:08:15,657 | INFO | Loaded 2132 MTF stock records from sec_bhavdata_full_08102025.csv for 2025-10-08
+2026-01-04 23:08:15,668 | INFO | Read 3026 rows from sec_bhavdata_full_09102025.csv
+2026-01-04 23:08:15,668 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:15,669 | INFO | Filtered from 3026 to 2134 MTF stocks
+2026-01-04 23:08:15,933 | INFO | Loaded 2134 MTF stock records from sec_bhavdata_full_09102025.csv for 2025-10-09
+2026-01-04 23:08:15,943 | INFO | Read 3019 rows from sec_bhavdata_full_10102025.csv
+2026-01-04 23:08:15,943 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:15,944 | INFO | Filtered from 3019 to 2139 MTF stocks
+2026-01-04 23:08:16,217 | INFO | Loaded 2139 MTF stock records from sec_bhavdata_full_10102025.csv for 2025-10-10
+2026-01-04 23:08:16,222 | INFO | Read 3019 rows from sec_bhavdata_full_12102025.csv
+2026-01-04 23:08:16,222 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:16,223 | INFO | Filtered from 3019 to 2139 MTF stocks
+2026-01-04 23:08:16,493 | INFO | Loaded 2139 MTF stock records from sec_bhavdata_full_12102025.csv for 2025-10-12
+2026-01-04 23:08:16,504 | INFO | Read 3038 rows from sec_bhavdata_full_13102025.csv
+2026-01-04 23:08:16,504 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:16,504 | INFO | Filtered from 3038 to 2139 MTF stocks
+2026-01-04 23:08:16,775 | INFO | Loaded 2139 MTF stock records from sec_bhavdata_full_13102025.csv for 2025-10-13
+2026-01-04 23:08:16,787 | INFO | Read 3044 rows from sec_bhavdata_full_14102025.csv
+2026-01-04 23:08:16,787 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:16,788 | INFO | Filtered from 3044 to 2141 MTF stocks
+2026-01-04 23:08:17,073 | INFO | Loaded 2141 MTF stock records from sec_bhavdata_full_14102025.csv for 2025-10-14
+2026-01-04 23:08:17,085 | INFO | Read 3035 rows from sec_bhavdata_full_15102025.csv
+2026-01-04 23:08:17,085 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:17,085 | INFO | Filtered from 3035 to 2145 MTF stocks
+2026-01-04 23:08:17,354 | INFO | Loaded 2145 MTF stock records from sec_bhavdata_full_15102025.csv for 2025-10-15
+2026-01-04 23:08:17,366 | INFO | Read 3045 rows from sec_bhavdata_full_16102025.csv
+2026-01-04 23:08:17,366 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:17,366 | INFO | Filtered from 3045 to 2149 MTF stocks
+2026-01-04 23:08:17,644 | INFO | Loaded 2149 MTF stock records from sec_bhavdata_full_16102025.csv for 2025-10-16
+2026-01-04 23:08:17,654 | INFO | Read 3019 rows from sec_bhavdata_full_17102025.csv
+2026-01-04 23:08:17,654 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:17,654 | INFO | Filtered from 3019 to 2146 MTF stocks
+2026-01-04 23:08:17,925 | INFO | Loaded 2146 MTF stock records from sec_bhavdata_full_17102025.csv for 2025-10-17
+2026-01-04 23:08:17,937 | INFO | Read 3019 rows from sec_bhavdata_full_19102025.csv
+2026-01-04 23:08:17,937 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:17,938 | INFO | Filtered from 3019 to 2146 MTF stocks
+2026-01-04 23:08:18,208 | INFO | Loaded 2146 MTF stock records from sec_bhavdata_full_19102025.csv for 2025-10-19
+2026-01-04 23:08:18,218 | INFO | Read 3066 rows from sec_bhavdata_full_20102025.csv
+2026-01-04 23:08:18,218 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:18,219 | INFO | Filtered from 3066 to 2151 MTF stocks
+2026-01-04 23:08:18,486 | INFO | Loaded 2151 MTF stock records from sec_bhavdata_full_20102025.csv for 2025-10-20
+2026-01-04 23:08:18,496 | INFO | Read 2953 rows from sec_bhavdata_full_21102025.csv
+2026-01-04 23:08:18,496 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:18,497 | INFO | Filtered from 2953 to 2143 MTF stocks
+2026-01-04 23:08:18,759 | INFO | Loaded 2143 MTF stock records from sec_bhavdata_full_21102025.csv for 2025-10-21
+2026-01-04 23:08:18,766 | INFO | Read 2953 rows from sec_bhavdata_full_22102025.csv
+2026-01-04 23:08:18,766 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:18,767 | INFO | Filtered from 2953 to 2143 MTF stocks
+2026-01-04 23:08:19,040 | INFO | Loaded 2143 MTF stock records from sec_bhavdata_full_22102025.csv for 2025-10-22
+2026-01-04 23:08:19,052 | INFO | Read 3048 rows from sec_bhavdata_full_23102025.csv
+2026-01-04 23:08:19,052 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:19,052 | INFO | Filtered from 3048 to 2154 MTF stocks
+2026-01-04 23:08:19,319 | INFO | Loaded 2154 MTF stock records from sec_bhavdata_full_23102025.csv for 2025-10-23
+2026-01-04 23:08:19,324 | INFO | Read 3036 rows from sec_bhavdata_full_24102025.csv
+2026-01-04 23:08:19,324 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:19,325 | INFO | Filtered from 3036 to 2154 MTF stocks
+2026-01-04 23:08:19,754 | INFO | Loaded 2154 MTF stock records from sec_bhavdata_full_24102025.csv for 2025-10-24
+2026-01-04 23:08:19,764 | INFO | Read 3036 rows from sec_bhavdata_full_26102025.csv
+2026-01-04 23:08:19,764 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:19,764 | INFO | Filtered from 3036 to 2154 MTF stocks
+2026-01-04 23:08:20,040 | INFO | Loaded 2154 MTF stock records from sec_bhavdata_full_26102025.csv for 2025-10-26
+2026-01-04 23:08:20,052 | INFO | Read 3080 rows from sec_bhavdata_full_27102025.csv
+2026-01-04 23:08:20,052 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:20,053 | INFO | Filtered from 3080 to 2155 MTF stocks
+2026-01-04 23:08:20,318 | INFO | Loaded 2155 MTF stock records from sec_bhavdata_full_27102025.csv for 2025-10-27
+2026-01-04 23:08:20,330 | INFO | Read 3052 rows from sec_bhavdata_full_28102025.csv
+2026-01-04 23:08:20,330 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:20,330 | INFO | Filtered from 3052 to 2153 MTF stocks
+2026-01-04 23:08:20,599 | INFO | Loaded 2153 MTF stock records from sec_bhavdata_full_28102025.csv for 2025-10-28
+2026-01-04 23:08:20,610 | INFO | Read 3035 rows from sec_bhavdata_full_29102025.csv
+2026-01-04 23:08:20,610 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:20,611 | INFO | Filtered from 3035 to 2148 MTF stocks
+2026-01-04 23:08:20,876 | INFO | Loaded 2148 MTF stock records from sec_bhavdata_full_29102025.csv for 2025-10-29
+2026-01-04 23:08:20,884 | INFO | Read 3035 rows from sec_bhavdata_full_30102025.csv
+2026-01-04 23:08:20,885 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:20,885 | INFO | Filtered from 3035 to 2155 MTF stocks
+2026-01-04 23:08:21,150 | INFO | Loaded 2155 MTF stock records from sec_bhavdata_full_30102025.csv for 2025-10-30
+2026-01-04 23:08:21,160 | INFO | Read 3038 rows from sec_bhavdata_full_31102025.csv
+2026-01-04 23:08:21,160 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:21,161 | INFO | Filtered from 3038 to 2147 MTF stocks
+2026-01-04 23:08:21,443 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_31102025.csv for 2025-10-31
+2026-01-04 23:08:21,449 | INFO | Read 3038 rows from sec_bhavdata_full_02112025.csv
+2026-01-04 23:08:21,449 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:21,449 | INFO | Filtered from 3038 to 2147 MTF stocks
+2026-01-04 23:08:21,774 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_02112025.csv for 2025-11-02
+2026-01-04 23:08:21,781 | INFO | Read 3053 rows from sec_bhavdata_full_03112025.csv
+2026-01-04 23:08:21,781 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:21,782 | INFO | Filtered from 3053 to 2147 MTF stocks
+2026-01-04 23:08:22,188 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_03112025.csv for 2025-11-03
+2026-01-04 23:08:22,200 | INFO | Read 3039 rows from sec_bhavdata_full_04112025.csv
+2026-01-04 23:08:22,200 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:22,200 | INFO | Filtered from 3039 to 2147 MTF stocks
+2026-01-04 23:08:22,475 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_04112025.csv for 2025-11-04
+2026-01-04 23:08:22,485 | INFO | Read 3039 rows from sec_bhavdata_full_05112025.csv
+2026-01-04 23:08:22,485 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:22,486 | INFO | Filtered from 3039 to 2147 MTF stocks
+2026-01-04 23:08:22,758 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_05112025.csv for 2025-11-05
+2026-01-04 23:08:22,771 | INFO | Read 3043 rows from sec_bhavdata_full_06112025.csv
+2026-01-04 23:08:22,771 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:22,772 | INFO | Filtered from 3043 to 2147 MTF stocks
+2026-01-04 23:08:23,040 | INFO | Loaded 2147 MTF stock records from sec_bhavdata_full_06112025.csv for 2025-11-06
+2026-01-04 23:08:23,052 | INFO | Read 3033 rows from sec_bhavdata_full_07112025.csv
+2026-01-04 23:08:23,052 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:23,053 | INFO | Filtered from 3033 to 2151 MTF stocks
+2026-01-04 23:08:23,338 | INFO | Loaded 2151 MTF stock records from sec_bhavdata_full_07112025.csv for 2025-11-07
+2026-01-04 23:08:23,351 | INFO | Read 3033 rows from sec_bhavdata_full_09112025.csv
+2026-01-04 23:08:23,351 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:23,352 | INFO | Filtered from 3033 to 2151 MTF stocks
+2026-01-04 23:08:23,625 | INFO | Loaded 2151 MTF stock records from sec_bhavdata_full_09112025.csv for 2025-11-09
+2026-01-04 23:08:23,638 | INFO | Read 3065 rows from sec_bhavdata_full_10112025.csv
+2026-01-04 23:08:23,638 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:23,639 | INFO | Filtered from 3065 to 2152 MTF stocks
+2026-01-04 23:08:23,919 | INFO | Loaded 2152 MTF stock records from sec_bhavdata_full_10112025.csv for 2025-11-10
+2026-01-04 23:08:23,931 | INFO | Read 3048 rows from sec_bhavdata_full_11112025.csv
+2026-01-04 23:08:23,931 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:23,932 | INFO | Filtered from 3048 to 2151 MTF stocks
+2026-01-04 23:08:24,220 | INFO | Loaded 2151 MTF stock records from sec_bhavdata_full_11112025.csv for 2025-11-11
+2026-01-04 23:08:24,231 | INFO | Read 3048 rows from sec_bhavdata_full_12112025.csv
+2026-01-04 23:08:24,231 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:24,231 | INFO | Filtered from 3048 to 2153 MTF stocks
+2026-01-04 23:08:24,509 | INFO | Loaded 2153 MTF stock records from sec_bhavdata_full_12112025.csv for 2025-11-12
+2026-01-04 23:08:24,522 | INFO | Read 3041 rows from sec_bhavdata_full_13112025.csv
+2026-01-04 23:08:24,522 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:24,522 | INFO | Filtered from 3041 to 2156 MTF stocks
+2026-01-04 23:08:24,794 | INFO | Loaded 2156 MTF stock records from sec_bhavdata_full_13112025.csv for 2025-11-13
+2026-01-04 23:08:24,806 | INFO | Read 3050 rows from sec_bhavdata_full_14112025.csv
+2026-01-04 23:08:24,806 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:24,807 | INFO | Filtered from 3050 to 2157 MTF stocks
+2026-01-04 23:08:25,100 | INFO | Loaded 2157 MTF stock records from sec_bhavdata_full_14112025.csv for 2025-11-14
+2026-01-04 23:08:25,110 | INFO | Read 3050 rows from sec_bhavdata_full_16112025.csv
+2026-01-04 23:08:25,110 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:25,110 | INFO | Filtered from 3050 to 2157 MTF stocks
+2026-01-04 23:08:25,384 | INFO | Loaded 2157 MTF stock records from sec_bhavdata_full_16112025.csv for 2025-11-16
+2026-01-04 23:08:25,398 | INFO | Read 3087 rows from sec_bhavdata_full_17112025.csv
+2026-01-04 23:08:25,398 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:25,399 | INFO | Filtered from 3087 to 2158 MTF stocks
+2026-01-04 23:08:25,673 | INFO | Loaded 2158 MTF stock records from sec_bhavdata_full_17112025.csv for 2025-11-17
+2026-01-04 23:08:25,684 | INFO | Read 3048 rows from sec_bhavdata_full_18112025.csv
+2026-01-04 23:08:25,684 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:25,685 | INFO | Filtered from 3048 to 2160 MTF stocks
+2026-01-04 23:08:25,956 | INFO | Loaded 2160 MTF stock records from sec_bhavdata_full_18112025.csv for 2025-11-18
+2026-01-04 23:08:25,968 | INFO | Read 3049 rows from sec_bhavdata_full_19112025.csv
+2026-01-04 23:08:25,968 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:25,968 | INFO | Filtered from 3049 to 2162 MTF stocks
+2026-01-04 23:08:26,276 | INFO | Loaded 2162 MTF stock records from sec_bhavdata_full_19112025.csv for 2025-11-19
+2026-01-04 23:08:26,287 | INFO | Read 3046 rows from sec_bhavdata_full_20112025.csv
+2026-01-04 23:08:26,287 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:26,288 | INFO | Filtered from 3046 to 2166 MTF stocks
+2026-01-04 23:08:26,559 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_20112025.csv for 2025-11-20
+2026-01-04 23:08:26,571 | INFO | Read 3038 rows from sec_bhavdata_full_21112025.csv
+2026-01-04 23:08:26,571 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:26,572 | INFO | Filtered from 3038 to 2165 MTF stocks
+2026-01-04 23:08:26,956 | INFO | Loaded 2165 MTF stock records from sec_bhavdata_full_21112025.csv for 2025-11-21
+2026-01-04 23:08:26,968 | INFO | Read 3038 rows from sec_bhavdata_full_23112025.csv
+2026-01-04 23:08:26,968 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:26,968 | INFO | Filtered from 3038 to 2165 MTF stocks
+2026-01-04 23:08:27,260 | INFO | Loaded 2165 MTF stock records from sec_bhavdata_full_23112025.csv for 2025-11-23
+2026-01-04 23:08:27,271 | INFO | Read 3070 rows from sec_bhavdata_full_24112025.csv
+2026-01-04 23:08:27,271 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:27,272 | INFO | Filtered from 3070 to 2164 MTF stocks
+2026-01-04 23:08:27,548 | INFO | Loaded 2164 MTF stock records from sec_bhavdata_full_24112025.csv for 2025-11-24
+2026-01-04 23:08:27,560 | INFO | Read 3052 rows from sec_bhavdata_full_25112025.csv
+2026-01-04 23:08:27,560 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:27,560 | INFO | Filtered from 3052 to 2164 MTF stocks
+2026-01-04 23:08:27,840 | INFO | Loaded 2164 MTF stock records from sec_bhavdata_full_25112025.csv for 2025-11-25
+2026-01-04 23:08:27,853 | INFO | Read 3046 rows from sec_bhavdata_full_26112025.csv
+2026-01-04 23:08:27,853 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:27,854 | INFO | Filtered from 3046 to 2164 MTF stocks
+2026-01-04 23:08:28,127 | INFO | Loaded 2164 MTF stock records from sec_bhavdata_full_26112025.csv for 2025-11-26
+2026-01-04 23:08:28,137 | INFO | Read 3050 rows from sec_bhavdata_full_27112025.csv
+2026-01-04 23:08:28,137 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:28,138 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 23:08:28,419 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_27112025.csv for 2025-11-27
+2026-01-04 23:08:28,429 | INFO | Read 3052 rows from sec_bhavdata_full_28112025.csv
+2026-01-04 23:08:28,429 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:28,430 | INFO | Filtered from 3052 to 2166 MTF stocks
+2026-01-04 23:08:28,709 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_28112025.csv for 2025-11-28
+2026-01-04 23:08:28,721 | INFO | Read 3052 rows from sec_bhavdata_full_30112025.csv
+2026-01-04 23:08:28,721 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:28,721 | INFO | Filtered from 3052 to 2166 MTF stocks
+2026-01-04 23:08:29,006 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_30112025.csv for 2025-11-30
+2026-01-04 23:08:29,014 | INFO | Read 3086 rows from sec_bhavdata_full_01122025.csv
+2026-01-04 23:08:29,014 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:29,014 | INFO | Filtered from 3086 to 2167 MTF stocks
+2026-01-04 23:08:29,304 | INFO | Loaded 2167 MTF stock records from sec_bhavdata_full_01122025.csv for 2025-12-01
+2026-01-04 23:08:29,316 | INFO | Read 3050 rows from sec_bhavdata_full_02122025.csv
+2026-01-04 23:08:29,316 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:29,317 | INFO | Filtered from 3050 to 2166 MTF stocks
+2026-01-04 23:08:29,597 | INFO | Loaded 2166 MTF stock records from sec_bhavdata_full_02122025.csv for 2025-12-02
+2026-01-04 23:08:29,608 | INFO | Read 3070 rows from sec_bhavdata_full_03122025.csv
+2026-01-04 23:08:29,608 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:29,609 | INFO | Filtered from 3070 to 2167 MTF stocks
+2026-01-04 23:08:29,892 | INFO | Loaded 2167 MTF stock records from sec_bhavdata_full_03122025.csv for 2025-12-03
+2026-01-04 23:08:29,904 | INFO | Read 3062 rows from sec_bhavdata_full_04122025.csv
+2026-01-04 23:08:29,904 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:29,904 | INFO | Filtered from 3062 to 2168 MTF stocks
+2026-01-04 23:08:30,185 | INFO | Loaded 2168 MTF stock records from sec_bhavdata_full_04122025.csv for 2025-12-04
+2026-01-04 23:08:30,196 | INFO | Read 3039 rows from sec_bhavdata_full_05122025.csv
+2026-01-04 23:08:30,196 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:30,197 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:08:30,469 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_05122025.csv for 2025-12-05
+2026-01-04 23:08:30,480 | INFO | Read 3039 rows from sec_bhavdata_full_07122025.csv
+2026-01-04 23:08:30,480 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:30,481 | INFO | Filtered from 3039 to 2169 MTF stocks
+2026-01-04 23:08:30,756 | INFO | Loaded 2169 MTF stock records from sec_bhavdata_full_07122025.csv for 2025-12-07
+2026-01-04 23:08:30,766 | INFO | Read 3101 rows from sec_bhavdata_full_08122025.csv
+2026-01-04 23:08:30,766 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:30,767 | INFO | Filtered from 3101 to 2170 MTF stocks
+2026-01-04 23:08:31,047 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_08122025.csv for 2025-12-08
+2026-01-04 23:08:31,059 | INFO | Read 3066 rows from sec_bhavdata_full_09122025.csv
+2026-01-04 23:08:31,059 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:31,060 | INFO | Filtered from 3066 to 2170 MTF stocks
+2026-01-04 23:08:31,379 | INFO | Loaded 2170 MTF stock records from sec_bhavdata_full_09122025.csv for 2025-12-09
+2026-01-04 23:08:31,392 | INFO | Read 3054 rows from sec_bhavdata_full_10122025.csv
+2026-01-04 23:08:31,392 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:31,392 | INFO | Filtered from 3054 to 2172 MTF stocks
+2026-01-04 23:08:31,787 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_10122025.csv for 2025-12-10
+2026-01-04 23:08:31,796 | INFO | Read 3053 rows from sec_bhavdata_full_11122025.csv
+2026-01-04 23:08:31,796 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:31,797 | INFO | Filtered from 3053 to 2172 MTF stocks
+2026-01-04 23:08:32,069 | INFO | Loaded 2172 MTF stock records from sec_bhavdata_full_11122025.csv for 2025-12-11
+2026-01-04 23:08:32,080 | INFO | Read 3056 rows from sec_bhavdata_full_12122025.csv
+2026-01-04 23:08:32,080 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:32,080 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:08:32,385 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_12122025.csv for 2025-12-12
+2026-01-04 23:08:32,396 | INFO | Read 3056 rows from sec_bhavdata_full_14122025.csv
+2026-01-04 23:08:32,396 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:32,396 | INFO | Filtered from 3056 to 2174 MTF stocks
+2026-01-04 23:08:32,675 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_14122025.csv for 2025-12-14
+2026-01-04 23:08:32,685 | INFO | Read 3080 rows from sec_bhavdata_full_15122025.csv
+2026-01-04 23:08:32,685 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:32,686 | INFO | Filtered from 3080 to 2174 MTF stocks
+2026-01-04 23:08:32,959 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_15122025.csv for 2025-12-15
+2026-01-04 23:08:32,968 | INFO | Read 3063 rows from sec_bhavdata_full_16122025.csv
+2026-01-04 23:08:32,968 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:32,969 | INFO | Filtered from 3063 to 2174 MTF stocks
+2026-01-04 23:08:33,265 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_16122025.csv for 2025-12-16
+2026-01-04 23:08:33,275 | INFO | Read 3073 rows from sec_bhavdata_full_17122025.csv
+2026-01-04 23:08:33,275 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:33,276 | INFO | Filtered from 3073 to 2174 MTF stocks
+2026-01-04 23:08:33,549 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_17122025.csv for 2025-12-17
+2026-01-04 23:08:33,559 | INFO | Read 3061 rows from sec_bhavdata_full_18122025.csv
+2026-01-04 23:08:33,559 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:33,560 | INFO | Filtered from 3061 to 2175 MTF stocks
+2026-01-04 23:08:33,835 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_18122025.csv for 2025-12-18
+2026-01-04 23:08:33,845 | INFO | Read 3064 rows from sec_bhavdata_full_19122025.csv
+2026-01-04 23:08:33,845 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:33,846 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:08:34,120 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_19122025.csv for 2025-12-19
+2026-01-04 23:08:34,127 | INFO | Read 3064 rows from sec_bhavdata_full_21122025.csv
+2026-01-04 23:08:34,127 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:34,128 | INFO | Filtered from 3064 to 2175 MTF stocks
+2026-01-04 23:08:34,417 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_21122025.csv for 2025-12-21
+2026-01-04 23:08:34,427 | INFO | Read 3107 rows from sec_bhavdata_full_22122025.csv
+2026-01-04 23:08:34,427 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:34,427 | INFO | Filtered from 3107 to 2174 MTF stocks
+2026-01-04 23:08:34,702 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_22122025.csv for 2025-12-22
+2026-01-04 23:08:34,711 | INFO | Read 3094 rows from sec_bhavdata_full_23122025.csv
+2026-01-04 23:08:34,711 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:34,712 | INFO | Filtered from 3094 to 2176 MTF stocks
+2026-01-04 23:08:34,988 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_23122025.csv for 2025-12-23
+2026-01-04 23:08:34,996 | INFO | Read 3090 rows from sec_bhavdata_full_24122025.csv
+2026-01-04 23:08:34,997 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:34,997 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:08:35,289 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_24122025.csv for 2025-12-24
+2026-01-04 23:08:35,300 | INFO | Read 3090 rows from sec_bhavdata_full_25122025.csv
+2026-01-04 23:08:35,300 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:35,300 | INFO | Filtered from 3090 to 2175 MTF stocks
+2026-01-04 23:08:35,570 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_25122025.csv for 2025-12-25
+2026-01-04 23:08:35,579 | INFO | Read 3092 rows from sec_bhavdata_full_26122025.csv
+2026-01-04 23:08:35,580 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:35,580 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:08:35,852 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_26122025.csv for 2025-12-26
+2026-01-04 23:08:35,862 | INFO | Read 3092 rows from sec_bhavdata_full_28122025.csv
+2026-01-04 23:08:35,862 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:35,863 | INFO | Filtered from 3092 to 2175 MTF stocks
+2026-01-04 23:08:36,141 | INFO | Loaded 2175 MTF stock records from sec_bhavdata_full_28122025.csv for 2025-12-28
+2026-01-04 23:08:36,153 | INFO | Read 3123 rows from sec_bhavdata_full_29122025.csv
+2026-01-04 23:08:36,153 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:36,154 | INFO | Filtered from 3123 to 2176 MTF stocks
+2026-01-04 23:08:36,449 | INFO | Loaded 2176 MTF stock records from sec_bhavdata_full_29122025.csv for 2025-12-29
+2026-01-04 23:08:36,458 | INFO | Read 3091 rows from sec_bhavdata_full_30122025.csv
+2026-01-04 23:08:36,458 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:36,459 | INFO | Filtered from 3091 to 2174 MTF stocks
+2026-01-04 23:08:36,731 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_30122025.csv for 2025-12-30
+2026-01-04 23:08:36,741 | INFO | Read 3088 rows from sec_bhavdata_full_31122025.csv
+2026-01-04 23:08:36,741 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:36,742 | INFO | Filtered from 3088 to 2174 MTF stocks
+2026-01-04 23:08:37,022 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_31122025.csv for 2025-12-31
+2026-01-04 23:08:37,035 | INFO | Read 3078 rows from sec_bhavdata_full_01012026.csv
+2026-01-04 23:08:37,035 | INFO | Columns: ['SYMBOL', 'SERIES', 'DATE1', 'PREV_CLOSE', 'OPEN_PRICE', 'HIGH_PRICE', 'LOW_PRICE', 'LAST_PRICE', 'CLOSE_PRICE', 'AVG_PRICE', 'TTL_TRD_QNTY', 'TURNOVER_LACS', 'NO_OF_TRADES', 'DELIV_QTY', 'DELIV_PER']
+2026-01-04 23:08:37,036 | INFO | Filtered from 3078 to 2174 MTF stocks
+2026-01-04 23:08:37,309 | INFO | Loaded 2174 MTF stock records from sec_bhavdata_full_01012026.csv for 2026-01-01

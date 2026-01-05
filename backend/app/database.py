@@ -43,10 +43,13 @@ async def get_db() -> AsyncGenerator[asyncpg.Connection, None]:
         yield connection
 
 
-async def execute_query(query: str) -> list[dict]:
+async def execute_query(query: str, params: tuple = None) -> list[dict]:
     """Execute SQL query and return results as list of dicts"""
     async with get_db() as conn:
-        rows = await conn.fetch(query)
+        if params:
+            rows = await conn.fetch(query, *params)
+        else:
+            rows = await conn.fetch(query)
         return [dict(row) for row in rows]
 
 
