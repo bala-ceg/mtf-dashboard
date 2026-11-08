@@ -13,11 +13,35 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
     # Current constituents are used until point-in-time membership snapshots are
     # populated. Do not treat historic results as survivorship-bias-free.
     await conn.execute("""
-        WITH universe AS (
-            SELECT DISTINCT upper(symbol) AS symbol
-            FROM nifty_index_constituents
-            WHERE upper(replace(index_name, ' ', '_')) IN
-                  ('NIFTY_TOTAL_MARKET', 'NIFTY_TOTALMARKET')
+        WITH calendar AS (
+            SELECT DISTINCT trade_date
+            FROM cash_market_daily
+            WHERE trade_date <= $2
+        ),
+        snapshot_dates AS (
+            SELECT d.trade_date,
+                   (SELECT max(s.snapshot_date)
+                    FROM nifty_index_constituent_snapshots s
+                    WHERE upper(replace(s.index_name, ' ', '_')) IN
+                          ('NIFTY_TOTAL_MARKET', 'NIFTY_TOTALMARKET')
+                      AND s.snapshot_date <= d.trade_date) AS snapshot_date
+            FROM calendar d
+        ),
+        universe AS (
+            SELECT d.trade_date, upper(s.symbol) AS symbol
+            FROM snapshot_dates d
+            JOIN nifty_index_constituent_snapshots s
+              ON s.snapshot_date = d.snapshot_date
+             AND upper(replace(s.index_name, ' ', '_')) IN
+                 ('NIFTY_TOTAL_MARKET', 'NIFTY_TOTALMARKET')
+            WHERE d.snapshot_date IS NOT NULL
+            UNION ALL
+            SELECT d.trade_date, upper(i.symbol) AS symbol
+            FROM snapshot_dates d
+            JOIN nifty_index_constituents i
+              ON upper(replace(i.index_name, ' ', '_')) IN
+                 ('NIFTY_TOTAL_MARKET', 'NIFTY_TOTALMARKET')
+            WHERE d.snapshot_date IS NULL
         ),
         history AS (
             SELECT c.*,
@@ -60,7 +84,9 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                     OVER (PARTITION BY c.symbol ORDER BY c.trade_date
                     ROWS BETWEEN 13 PRECEDING AND CURRENT ROW) AS atr_14
             FROM cash_market_daily c
-            JOIN universe u ON u.symbol = upper(c.symbol)
+            JOIN universe u
+              ON u.trade_date = c.trade_date
+             AND u.symbol = upper(c.symbol)
             WHERE c.series = 'EQ' AND c.trade_date <= $2
         ),
         price_flow AS (
@@ -89,8 +115,17 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                 obv - lag(obv, 5) OVER (PARTITION BY symbol ORDER BY trade_date) AS obv_change_5
             FROM money_flow h
         ),
+        benchmark AS (
+            SELECT trade_date,
+                   (close_value / NULLIF(lag(close_value, 20) OVER (ORDER BY trade_date), 0) - 1) * 100
+                       AS benchmark_return_20d_pct
+            FROM nifty_index_daily
+            WHERE upper(replace(index_name, ' ', '_')) IN
+                  ('NIFTY_TOTAL_MARKET', 'NIFTY_TOTALMARKET')
+              AND trade_date <= $2
+        ),
         features AS (
-            SELECT *,
+            SELECT latest.*, b.benchmark_return_20d_pct,
                 CASE WHEN high_price > low_price
                     THEN ((close_price-low_price)-(high_price-close_price))
                          / NULLIF(high_price-low_price,0) ELSE 0 END AS clv,
@@ -104,33 +139,44 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                     THEN deliv_per-avg_delivery_20 END AS delivery_delta,
                 CASE WHEN bars_20 = 20 AND volume_20 > 0 THEN mfv_20/volume_20 END AS cmf20,
                 CASE WHEN avg_price > 0 THEN (close_price/avg_price-1)*100 END AS vwap_deviation,
+                CASE WHEN ret20 IS NOT NULL AND b.benchmark_return_20d_pct IS NOT NULL
+                    THEN ret20 - b.benchmark_return_20d_pct END AS relative_strength_20d_pct,
                 CASE WHEN mfi_obs_14 = 14 AND coalesce(negative_mf_14,0) = 0 THEN 100
                      WHEN mfi_obs_14 = 14 AND coalesce(positive_mf_14,0) = 0 THEN 0
                      WHEN mfi_obs_14 = 14
                      THEN 100 - (100 / (1 + positive_mf_14 / NULLIF(negative_mf_14,0)))
                 END AS mfi14
             FROM latest
+            LEFT JOIN benchmark b ON b.trade_date = latest.trade_date
         ),
         scored AS (
             SELECT *,
-                (CASE WHEN rvol >= 1.5 THEN 15 WHEN rvol >= 1.2 THEN 8 ELSE 0 END +
-                 CASE WHEN rvalue >= 1.5 THEN 10 WHEN rvalue >= 1.2 THEN 5 ELSE 0 END +
-                 CASE WHEN clv >= 0.7 THEN 15 WHEN clv >= 0.4 THEN 8 ELSE 0 END +
-                 CASE WHEN close_price > prev_close THEN 10 ELSE 0 END +
-                 CASE WHEN close_20 IS NOT NULL AND close_price > close_20 THEN 10 ELSE 0 END +
-                 CASE WHEN delivery_delta >= 10 THEN 15 WHEN delivery_delta >= 5 THEN 8 ELSE 0 END +
-                 CASE WHEN ret20 > 0 THEN 10 ELSE 0 END +
-                 CASE WHEN obv_change_5 > 0 THEN 10 ELSE 0 END +
-                 CASE WHEN cmf20 > 0 THEN 5 ELSE 0 END) AS acc_score,
-                (CASE WHEN rvol >= 1.5 THEN 15 WHEN rvol >= 1.2 THEN 8 ELSE 0 END +
-                 CASE WHEN rvalue >= 1.5 THEN 10 WHEN rvalue >= 1.2 THEN 5 ELSE 0 END +
-                 CASE WHEN clv <= -0.7 THEN 15 WHEN clv <= -0.4 THEN 8 ELSE 0 END +
-                 CASE WHEN close_price < prev_close THEN 10 ELSE 0 END +
-                 CASE WHEN close_20 IS NOT NULL AND close_price < close_20 THEN 10 ELSE 0 END +
-                 CASE WHEN delivery_delta <= -10 THEN 15 WHEN delivery_delta <= -5 THEN 8 ELSE 0 END +
-                 CASE WHEN ret20 < 0 THEN 10 ELSE 0 END +
-                 CASE WHEN obv_change_5 < 0 THEN 10 ELSE 0 END +
-                 CASE WHEN cmf20 < 0 THEN 5 ELSE 0 END) AS dist_score
+                (CASE WHEN rvol >= 1.5 THEN 12 WHEN rvol >= 1.2 THEN 6 ELSE 0 END +
+                 CASE WHEN rvalue >= 1.5 THEN 8 WHEN rvalue >= 1.2 THEN 4 ELSE 0 END +
+                 CASE WHEN clv >= 0.7 THEN 12 WHEN clv >= 0.4 THEN 6 ELSE 0 END +
+                 CASE WHEN close_price > prev_close THEN 8 ELSE 0 END +
+                 CASE WHEN close_20 IS NOT NULL AND close_price > close_20 THEN 8 ELSE 0 END +
+                 CASE WHEN delivery_delta >= 10 THEN 12 WHEN delivery_delta >= 5 THEN 6 ELSE 0 END +
+                 CASE WHEN ret20 > 0 THEN 8 ELSE 0 END +
+                 CASE WHEN obv_change_5 > 0 THEN 8 ELSE 0 END +
+                 CASE WHEN cmf20 > 0 THEN 4 ELSE 0 END +
+                 CASE WHEN relative_strength_20d_pct >= 2 THEN 10
+                      WHEN relative_strength_20d_pct > 0 THEN 5 ELSE 0 END +
+                 CASE WHEN turnover_lacs >= 100 THEN 10
+                      WHEN turnover_lacs >= 25 THEN 5 ELSE 0 END) AS acc_score,
+                (CASE WHEN rvol >= 1.5 THEN 12 WHEN rvol >= 1.2 THEN 6 ELSE 0 END +
+                 CASE WHEN rvalue >= 1.5 THEN 8 WHEN rvalue >= 1.2 THEN 4 ELSE 0 END +
+                 CASE WHEN clv <= -0.7 THEN 12 WHEN clv <= -0.4 THEN 6 ELSE 0 END +
+                 CASE WHEN close_price < prev_close THEN 8 ELSE 0 END +
+                 CASE WHEN close_20 IS NOT NULL AND close_price < close_20 THEN 8 ELSE 0 END +
+                 CASE WHEN delivery_delta <= -10 THEN 12 WHEN delivery_delta <= -5 THEN 6 ELSE 0 END +
+                 CASE WHEN ret20 < 0 THEN 8 ELSE 0 END +
+                 CASE WHEN obv_change_5 < 0 THEN 8 ELSE 0 END +
+                 CASE WHEN cmf20 < 0 THEN 4 ELSE 0 END +
+                 CASE WHEN relative_strength_20d_pct <= -2 THEN 10
+                      WHEN relative_strength_20d_pct < 0 THEN 5 ELSE 0 END +
+                 CASE WHEN turnover_lacs >= 100 THEN 10
+                      WHEN turnover_lacs >= 25 THEN 5 ELSE 0 END) AS dist_score
             FROM features
         )
         INSERT INTO swing_scanner_features (
@@ -138,13 +184,13 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
             delivery_pct, avg_volume_20, relative_volume, avg_turnover_20,
             relative_turnover, close_location_value, obv, obv_change_5, ad_line, cmf_20,
             atr_14, mfi_14, vwap_deviation_pct, return_5d_pct, return_20d_pct,
-            delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
+            relative_strength_20d_pct, delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
             distribution_score, signal, reason_codes, data_quality, strategy_version
         )
         SELECT trade_date, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
             deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv, obv_change_5, ad_line,
             cmf20, atr_14, mfi14, vwap_deviation, ret5, ret20,
-            avg_delivery_20, delivery_delta, least(100, acc_score),
+            relative_strength_20d_pct, avg_delivery_20, delivery_delta, least(100, acc_score),
             least(100, dist_score),
             CASE WHEN acc_score >= 65 AND acc_score > dist_score THEN 'ACCUMULATION'
                  WHEN dist_score >= 65 AND dist_score > acc_score THEN 'DISTRIBUTION'
@@ -159,13 +205,16 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                 CASE WHEN delivery_delta >= 5 THEN 'DELIVERY_ABOVE_20D_AVERAGE' END,
                 CASE WHEN obv_change_5 > 0 THEN 'OBV_RISING' END,
                 CASE WHEN cmf20 > 0 THEN 'POSITIVE_CHAIKIN_MONEY_FLOW' END,
-                CASE WHEN ret20 > 0 THEN 'POSITIVE_20D_RETURN' END
+                CASE WHEN ret20 > 0 THEN 'POSITIVE_20D_RETURN' END,
+                CASE WHEN relative_strength_20d_pct > 0 THEN 'OUTPERFORMING_NIFTY_TOTAL_MARKET' END,
+                CASE WHEN turnover_lacs >= 25 THEN 'MINIMUM_LIQUIDITY_MET' END
             ]::text[], NULL)),
             jsonb_build_object(
                 'has_20d_volume_baseline', avg_volume_20 IS NOT NULL,
                 'has_20d_delivery_baseline', avg_delivery_20 IS NOT NULL,
                 'has_20d_price_history', close_20 IS NOT NULL,
                 'has_vwap_proxy', avg_price IS NOT NULL,
+                'has_benchmark_20d', benchmark_return_20d_pct IS NOT NULL,
                 'low_liquidity', coalesce(turnover_lacs,0) < 25
             ),
             $3
@@ -184,6 +233,7 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
             atr_14=EXCLUDED.atr_14, mfi_14=EXCLUDED.mfi_14,
             vwap_deviation_pct=EXCLUDED.vwap_deviation_pct,
             return_5d_pct=EXCLUDED.return_5d_pct, return_20d_pct=EXCLUDED.return_20d_pct,
+            relative_strength_20d_pct=EXCLUDED.relative_strength_20d_pct,
             delivery_pct_avg_20=EXCLUDED.delivery_pct_avg_20,
             delivery_pct_delta=EXCLUDED.delivery_pct_delta,
             accumulation_score=EXCLUDED.accumulation_score,
