@@ -26,14 +26,14 @@ The dashboard now includes a cash-market swing scanner for the NIFTY Total Marke
 
 ### Signals and interpretation
 
-The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR and Money Flow Index (MFI), close-vs-average-price deviation, 5/20-session returns, and delivery percentage versus its preceding 20-session average.
+The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR and Money Flow Index (MFI), close-vs-average-price deviation, 5/20-session returns, delivery percentage versus its preceding 20-session average, and 20-session relative strength versus the NIFTY Total Market index when official index history is imported.
 
 - **Accumulation / distribution scores:** transparent 0–100 rule-based screening scores. Scores of 65+ are strong candidates; 45–64 are watch candidates.
 - **Liquidity screen:** by default excludes stocks with less than ₹25 lakh turnover on the signal day. The dashboard has an option to include them.
 - **Delivery delta:** expressed in percentage points versus the preceding 20-session average.
 - **Forward-return diagnostics:** the API reports close-to-close 5/10/20-session returns and direction-adjusted hit rates for historical signals. These are descriptive diagnostics, not a fully costed or out-of-sample backtest.
 
-Bhavcopy is end-of-day data. The scanner cannot calculate intraday bid/ask delta, CVD, footprint charts, queue position or executed aggressor-side flow. It identifies accumulation/distribution *proxies*, not confirmed institutional activity.
+Bhavcopy is end-of-day data. The scanner cannot calculate intraday bid/ask delta, CVD, footprint charts, queue position or executed aggressor-side flow. It identifies accumulation/distribution *proxies*, not confirmed institutional activity. The 0–100 score includes a 10-point benchmark-relative-strength component and a liquidity component; without imported benchmark history, relative strength remains null and that component is not earned.
 
 ### Initial setup
 
@@ -52,10 +52,14 @@ python -m etl.download_nifty_indices
 # 2. Load the downloaded constituent lists into PostgreSQL
 python -m etl.load_nifty_indices
 
-# 3. Create the additive cash-market and scanner tables
+# 3. Create the additive cash-market, scanner, benchmark and dated-membership tables
 psql -h "$DB_HOST" -U "$DB_USER" -d "$DB_NAME" -f sql/20_swing_scanner_schema.sql
 
-# 4. Backfill all local full-security Bhavcopy CSV files and calculate historical features
+# 4. Optional but recommended: export NIFTY Total Market daily OHLC CSV from
+#    NSE Indices > Historical Data Reports, then import it for benchmark-relative strength
+python -m etl.load_index_history data/nifty_total_market.csv
+
+# 5. Backfill all local full-security Bhavcopy CSV files and calculate historical features
 python -m etl.backfill_swing_scanner
 ```
 
@@ -81,11 +85,12 @@ A GitHub Actions schedule is included in `.github/workflows/swing-scanner.yml` f
 
 ### Research caveats
 
-1. The existing constituent table is refreshed to the current list; it does not yet preserve point-in-time index membership. Historical scans therefore use today's universe and have survivorship bias.
+1. Dated constituent snapshots are captured from the first successful daily universe refresh onward. Before the first snapshot date, historical backfills fall back to today's constituent list and remain exposed to survivorship bias.
 2. Corporate-action adjusted historical prices are not yet applied in the feature engine. Review splits, bonuses, demergers and symbol changes before relying on long-period results.
 3. The forward-return panel overlaps observations, does not account for fees/slippage/circuit exits, and is not an out-of-sample strategy backtest.
 4. The current rule-based weights and cutoffs are initial hypotheses. Validate them chronologically and separately by market-cap group before using the rankings in live decisions.
-5. The schema includes a field for benchmark-relative strength, which is not currently populated because the daily index-level benchmark series has not yet been added.
+5. Benchmark-relative strength is available only for dates with imported NIFTY Total Market index OHLC history. Export the official historical CSV and load it with `python -m etl.load_index_history <file.csv>`; without it, the relative-strength field is null.
+6. Confirm NSE / NSE Indices data-use and redistribution terms before commercial or public redistribution.
 
 ## 🏗️ Architecture
 
