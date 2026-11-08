@@ -460,3 +460,13 @@ code {
   .swing-toolbar { gap: 12px; }
   .swing-result-count { margin-left: 0; }
 }
+
+.swing-checkbox-label {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 7px !important;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+.swing-checkbox-label input { width: auto; accent-color: var(--color-primary); }
