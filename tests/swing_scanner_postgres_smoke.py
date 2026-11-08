@@ -4,6 +4,7 @@ Uses a disposable CI database. It seeds two constituents and 35 synthetic sessio
 runs the actual feature service SQL, and asserts benchmark-relative strength is present.
 """
 import asyncio
+import json
 from datetime import date, timedelta
 import os
 
@@ -79,7 +80,7 @@ async def main():
         rows = await conn.fetch(
             """
             SELECT symbol, relative_strength_20d_pct, accumulation_score,
-                   distribution_score, signal
+                   distribution_score, signal, score_breakdown
             FROM swing_scanner_features
             WHERE trade_date=$1
             ORDER BY symbol
