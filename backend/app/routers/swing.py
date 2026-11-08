@@ -19,6 +19,12 @@ async def scanner_status():
                        ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')) AS universe_count,
                 (SELECT max(trade_date) FROM cash_market_daily) AS latest_bhavcopy_date,
                 (SELECT max(trade_date) FROM swing_scanner_features) AS latest_feature_date,
+                (SELECT max(trade_date) FROM nifty_index_daily
+                 WHERE upper(replace(index_name, ' ', '_')) IN
+                       ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')) AS latest_benchmark_date,
+                (SELECT max(snapshot_date) FROM nifty_index_constituent_snapshots
+                 WHERE upper(replace(index_name, ' ', '_')) IN
+                       ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')) AS latest_membership_snapshot_date,
                 (SELECT count(*) FROM cash_market_daily c
                  JOIN nifty_index_constituents i ON upper(i.symbol)=upper(c.symbol)
                  WHERE upper(replace(i.index_name, ' ', '_')) IN
