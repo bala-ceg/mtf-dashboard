@@ -139,8 +139,9 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                     THEN deliv_per-avg_delivery_20 END AS delivery_delta,
                 CASE WHEN bars_20 = 20 AND volume_20 > 0 THEN mfv_20/volume_20 END AS cmf20,
                 CASE WHEN avg_price > 0 THEN (close_price/avg_price-1)*100 END AS vwap_deviation,
-                CASE WHEN ret20 IS NOT NULL AND b.benchmark_return_20d_pct IS NOT NULL
-                    THEN ret20 - b.benchmark_return_20d_pct END AS relative_strength_20d_pct,
+                CASE WHEN close_20 > 0 AND b.benchmark_return_20d_pct IS NOT NULL
+                    THEN ((close_price/close_20-1)*100) - b.benchmark_return_20d_pct
+                END AS relative_strength_20d_pct,
                 CASE WHEN mfi_obs_14 = 14 AND coalesce(negative_mf_14,0) = 0 THEN 100
                      WHEN mfi_obs_14 = 14 AND coalesce(positive_mf_14,0) = 0 THEN 0
                      WHEN mfi_obs_14 = 14
