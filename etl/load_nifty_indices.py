@@ -23,7 +23,8 @@ def load_index_constituents():
         "nifty50.csv": "NIFTY50",
         "nifty_next50.csv": "NIFTY_NEXT50",
         "nifty_smallcap50.csv": "NIFTY_SMALLCAP50",
-        "nifty_midcap50.csv": "NIFTY_MIDCAP50"
+        "nifty_midcap50.csv": "NIFTY_MIDCAP50",
+        "nifty_total_market.csv": "NIFTY_TOTAL_MARKET"
     }
     
     conn = psycopg2.connect(**DB_CONFIG)
