@@ -19,6 +19,70 @@ Fixed categories for consistent analysis:
 - Small-High (10,000-29,999 Cr), Small-Low (5,000-9,999 Cr)
 - Micro-High (5,000-9,999 Cr), Micro-Low (<5,000 Cr)
 
+
+## 📈 NIFTY Total Market Swing Order-Flow Scanner
+
+The dashboard now includes a cash-market swing scanner for the NIFTY Total Market universe. It analyses daily NSE full-security Bhavcopy and delivery statistics; it does not depend on MTF participation and therefore includes NIFTY Total Market EQ constituents that have no MTF record.
+
+### Signals and interpretation
+
+The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR, close-vs-average-price deviation, 5/20-session returns, and delivery percentage versus its preceding 20-session average.
+
+- **Accumulation / distribution scores:** transparent 0–100 rule-based screening scores. Scores of 65+ are strong candidates; 45–64 are watch candidates.
+- **Liquidity screen:** by default excludes stocks with less than ₹25 lakh turnover on the signal day. The dashboard has an option to include them.
+- **Delivery delta:** expressed in percentage points versus the preceding 20-session average.
+- **Forward-return diagnostics:** the API reports close-to-close 5/10/20-session returns and direction-adjusted hit rates for historical signals. These are descriptive diagnostics, not a fully costed or out-of-sample backtest.
+
+Bhavcopy is end-of-day data. The scanner cannot calculate intraday bid/ask delta, CVD, footprint charts, queue position or executed aggressor-side flow. It identifies accumulation/distribution *proxies*, not confirmed institutional activity.
+
+### Initial setup
+
+The scanner reuses the project's PostgreSQL database and existing backend environment file. Ensure `backend/.env` has the correct database connection variables (including `DB_SSLMODE`, normally `prefer`).
+
+From the repository root:
+
+```bash
+# 1. Download NIFTY index constituent files, including NIFTY_TOTAL_MARKET
+python -m etl.download_nifty_indices
+
+# 2. Load the downloaded constituent lists into PostgreSQL
+python -m etl.load_nifty_indices
+
+# 3. Create the additive cash-market and scanner tables
+psql -h "$DB_HOST" -U "$DB_USER" -d "$DB_NAME" -f sql/20_swing_scanner_schema.sql
+
+# 4. Backfill all local full-security Bhavcopy CSV files and calculate historical features
+python -m etl.backfill_swing_scanner
+```
+
+The backfill script reads the project's existing `data/data/clean/bhavcopy/sec_bhavdata_full_*.csv` archive (or `data/clean/bhavcopy`). To obtain more history, download the required date range with the existing `etl/download_bhavcopy.py` range command before running the backfill. Keep in mind that reliable 20-session averages require at least 21 trading sessions per stock.
+
+### Daily run
+
+```bash
+python -m etl.swing_daily_runner
+```
+
+This refreshes the official NIFTY Total Market constituent file, obtains the latest available NSE full-security Bhavcopy, loads EQ constituents into `cash_market_daily`, calculates features and updates `swing_scanner_runs`.
+
+A GitHub Actions schedule is included in `.github/workflows/swing-scanner.yml` for 19:00 IST on weekdays. Add repository Actions secrets `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`; optionally set `DB_SSLMODE` (defaults to `prefer`). The runner requires network access to NSE/Nifty Indices and database access from the GitHub-hosted runner. If your PostgreSQL server is private or IP-restricted, run the command from your own scheduled host instead.
+
+### Swing scanner API
+
+- `GET /api/swing/status` – universe size and latest cash-data / feature dates.
+- `GET /api/swing/scanner?min_score=40&limit=750` – ranked stock candidates; supports `signal`, `trade_date` and `include_illiquid`.
+- `GET /api/swing/sectors` – sector-level accumulation/distribution participation.
+- `GET /api/swing/stock/{symbol}/history` – recent signal and feature history for a stock.
+- `GET /api/swing/performance?signal=ACCUMULATION` – exploratory 5/10/20-session forward-return summary. Also accepts `DISTRIBUTION`, `ACCUMULATION_WATCH` and `DISTRIBUTION_WATCH`.
+
+### Research caveats
+
+1. The existing constituent table is refreshed to the current list; it does not yet preserve point-in-time index membership. Historical scans therefore use today's universe and have survivorship bias.
+2. Corporate-action adjusted historical prices are not yet applied in the feature engine. Review splits, bonuses, demergers and symbol changes before relying on long-period results.
+3. The forward-return panel overlaps observations, does not account for fees/slippage/circuit exits, and is not an out-of-sample strategy backtest.
+4. The current rule-based weights and cutoffs are initial hypotheses. Validate them chronologically and separately by market-cap group before using the rankings in live decisions.
+5. The schema reserves fields for MFI and benchmark-relative strength; those are not currently populated by this first scoring version.
+
 ## 🏗️ Architecture
 
 ```
