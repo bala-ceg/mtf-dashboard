@@ -30,7 +30,8 @@ def download_nifty_indices():
         "nifty50": "https://www.niftyindices.com/IndexConstituent/ind_nifty50list.csv",
         "nifty_next50": "https://www.niftyindices.com/IndexConstituent/ind_niftynext50list.csv",
         "nifty_smallcap50": "https://www.niftyindices.com/IndexConstituent/ind_niftysmallcap50list.csv",
-        "nifty_midcap50": "https://www.niftyindices.com/IndexConstituent/ind_niftymidcap50list.csv"
+        "nifty_midcap50": "https://www.niftyindices.com/IndexConstituent/ind_niftymidcap50list.csv",
+        "nifty_total_market": "https://www.niftyindices.com/IndexConstituent/ind_niftytotalmarket_list.csv"
     }
     
     downloaded_files = []
