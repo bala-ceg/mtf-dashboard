@@ -63,11 +63,32 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             JOIN universe u ON u.symbol = upper(c.symbol)
             WHERE c.series = 'EQ' AND c.trade_date <= $1
         ),
+        price_flow AS (
+            SELECT h.*,
+                (h.high_price + h.low_price + h.close_price) / 3 AS typical_price,
+                lag((h.high_price + h.low_price + h.close_price) / 3)
+                    OVER (PARTITION BY h.symbol ORDER BY h.trade_date) AS prev_typical_price
+            FROM history h
+        ),
+        money_flow AS (
+            SELECT p.*,
+                sum(CASE WHEN typical_price > prev_typical_price
+                         THEN typical_price * total_traded_qty ELSE 0 END)
+                    OVER (PARTITION BY symbol ORDER BY trade_date
+                    ROWS BETWEEN 13 PRECEDING AND CURRENT ROW) AS positive_mf_14,
+                sum(CASE WHEN typical_price < prev_typical_price
+                         THEN typical_price * total_traded_qty ELSE 0 END)
+                    OVER (PARTITION BY symbol ORDER BY trade_date
+                    ROWS BETWEEN 13 PRECEDING AND CURRENT ROW) AS negative_mf_14,
+                count(prev_typical_price) OVER (PARTITION BY symbol ORDER BY trade_date
+                    ROWS BETWEEN 13 PRECEDING AND CURRENT ROW) AS mfi_obs_14
+            FROM price_flow p
+        ),
         latest AS (
             SELECT h.*,
                 row_number() OVER (PARTITION BY symbol ORDER BY trade_date DESC) AS rn,
                 obv - lag(obv, 5) OVER (PARTITION BY symbol ORDER BY trade_date) AS obv_change_5
-            FROM history h
+            FROM money_flow h
         ),
         features AS (
             SELECT *,
@@ -83,7 +104,12 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                 CASE WHEN avg_delivery_20 IS NOT NULL
                     THEN deliv_per-avg_delivery_20 END AS delivery_delta,
                 CASE WHEN bars_20 = 20 AND volume_20 > 0 THEN mfv_20/volume_20 END AS cmf20,
-                CASE WHEN avg_price > 0 THEN (close_price/avg_price-1)*100 END AS vwap_deviation
+                CASE WHEN avg_price > 0 THEN (close_price/avg_price-1)*100 END AS vwap_deviation,
+                CASE WHEN mfi_obs_14 = 14 AND coalesce(negative_mf_14,0) = 0 THEN 100
+                     WHEN mfi_obs_14 = 14 AND coalesce(positive_mf_14,0) = 0 THEN 0
+                     WHEN mfi_obs_14 = 14
+                     THEN 100 - (100 / (1 + positive_mf_14 / NULLIF(negative_mf_14,0)))
+                END AS mfi14
             FROM latest
             WHERE rn = 1
         ),
@@ -113,13 +139,13 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             trade_date, symbol, close_price, volume, turnover_lacs, delivery_qty,
             delivery_pct, avg_volume_20, relative_volume, avg_turnover_20,
             relative_turnover, close_location_value, obv, obv_change_5, ad_line, cmf_20,
-            atr_14, vwap_deviation_pct, return_5d_pct, return_20d_pct,
+            atr_14, mfi_14, vwap_deviation_pct, return_5d_pct, return_20d_pct,
             delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
             distribution_score, signal, reason_codes, data_quality, strategy_version
         )
         SELECT $1, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
             deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv, obv_change_5, ad_line,
-            cmf20, atr_14, vwap_deviation, ret5, ret20,
+            cmf20, atr_14, mfi14, vwap_deviation, ret5, ret20,
             avg_delivery_20, delivery_delta, least(100, acc_score),
             least(100, dist_score),
             CASE WHEN acc_score >= 65 AND acc_score > dist_score THEN 'ACCUMULATION'
@@ -156,7 +182,8 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             close_location_value=EXCLUDED.close_location_value, obv=EXCLUDED.obv,
             obv_change_5=EXCLUDED.obv_change_5, ad_line=EXCLUDED.ad_line,
             cmf_20=EXCLUDED.cmf_20,
-            atr_14=EXCLUDED.atr_14, vwap_deviation_pct=EXCLUDED.vwap_deviation_pct,
+            atr_14=EXCLUDED.atr_14, mfi_14=EXCLUDED.mfi_14,
+            vwap_deviation_pct=EXCLUDED.vwap_deviation_pct,
             return_5d_pct=EXCLUDED.return_5d_pct, return_20d_pct=EXCLUDED.return_20d_pct,
             delivery_pct_avg_20=EXCLUDED.delivery_pct_avg_20,
             delivery_pct_delta=EXCLUDED.delivery_pct_delta,
