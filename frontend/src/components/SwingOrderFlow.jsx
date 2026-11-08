@@ -12,6 +12,7 @@ export default function SwingOrderFlow() {
   const [includeIlliquid, setIncludeIlliquid] = useState(false);
   const [results, setResults] = useState([]);
   const [sectors, setSectors] = useState([]);
+  const [performance, setPerformance] = useState({ accumulation: null, distribution: null });
   const [status, setStatus] = useState(null);
   const [tradeDate, setTradeDate] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -21,15 +22,18 @@ export default function SwingOrderFlow() {
     setLoading(true);
     setError(null);
     try {
-      const [scannerRes, sectorsRes, statusRes] = await Promise.all([
+      const [scannerRes, sectorsRes, statusRes, accumulationPerfRes, distributionPerfRes] = await Promise.all([
         swingApi.getScanner({ signal: signal || undefined, minScore, limit: 750, includeIlliquid }),
         swingApi.getSectors(),
         swingApi.getStatus(),
+        swingApi.getPerformance('ACCUMULATION'),
+        swingApi.getPerformance('DISTRIBUTION'),
       ]);
       setResults(scannerRes.data.results || []);
       setTradeDate(scannerRes.data.trade_date);
       setSectors(sectorsRes.data.results || []);
       setStatus(statusRes.data);
+      setPerformance({ accumulation: accumulationPerfRes.data, distribution: distributionPerfRes.data });
     } catch (err) {
       setError(err.response?.data?.detail || err.message || 'Unable to load swing scanner');
     } finally {
@@ -126,6 +130,35 @@ export default function SwingOrderFlow() {
         {loading && <div className="swing-loading">Loading scanner…</div>}
       </div>
 
+      <div className="swing-performance-grid">
+        {[
+          ['Accumulation signals', performance.accumulation],
+          ['Distribution signals', performance.distribution],
+        ].map(([label, item]) => (
+          <div className="swing-subpanel" key={label}>
+            <h3>{label} · forward close returns</h3>
+            {item ? (
+              <>
+                <div className="swing-performance-meta">{item.signal_count ?? 0} historical signals · {item.observations_20d ?? 0} complete 20-session outcomes</div>
+                <table className="swing-table compact">
+                  <thead><tr><th>Horizon</th><th>Average return</th><th>Median return</th><th>Directional hit rate</th></tr></thead>
+                  <tbody>
+                    {[5, 10, 20].map(days => (
+                      <tr key={days}>
+                        <td>{days} sessions</td>
+                        <td className={Number(item['avg_return_' + days + 'd_pct']) >= 0 ? 'positive' : 'negative'}>{pct(item['avg_return_' + days + 'd_pct'])}</td>
+                        <td>{pct(item['median_return_' + days + 'd_pct'])}</td>
+                        <td>{pct(item['win_rate_' + days + 'd_pct'])}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </>
+            ) : <div className="swing-loading">Performance history not available yet.</div>}
+          </div>
+        ))}
+      </div>
+
       <div className="swing-sector-grid">
         <div className="swing-subpanel">
           <h3>Sector participation</h3>
@@ -148,7 +181,7 @@ export default function SwingOrderFlow() {
           <p><b>Accumulation / distribution scores</b> combine relative volume and turnover, close location, price trend, delivery participation, OBV change and Chaikin Money Flow.</p>
           <p><b>Delivery delta</b> is the percentage-point difference versus the stock’s preceding 20-session average.</p>
           <p><b>RVOL</b> compares today’s traded quantity with the preceding 20 sessions. Signals are screening hypotheses, not confirmed institutional activity or trade-side delta.</p>
-          <p className="swing-footnote">Backtests require point-in-time constituent membership and adjusted prices. Current-universe history can contain survivorship bias.</p>
+          <p className="swing-footnote">Forward-return panels are descriptive, overlap across signal dates, exclude fees and slippage, and are not an out-of-sample backtest. Point-in-time index membership and adjusted prices are required to reduce survivorship and corporate-action bias.</p>
         </div>
       </div>
     </section>
