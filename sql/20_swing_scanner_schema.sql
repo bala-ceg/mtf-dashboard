@@ -55,10 +55,15 @@ CREATE TABLE IF NOT EXISTS swing_scanner_features (
     signal TEXT NOT NULL DEFAULT 'NEUTRAL',
     reason_codes JSONB NOT NULL DEFAULT '[]'::jsonb,
     data_quality JSONB NOT NULL DEFAULT '{}'::jsonb,
+    score_breakdown JSONB NOT NULL DEFAULT '{}'::jsonb,
     strategy_version TEXT NOT NULL DEFAULT 'swing-v1',
     computed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     PRIMARY KEY (trade_date, symbol)
 );
+-- Additive for databases that already created the initial scanner table.
+ALTER TABLE swing_scanner_features
+    ADD COLUMN IF NOT EXISTS score_breakdown JSONB NOT NULL DEFAULT '{}'::jsonb;
+
 CREATE INDEX IF NOT EXISTS idx_swing_features_date_signal_score
     ON swing_scanner_features (trade_date DESC, signal, accumulation_score DESC);
 CREATE INDEX IF NOT EXISTS idx_swing_features_symbol_date
