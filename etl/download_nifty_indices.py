@@ -42,9 +42,6 @@ def download_nifty_indices():
         
         if response:
             data_text = response.text
-            # Replace & with %26 to handle special characters
-            data_text = data_text.replace('&', '%26')
-            
             output_file = base_dir / f"{index_name}.csv"
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(data_text)
