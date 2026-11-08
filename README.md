@@ -54,7 +54,7 @@ python -m etl.download_nifty_indices
 python -m etl.load_nifty_indices
 
 # 3. Create the additive cash-market, scanner, benchmark and dated-membership tables
-psql -h "$DB_HOST" -U "$DB_USER" -d "$DB_NAME" -f sql/20_swing_scanner_schema.sql
+PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "${DB_PORT:-5432}" -U "$DB_USER" -d "$DB_NAME" -f sql/20_swing_scanner_schema.sql
 
 # 4. Optional but recommended: export NIFTY Total Market daily OHLC CSV from
 #    NSE Indices > Historical Data Reports, then import it for benchmark-relative strength
@@ -64,7 +64,7 @@ python -m etl.load_index_history data/nifty_total_market.csv
 python -m etl.backfill_swing_scanner
 ```
 
-The backfill script reads the project's existing `data/data/clean/bhavcopy/sec_bhavdata_full_*.csv` archive (or `data/clean/bhavcopy`). To obtain more history, download the required date range with the existing `etl/download_bhavcopy.py` range command before running the backfill. Keep in mind that reliable 20-session averages require at least 21 trading sessions per stock.
+The backfill script reads the project's existing `data/data/clean/bhavcopy/sec_bhavdata_full_*.csv` archive (or `data/clean/bhavcopy`). To obtain more history, download the required date range before backfilling, for example `python etl/download_bhavcopy.py range 2025-01-01 2026-11-06`. Keep in mind that reliable 20-session averages require at least 21 trading sessions per stock.
 
 ### Daily run
 
