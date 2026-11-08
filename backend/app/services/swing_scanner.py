@@ -134,7 +134,7 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                 'has_20d_delivery_baseline', avg_delivery_20 IS NOT NULL,
                 'has_20d_price_history', close_20 IS NOT NULL,
                 'has_vwap_proxy', avg_price IS NOT NULL,
-                'low_liquidity', coalesce(total_traded_qty,0) < 10000
+                'low_liquidity', coalesce(turnover_lacs,0) < 25
             ),
             $2
         FROM scored
