@@ -1,8 +1,9 @@
 """Backfill cash Bhavcopy and compute historical swing features.
 
-Run after the schema migration and after loading NIFTY_TOTAL_MARKET constituents.
-Current constituent membership is used for all dates; results are exploratory
-until point-in-time index membership is captured.
+Run after loading NIFTY_TOTAL_MARKET constituents and the scanner schema.
+Feature calculation uses dated membership snapshots where available. Dates
+before the first captured snapshot fall back to the current member list and
+remain subject to survivorship bias.
 """
 import argparse
 import asyncio
