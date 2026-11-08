@@ -58,3 +58,14 @@ export const indicesApi = {
 };
 
 export default apiClient;
+
+
+// NIFTY Total Market swing scanner
+export const swingApi = {
+  getStatus: () => apiClient.get('/swing/status'),
+  getScanner: ({ signal, minScore = 40, limit = 750 } = {}) =>
+    apiClient.get('/swing/scanner', { params: { signal, min_score: minScore, limit } }),
+  getSectors: () => apiClient.get('/swing/sectors'),
+  getStockHistory: (symbol, limit = 60) =>
+    apiClient.get(`/swing/stock/${symbol}/history`, { params: { limit } }),
+};
