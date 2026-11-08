@@ -10,8 +10,9 @@ STRATEGY_VERSION = "swing-v1"
 
 
 async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: date) -> dict:
-    # Current constituents are used until point-in-time membership snapshots are
-    # populated. Do not treat historic results as survivorship-bias-free.
+    # Use the latest captured constituent snapshot on or before each session.
+    # Before the first snapshot exists, fall back to the current legacy list;
+    # those earlier backfill dates still have survivorship bias.
     await conn.execute("""
         WITH calendar AS (
             SELECT DISTINCT trade_date
@@ -204,10 +205,13 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                 CASE WHEN clv >= 0.7 THEN 'CLOSE_NEAR_HIGH' END,
                 CASE WHEN clv <= -0.7 THEN 'CLOSE_NEAR_LOW' END,
                 CASE WHEN delivery_delta >= 5 THEN 'DELIVERY_ABOVE_20D_AVERAGE' END,
+                CASE WHEN delivery_delta <= -5 THEN 'DELIVERY_BELOW_20D_AVERAGE' END,
                 CASE WHEN obv_change_5 > 0 THEN 'OBV_RISING' END,
+                CASE WHEN obv_change_5 < 0 THEN 'OBV_FALLING' END,
                 CASE WHEN cmf20 > 0 THEN 'POSITIVE_CHAIKIN_MONEY_FLOW' END,
                 CASE WHEN ret20 > 0 THEN 'POSITIVE_20D_RETURN' END,
                 CASE WHEN relative_strength_20d_pct > 0 THEN 'OUTPERFORMING_NIFTY_TOTAL_MARKET' END,
+                CASE WHEN relative_strength_20d_pct < 0 THEN 'UNDERPERFORMING_NIFTY_TOTAL_MARKET' END,
                 CASE WHEN turnover_lacs >= 25 THEN 'MINIMUM_LIQUIDITY_MET' END
             ]::text[], NULL)),
             jsonb_build_object(
