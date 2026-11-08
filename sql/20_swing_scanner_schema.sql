@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS cash_market_daily (
     high_price NUMERIC,
     low_price NUMERIC,
     close_price NUMERIC,
+    avg_price NUMERIC,
     last_price NUMERIC,
     prev_close NUMERIC,
     total_traded_qty BIGINT,
