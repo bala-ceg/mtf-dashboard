@@ -9,6 +9,7 @@ on:
       - "etl/**"
       - "sql/**"
       - "frontend/**"
+      - "tests/**"
       - ".github/workflows/swing-scanner-ci.yml"
   pull_request:
     paths:
@@ -16,15 +17,37 @@ on:
       - "etl/**"
       - "sql/**"
       - "frontend/**"
+      - "tests/**"
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  compile-and-build:
+  compile-build-and-db-smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: mtf_db
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d mtf_db"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: mtf_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      PYTHONPATH: .
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,7 +63,17 @@ jobs:
           pip install -r backend/requirements.txt
 
       - name: Compile Python modules
-        run: python -m compileall -q backend etl config.py
+        run: python -m compileall -q backend etl config.py tests
+
+      - name: Apply scanner migrations to disposable PostgreSQL
+        run: |
+          PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" \
+            -v ON_ERROR_STOP=1 \
+            -f sql/15_nifty_index_constituents.sql \
+            -f sql/20_swing_scanner_schema.sql
+
+      - name: Run PostgreSQL feature-engine smoke test
+        run: python tests/swing_scanner_postgres_smoke.py
 
       - name: Set up Node
         uses: actions/setup-node@v4
