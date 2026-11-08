@@ -57,7 +57,10 @@ export default function SwingOrderFlow() {
           <p>Multi-session accumulation and distribution candidates from price, volume and delivery data.</p>
         </div>
         <div className="swing-actions">
-          <span className="swing-date">{tradeDate ? `Session: ${tradeDate}` : 'No computed session'}</span>
+          <span className="swing-date">
+            {tradeDate ? `Session: ${tradeDate}` : 'No computed session'}
+            <small>Benchmark: {status?.latest_benchmark_date || 'not loaded'} · Membership snapshot: {status?.latest_membership_snapshot_date || 'not captured'}</small>
+          </span>
           <button type="button" className="swing-refresh" onClick={load} disabled={loading}>
             {loading ? 'Refreshing…' : 'Refresh'}
           </button>
@@ -107,7 +110,7 @@ export default function SwingOrderFlow() {
         <table className="swing-table">
           <thead><tr>
             <th>Stock</th><th>Signal</th><th>Acc. score</th><th>Dist. score</th>
-            <th>RVOL</th><th>Delivery %</th><th>20D return</th><th>CMF 20</th><th>MFI 14</th><th>Close vs VWAP</th>
+            <th>RVOL</th><th>Delivery %</th><th>20D return</th><th>RS vs NIFTY TM</th><th>CMF 20</th><th>MFI 14</th><th>Close vs VWAP</th>
           </tr></thead>
           <tbody>
             {results.map(row => (
@@ -119,13 +122,14 @@ export default function SwingOrderFlow() {
                 <td>{number(row.relative_volume, 2)}×</td>
                 <td>{pct(row.delivery_pct)} <small>({row.delivery_pct_delta == null ? '—' : `${number(row.delivery_pct_delta)} pp vs 20D`})</small></td>
                 <td className={Number(row.return_20d_pct) >= 0 ? 'positive' : 'negative'}>{pct(row.return_20d_pct)}</td>
+                <td className={row.relative_strength_20d_pct == null ? '' : Number(row.relative_strength_20d_pct) >= 0 ? 'positive' : 'negative'}>{pct(row.relative_strength_20d_pct)}</td>
                 <td>{number(row.cmf_20, 2)}</td>
                 <td>{number(row.mfi_14, 1)}</td>
                 <td>{pct(row.vwap_deviation_pct)}</td>
               </tr>
             ))}
             {!loading && results.length === 0 && tradeDate && (
-              <tr><td colSpan="10" className="swing-no-results">No stocks match the current filters.</td></tr>
+              <tr><td colSpan="11" className="swing-no-results">No stocks match the current filters.</td></tr>
             )}
           </tbody>
         </table>
