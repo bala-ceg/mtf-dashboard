@@ -107,7 +107,7 @@ export default function SwingOrderFlow() {
         <table className="swing-table">
           <thead><tr>
             <th>Stock</th><th>Signal</th><th>Acc. score</th><th>Dist. score</th>
-            <th>RVOL</th><th>Delivery %</th><th>20D return</th><th>CMF 20</th>
+            <th>RVOL</th><th>Delivery %</th><th>20D return</th><th>CMF 20</th><th>MFI 14</th><th>Close vs VWAP</th>
           </tr></thead>
           <tbody>
             {results.map(row => (
@@ -120,10 +120,12 @@ export default function SwingOrderFlow() {
                 <td>{pct(row.delivery_pct)} <small>({row.delivery_pct_delta == null ? '—' : `${number(row.delivery_pct_delta)} pp vs 20D`})</small></td>
                 <td className={Number(row.return_20d_pct) >= 0 ? 'positive' : 'negative'}>{pct(row.return_20d_pct)}</td>
                 <td>{number(row.cmf_20, 2)}</td>
+                <td>{number(row.mfi_14, 1)}</td>
+                <td>{pct(row.vwap_deviation_pct)}</td>
               </tr>
             ))}
             {!loading && results.length === 0 && tradeDate && (
-              <tr><td colSpan="8" className="swing-no-results">No stocks match the current filters.</td></tr>
+              <tr><td colSpan="10" className="swing-no-results">No stocks match the current filters.</td></tr>
             )}
           </tbody>
         </table>
