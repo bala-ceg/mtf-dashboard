@@ -50,8 +50,11 @@ def download_nifty_indices():
             except Exception as exc:
                 errors.append(f"{name}: {exc}")
                 print(f"Failed {name}: {exc}")
-        if not (OUTPUT_DIR / "nifty_total_market.csv").exists():
-            raise RuntimeError("Official NIFTY Total Market constituent file is unavailable")
+        if not any(path.name == "nifty_total_market.csv" for path in downloaded):
+            raise RuntimeError(
+                "Could not refresh the official NIFTY Total Market constituent file "
+                "from NSE. Refusing to mark a stale cached file as today's membership snapshot."
+            )
         if errors:
             print("Optional lists not refreshed: " + "; ".join(errors))
         return downloaded
