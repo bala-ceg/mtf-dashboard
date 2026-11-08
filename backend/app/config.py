@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     DB_NAME: str = "mtf_db"
     DB_USER: str = "bseetharaman"
     DB_PASSWORD: str = ""
+    DB_SSLMODE: str = "prefer"
     
     # API Configuration
     API_TITLE: str = "MTF Market Intelligence API"
