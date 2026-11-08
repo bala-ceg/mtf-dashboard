@@ -192,7 +192,10 @@ export default function SwingOrderFlow() {
             const latest = stockHistory[0];
             const parsedReasons = parseJson(latest.reason_codes, []);
             const parsedBreakdown = parseJson(latest.score_breakdown, {});
-            const direction = String(latest.signal || '').startsWith('DISTRIBUTION')
+            const latestSignal = String(latest.signal || '');
+            const direction = latestSignal.startsWith('DISTRIBUTION')
+              || (!latestSignal.startsWith('ACCUMULATION')
+                && Number(latest.distribution_score) > Number(latest.accumulation_score))
               ? 'distribution' : 'accumulation';
             const components = parsedBreakdown[direction] || {};
             const weights = parsedBreakdown.weights || {};
