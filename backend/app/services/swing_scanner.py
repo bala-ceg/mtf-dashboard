@@ -180,6 +180,48 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                  CASE WHEN turnover_lacs >= 100 THEN 10
                       WHEN turnover_lacs >= 25 THEN 5 ELSE 0 END) AS dist_score
             FROM features
+        ),
+        scored_detail AS (
+            SELECT scored.*,
+                jsonb_build_object(
+                    'weights', jsonb_build_object(
+                        'relative_volume', 12, 'relative_turnover', 8,
+                        'close_location', 12, 'daily_price_direction', 8,
+                        '20d_price_trend', 8, 'delivery_participation', 12,
+                        '20d_momentum', 8, 'obv_5d', 8,
+                        'chaikin_money_flow', 4, 'benchmark_relative_strength', 10,
+                        'liquidity', 10
+                    ),
+                    'accumulation', jsonb_build_object(
+                        'relative_volume', CASE WHEN rvol >= 1.5 THEN 12 WHEN rvol >= 1.2 THEN 6 ELSE 0 END,
+                        'relative_turnover', CASE WHEN rvalue >= 1.5 THEN 8 WHEN rvalue >= 1.2 THEN 4 ELSE 0 END,
+                        'close_location', CASE WHEN clv >= 0.7 THEN 12 WHEN clv >= 0.4 THEN 6 ELSE 0 END,
+                        'daily_price_direction', CASE WHEN close_price > prev_close THEN 8 ELSE 0 END,
+                        '20d_price_trend', CASE WHEN close_20 IS NOT NULL AND close_price > close_20 THEN 8 ELSE 0 END,
+                        'delivery_participation', CASE WHEN delivery_delta >= 10 THEN 12 WHEN delivery_delta >= 5 THEN 6 ELSE 0 END,
+                        '20d_momentum', CASE WHEN ret20 > 0 THEN 8 ELSE 0 END,
+                        'obv_5d', CASE WHEN obv_change_5 > 0 THEN 8 ELSE 0 END,
+                        'chaikin_money_flow', CASE WHEN cmf20 > 0 THEN 4 ELSE 0 END,
+                        'benchmark_relative_strength', CASE WHEN relative_strength_20d_pct >= 2 THEN 10 WHEN relative_strength_20d_pct > 0 THEN 5 ELSE 0 END,
+                        'liquidity', CASE WHEN turnover_lacs >= 100 THEN 10 WHEN turnover_lacs >= 25 THEN 5 ELSE 0 END,
+                        'total', least(100, acc_score)
+                    ),
+                    'distribution', jsonb_build_object(
+                        'relative_volume', CASE WHEN rvol >= 1.5 THEN 12 WHEN rvol >= 1.2 THEN 6 ELSE 0 END,
+                        'relative_turnover', CASE WHEN rvalue >= 1.5 THEN 8 WHEN rvalue >= 1.2 THEN 4 ELSE 0 END,
+                        'close_location', CASE WHEN clv <= -0.7 THEN 12 WHEN clv <= -0.4 THEN 6 ELSE 0 END,
+                        'daily_price_direction', CASE WHEN close_price < prev_close THEN 8 ELSE 0 END,
+                        '20d_price_trend', CASE WHEN close_20 IS NOT NULL AND close_price < close_20 THEN 8 ELSE 0 END,
+                        'delivery_participation', CASE WHEN delivery_delta <= -10 THEN 12 WHEN delivery_delta <= -5 THEN 6 ELSE 0 END,
+                        '20d_momentum', CASE WHEN ret20 < 0 THEN 8 ELSE 0 END,
+                        'obv_5d', CASE WHEN obv_change_5 < 0 THEN 8 ELSE 0 END,
+                        'chaikin_money_flow', CASE WHEN cmf20 < 0 THEN 4 ELSE 0 END,
+                        'benchmark_relative_strength', CASE WHEN relative_strength_20d_pct <= -2 THEN 10 WHEN relative_strength_20d_pct < 0 THEN 5 ELSE 0 END,
+                        'liquidity', CASE WHEN turnover_lacs >= 100 THEN 10 WHEN turnover_lacs >= 25 THEN 5 ELSE 0 END,
+                        'total', least(100, dist_score)
+                    )
+                ) AS score_breakdown
+            FROM scored
         )
         INSERT INTO swing_scanner_features (
             trade_date, symbol, close_price, volume, turnover_lacs, delivery_qty,
@@ -187,7 +229,7 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
             relative_turnover, close_location_value, obv, obv_change_5, ad_line, cmf_20,
             atr_14, mfi_14, vwap_deviation_pct, return_5d_pct, return_20d_pct,
             relative_strength_20d_pct, delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
-            distribution_score, signal, reason_codes, data_quality, strategy_version
+            distribution_score, signal, reason_codes, score_breakdown, data_quality, strategy_version
         )
         SELECT trade_date, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
             deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv, obv_change_5, ad_line,
@@ -214,6 +256,7 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                 CASE WHEN relative_strength_20d_pct < 0 THEN 'UNDERPERFORMING_NIFTY_TOTAL_MARKET' END,
                 CASE WHEN turnover_lacs >= 25 THEN 'MINIMUM_LIQUIDITY_MET' END
             ]::text[], NULL)),
+            score_breakdown,
             jsonb_build_object(
                 'has_20d_volume_baseline', avg_volume_20 IS NOT NULL,
                 'has_20d_delivery_baseline', avg_delivery_20 IS NOT NULL,
@@ -223,7 +266,7 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
                 'low_liquidity', coalesce(turnover_lacs,0) < 25
             ),
             $3
-        FROM scored
+        FROM scored_detail
         WHERE close_price IS NOT NULL AND total_traded_qty IS NOT NULL
           AND trade_date BETWEEN $1 AND $2
         ON CONFLICT (trade_date, symbol) DO UPDATE SET
@@ -244,6 +287,7 @@ async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: da
             accumulation_score=EXCLUDED.accumulation_score,
             distribution_score=EXCLUDED.distribution_score, signal=EXCLUDED.signal,
             reason_codes=EXCLUDED.reason_codes, data_quality=EXCLUDED.data_quality,
+            score_breakdown=EXCLUDED.score_breakdown,
             strategy_version=EXCLUDED.strategy_version, computed_at=now()
     """, start_date, end_date, STRATEGY_VERSION)
 
