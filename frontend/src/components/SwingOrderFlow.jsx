@@ -39,9 +39,9 @@ export default function SwingOrderFlow() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [signal, minScore, includeIlliquid]);
 
-  useEffect(() => { load(); }, [signal, minScore]);
+  useEffect(() => { load(); }, [load]);
 
   const accumulation = results.filter(x => String(x.signal).startsWith('ACCUMULATION')).length;
   const distribution = results.filter(x => String(x.signal).startsWith('DISTRIBUTION')).length;
