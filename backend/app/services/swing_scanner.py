@@ -9,7 +9,7 @@ import asyncpg
 STRATEGY_VERSION = "swing-v1"
 
 
-async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
+async def compute_range(conn: asyncpg.Connection, start_date: date, end_date: date) -> dict:
     # Current constituents are used until point-in-time membership snapshots are
     # populated. Do not treat historic results as survivorship-bias-free.
     await conn.execute("""
@@ -61,7 +61,7 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                     ROWS BETWEEN 13 PRECEDING AND CURRENT ROW) AS atr_14
             FROM cash_market_daily c
             JOIN universe u ON u.symbol = upper(c.symbol)
-            WHERE c.series = 'EQ' AND c.trade_date <= $1
+            WHERE c.series = 'EQ' AND c.trade_date <= $2
         ),
         price_flow AS (
             SELECT h.*,
@@ -86,7 +86,6 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
         ),
         latest AS (
             SELECT h.*,
-                row_number() OVER (PARTITION BY symbol ORDER BY trade_date DESC) AS rn,
                 obv - lag(obv, 5) OVER (PARTITION BY symbol ORDER BY trade_date) AS obv_change_5
             FROM money_flow h
         ),
@@ -111,7 +110,6 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                      THEN 100 - (100 / (1 + positive_mf_14 / NULLIF(negative_mf_14,0)))
                 END AS mfi14
             FROM latest
-            WHERE rn = 1
         ),
         scored AS (
             SELECT *,
@@ -143,7 +141,7 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
             distribution_score, signal, reason_codes, data_quality, strategy_version
         )
-        SELECT $1, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
+        SELECT trade_date, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
             deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv, obv_change_5, ad_line,
             cmf20, atr_14, mfi14, vwap_deviation, ret5, ret20,
             avg_delivery_20, delivery_delta, least(100, acc_score),
@@ -170,9 +168,10 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                 'has_vwap_proxy', avg_price IS NOT NULL,
                 'low_liquidity', coalesce(turnover_lacs,0) < 25
             ),
-            $2
+            $3
         FROM scored
         WHERE close_price IS NOT NULL AND total_traded_qty IS NOT NULL
+          AND trade_date BETWEEN $1 AND $2
         ON CONFLICT (trade_date, symbol) DO UPDATE SET
             close_price=EXCLUDED.close_price, volume=EXCLUDED.volume,
             turnover_lacs=EXCLUDED.turnover_lacs, delivery_qty=EXCLUDED.delivery_qty,
@@ -191,12 +190,17 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             distribution_score=EXCLUDED.distribution_score, signal=EXCLUDED.signal,
             reason_codes=EXCLUDED.reason_codes, data_quality=EXCLUDED.data_quality,
             strategy_version=EXCLUDED.strategy_version, computed_at=now()
-    """, trade_date, STRATEGY_VERSION)
+    """, start_date, end_date, STRATEGY_VERSION)
 
     summary = await conn.fetchrow("""
         SELECT count(*) AS feature_count,
                count(*) FILTER (WHERE signal IN ('ACCUMULATION','ACCUMULATION_WATCH')) AS accumulation_count,
                count(*) FILTER (WHERE signal IN ('DISTRIBUTION','DISTRIBUTION_WATCH')) AS distribution_count
-        FROM swing_scanner_features WHERE trade_date=$1
-    """, trade_date)
+        FROM swing_scanner_features WHERE trade_date BETWEEN $1 AND $2
+    """, start_date, end_date)
     return dict(summary)
+
+
+async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
+    """Compute one session while retaining all preceding history for rolling features."""
+    return await compute_range(conn, trade_date, trade_date)
