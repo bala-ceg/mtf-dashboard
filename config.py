@@ -1,5 +1,9 @@
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+ROOT_DIR = Path(__file__).resolve().parent
+load_dotenv(ROOT_DIR / "backend" / ".env")
 
 BASE_DIR = Path(os.getenv("DATA_BASE_DIR", "data"))
 CLEAN_DIR = BASE_DIR / "clean"
