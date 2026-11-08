@@ -14,7 +14,7 @@ import psycopg2
 from config import DB_CONFIG
 from etl.load_cash_bhavcopy import load_file, DATA_DIR
 from backend.app.database import init_db_pool, close_db_pool, get_db
-from backend.app.services.swing_scanner import compute_for_date, STRATEGY_VERSION
+from backend.app.services.swing_scanner import compute_range, STRATEGY_VERSION
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -49,21 +49,21 @@ async def compute_history(start_date=None, end_date=None):
     await init_db_pool()
     try:
         async with get_db() as conn:
-            dates = await conn.fetch("""
-                SELECT DISTINCT trade_date
-                FROM cash_market_daily
-                WHERE ($1::date IS NULL OR trade_date >= $1)
-                  AND ($2::date IS NULL OR trade_date <= $2)
-                ORDER BY trade_date
-            """, start_date, end_date)
-            for item in dates:
-                trade_date = item["trade_date"]
-                result = await compute_for_date(conn, trade_date)
-                print(
-                    f"{trade_date}: {result['feature_count']} features; "
-                    f"accumulation={result['accumulation_count']}; "
-                    f"distribution={result['distribution_count']}"
-                )
+            first_date = start_date or await conn.fetchval(
+                "SELECT min(trade_date) FROM cash_market_daily"
+            )
+            last_date = end_date or await conn.fetchval(
+                "SELECT max(trade_date) FROM cash_market_daily"
+            )
+            if not first_date or not last_date:
+                raise RuntimeError("cash_market_daily contains no data to calculate")
+            result = await compute_range(conn, first_date, last_date)
+            print(
+                f"Computed {result['feature_count']} daily stock features from "
+                f"{first_date} through {last_date}; "
+                f"accumulation={result['accumulation_count']}; "
+                f"distribution={result['distribution_count']}"
+            )
     finally:
         await close_db_pool()
 
