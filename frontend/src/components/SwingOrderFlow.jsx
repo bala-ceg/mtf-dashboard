@@ -1,10 +1,19 @@
 import { useCallback, useEffect, useState } from 'react';
+import {
+  CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis,
+} from 'recharts';
 import { swingApi } from '../api/client';
 
 const number = (value, digits = 1) =>
   value === null || value === undefined ? '—' : Number(value).toFixed(digits);
 const pct = (value) => value === null || value === undefined ? '—' : `${Number(value).toFixed(1)}%`;
 const scoreClass = (value) => Number(value) >= 65 ? 'strong' : Number(value) >= 45 ? 'watch' : 'neutral';
+const parseJson = (value, fallback) => {
+  if (value === null || value === undefined) return fallback;
+  if (typeof value !== 'string') return value;
+  try { return JSON.parse(value); } catch { return fallback; }
+};
+const labelize = (value) => String(value).replaceAll('_', ' ').toLowerCase();
 
 export default function SwingOrderFlow() {
   const [signal, setSignal] = useState('');
@@ -17,6 +26,10 @@ export default function SwingOrderFlow() {
   const [tradeDate, setTradeDate] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedSymbol, setSelectedSymbol] = useState('');
+  const [stockHistory, setStockHistory] = useState([]);
+  const [historyLoading, setHistoryLoading] = useState(false);
+  const [historyError, setHistoryError] = useState(null);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -42,6 +55,28 @@ export default function SwingOrderFlow() {
   }, [signal, minScore, includeIlliquid]);
 
   useEffect(() => { load(); }, [load]);
+
+  useEffect(() => {
+    if (!selectedSymbol) {
+      setStockHistory([]);
+      setHistoryError(null);
+      return undefined;
+    }
+    let cancelled = false;
+    setHistoryLoading(true);
+    setHistoryError(null);
+    swingApi.getStockHistory(selectedSymbol, 60)
+      .then(response => {
+        if (!cancelled) setStockHistory(response.data || []);
+      })
+      .catch(err => {
+        if (!cancelled) setHistoryError(err.response?.data?.detail || err.message || 'Unable to load stock history');
+      })
+      .finally(() => {
+        if (!cancelled) setHistoryLoading(false);
+      });
+    return () => { cancelled = true; };
+  }, [selectedSymbol]);
 
   const accumulation = results.filter(x => String(x.signal).startsWith('ACCUMULATION')).length;
   const distribution = results.filter(x => String(x.signal).startsWith('DISTRIBUTION')).length;
@@ -115,7 +150,12 @@ export default function SwingOrderFlow() {
           <tbody>
             {results.map(row => (
               <tr key={row.symbol}>
-                <td><strong>{row.symbol}</strong><small>{row.company_name || row.sector || ''}</small></td>
+                <td>
+                  <button type="button" className="swing-stock-select" onClick={() => setSelectedSymbol(row.symbol)}>
+                    {row.symbol}
+                  </button>
+                  <small>{row.company_name || row.sector || ''}</small>
+                </td>
                 <td><span className={`swing-signal ${String(row.signal).toLowerCase()}`}>{String(row.signal).replaceAll('_', ' ')}</span></td>
                 <td><span className={`swing-score ${scoreClass(row.accumulation_score)}`}>{number(row.accumulation_score, 0)}</span></td>
                 <td><span className={`swing-score ${scoreClass(row.distribution_score)}`}>{number(row.distribution_score, 0)}</span></td>
@@ -135,6 +175,78 @@ export default function SwingOrderFlow() {
         </table>
         {loading && <div className="swing-loading">Loading scanner…</div>}
       </div>
+
+      {selectedSymbol && (
+        <div className="swing-subpanel swing-stock-detail">
+          <div className="swing-detail-heading">
+            <div>
+              <h3>{selectedSymbol} · recent signal history</h3>
+              <p>Daily accumulation and distribution scores over the last 60 sessions.</p>
+            </div>
+            <button type="button" className="swing-refresh" onClick={() => setSelectedSymbol('')}>Close</button>
+          </div>
+          {historyError && <div className="swing-error">{historyError}</div>}
+          {historyLoading && <div className="swing-loading">Loading {selectedSymbol} history…</div>}
+          {!historyLoading && !historyError && stockHistory.length > 0 && (() => {
+            const chronological = [...stockHistory].reverse();
+            const latest = stockHistory[0];
+            const parsedReasons = parseJson(latest.reason_codes, []);
+            const parsedBreakdown = parseJson(latest.score_breakdown, {});
+            const direction = String(latest.signal || '').startsWith('DISTRIBUTION')
+              ? 'distribution' : 'accumulation';
+            const components = parsedBreakdown[direction] || {};
+            const weights = parsedBreakdown.weights || {};
+            return (
+              <>
+                <div className="swing-detail-chart">
+                  <ResponsiveContainer width="100%" height={260}>
+                    <LineChart data={chronological} margin={{ top: 8, right: 16, left: 0, bottom: 4 }}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="trade_date" tickFormatter={value => String(value).slice(5)} minTickGap={24} />
+                      <YAxis domain={[0, 100]} />
+                      <Tooltip labelFormatter={value => `Session: ${value}`} />
+                      <Legend />
+                      <Line type="monotone" dataKey="accumulation_score" name="Accumulation" stroke="#16a34a" dot={false} />
+                      <Line type="monotone" dataKey="distribution_score" name="Distribution" stroke="#dc2626" dot={false} />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+                <div className="swing-detail-summary">
+                  <span>Latest close: <b>{number(latest.close_price, 2)}</b></span>
+                  <span>Signal: <b>{String(latest.signal).replaceAll('_', ' ')}</b></span>
+                  <span>Accumulation: <b>{number(latest.accumulation_score, 0)}</b></span>
+                  <span>Distribution: <b>{number(latest.distribution_score, 0)}</b></span>
+                  <span>Relative strength: <b>{pct(latest.relative_strength_20d_pct)}</b></span>
+                </div>
+                <div className="swing-detail-breakdown">
+                  <div>
+                    <h4>Why this signal?</h4>
+                    {parsedReasons.length ? (
+                      <div className="swing-reason-list">
+                        {parsedReasons.map(reason => <span key={reason}>{labelize(reason)}</span>)}
+                      </div>
+                    ) : <p>No explicit reason flags for the latest session.</p>}
+                  </div>
+                  <div>
+                    <h4>{direction === 'distribution' ? 'Distribution' : 'Accumulation'} score breakdown</h4>
+                    <div className="swing-breakdown-list">
+                      {Object.entries(components).filter(([key]) => key !== 'total').map(([key, value]) => (
+                        <div key={key}>
+                          <span>{labelize(key)}</span>
+                          <b>{number(value, 0)} / {number(weights[key], 0)}</b>
+                        </div>
+                      ))}
+                      <div className="swing-breakdown-total">
+                        <span>Total</span><b>{number(components.total ?? latest[direction + '_score'], 0)} / 100</b>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })()}
+        </div>
+      )}
 
       <div className="swing-performance-grid">
         {[
