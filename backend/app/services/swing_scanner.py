@@ -23,12 +23,18 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             SELECT c.*,
                 lag(c.close_price, 5) OVER (PARTITION BY c.symbol ORDER BY c.trade_date) AS close_5,
                 lag(c.close_price, 20) OVER (PARTITION BY c.symbol ORDER BY c.trade_date) AS close_20,
-                avg(c.total_traded_qty) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
-                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) AS avg_volume_20,
-                avg(c.turnover_lacs) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
-                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) AS avg_turnover_20,
-                avg(c.deliv_per) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
-                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) AS avg_delivery_20,
+                CASE WHEN count(c.total_traded_qty) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) = 20
+                     THEN avg(c.total_traded_qty) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) END AS avg_volume_20,
+                CASE WHEN count(c.turnover_lacs) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) = 20
+                     THEN avg(c.turnover_lacs) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) END AS avg_turnover_20,
+                CASE WHEN count(c.deliv_per) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) = 20
+                     THEN avg(c.deliv_per) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 20 PRECEDING AND 1 PRECEDING) END AS avg_delivery_20,
                 sum(CASE WHEN c.close_price > c.prev_close THEN c.total_traded_qty
                          WHEN c.close_price < c.prev_close THEN -c.total_traded_qty
                          ELSE 0 END) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
@@ -46,6 +52,8 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                     ROWS BETWEEN 19 PRECEDING AND CURRENT ROW) AS mfv_20,
                 sum(c.total_traded_qty) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
                     ROWS BETWEEN 19 PRECEDING AND CURRENT ROW) AS volume_20,
+                count(c.total_traded_qty) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                    ROWS BETWEEN 19 PRECEDING AND CURRENT ROW) AS bars_20,
                 avg(greatest(c.high_price-c.low_price,
                              abs(c.high_price-c.prev_close),
                              abs(c.low_price-c.prev_close)))
@@ -74,7 +82,7 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                 CASE WHEN close_20 > 0 THEN (close_price/close_20-1)*100 END AS ret20,
                 CASE WHEN avg_delivery_20 IS NOT NULL
                     THEN deliv_per-avg_delivery_20 END AS delivery_delta,
-                CASE WHEN volume_20 > 0 THEN mfv_20/volume_20 END AS cmf20,
+                CASE WHEN bars_20 = 20 AND volume_20 > 0 THEN mfv_20/volume_20 END AS cmf20,
                 CASE WHEN avg_price > 0 THEN (close_price/avg_price-1)*100 END AS vwap_deviation
             FROM latest
             WHERE rn = 1
