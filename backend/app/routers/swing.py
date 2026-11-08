@@ -165,15 +165,15 @@ async def get_signal_performance(
             SELECT count(*) AS signal_count,
                    count(ret_5d) AS observations_5d,
                    round(avg(ret_5d)::numeric,2) AS avg_return_5d_pct,
-                   round(percentile_cont(0.5) WITHIN GROUP (ORDER BY ret_5d)::numeric,2) AS median_return_5d_pct,
+                   round(percentile_disc(0.5) WITHIN GROUP (ORDER BY ret_5d),2) AS median_return_5d_pct,
                    round(100.0*count(*) FILTER (WHERE (CASE WHEN $1 LIKE 'DISTRIBUTION%' THEN ret_5d<0 ELSE ret_5d>0 END))/NULLIF(count(ret_5d),0),1) AS win_rate_5d_pct,
                    count(ret_10d) AS observations_10d,
                    round(avg(ret_10d)::numeric,2) AS avg_return_10d_pct,
-                   round(percentile_cont(0.5) WITHIN GROUP (ORDER BY ret_10d)::numeric,2) AS median_return_10d_pct,
+                   round(percentile_disc(0.5) WITHIN GROUP (ORDER BY ret_10d),2) AS median_return_10d_pct,
                    round(100.0*count(*) FILTER (WHERE (CASE WHEN $1 LIKE 'DISTRIBUTION%' THEN ret_10d<0 ELSE ret_10d>0 END))/NULLIF(count(ret_10d),0),1) AS win_rate_10d_pct,
                    count(ret_20d) AS observations_20d,
                    round(avg(ret_20d)::numeric,2) AS avg_return_20d_pct,
-                   round(percentile_cont(0.5) WITHIN GROUP (ORDER BY ret_20d)::numeric,2) AS median_return_20d_pct,
+                   round(percentile_disc(0.5) WITHIN GROUP (ORDER BY ret_20d),2) AS median_return_20d_pct,
                    round(100.0*count(*) FILTER (WHERE (CASE WHEN $1 LIKE 'DISTRIBUTION%' THEN ret_20d<0 ELSE ret_20d>0 END))/NULLIF(count(ret_20d),0),1) AS win_rate_20d_pct
             FROM observations
         """, signal, start_date, end_date)
