@@ -6,6 +6,7 @@ until point-in-time index membership is captured.
 """
 import argparse
 import asyncio
+from datetime import datetime, date
 from pathlib import Path
 
 import psycopg2
@@ -27,13 +28,13 @@ def apply_migration():
 
 def load_history(directory: Path, start_date=None, end_date=None):
     files = sorted(directory.glob("sec_bhavdata_full_*.csv"))
+    def file_date(path):
+        return datetime.strptime(path.stem.split("_")[-1], "%d%m%Y").date()
+
     if start_date:
-        files = [p for p in files if p.stem.endswith(
-            __import__("datetime").datetime.strptime(p.stem.split("_")[-1], "%d%m%Y").strftime("%d%m%Y")
-        ) and __import__("datetime").datetime.strptime(p.stem.split("_")[-1], "%d%m%Y").date() >= start_date]
+        files = [path for path in files if file_date(path) >= start_date]
     if end_date:
-        from datetime import datetime
-        files = [p for p in files if datetime.strptime(p.stem.split("_")[-1], "%d%m%Y").date() <= end_date]
+        files = [path for path in files if file_date(path) <= end_date]
     if not files:
         raise RuntimeError(f"No Bhavcopy CSV files available under {directory}")
 
@@ -72,7 +73,6 @@ def main():
     parser.add_argument("--start-date", help="YYYY-MM-DD")
     parser.add_argument("--end-date", help="YYYY-MM-DD")
     args = parser.parse_args()
-    from datetime import date
 
     start_date = date.fromisoformat(args.start_date) if args.start_date else None
     end_date = date.fromisoformat(args.end_date) if args.end_date else None
