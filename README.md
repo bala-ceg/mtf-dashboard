@@ -37,11 +37,15 @@ Bhavcopy is end-of-day data. The scanner cannot calculate intraday bid/ask delta
 
 ### Initial setup
 
-The scanner reuses the project's PostgreSQL database and existing backend environment file. Ensure `backend/.env` has the correct database connection variables (including `DB_SSLMODE`, normally `prefer`).
+The scanner reuses the project's PostgreSQL database and existing backend environment file. Ensure `backend/.env` has the correct database connection variables (including `DB_SSLMODE`, normally `prefer`). For shell commands, load those variables into your current shell first:
 
 From the repository root:
 
 ```bash
+set -a
+source backend/.env
+set +a
+
 # 1. Download NIFTY index constituent files, including NIFTY_TOTAL_MARKET
 python -m etl.download_nifty_indices
 
