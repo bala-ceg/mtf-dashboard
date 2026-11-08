@@ -26,7 +26,7 @@ The dashboard now includes a cash-market swing scanner for the NIFTY Total Marke
 
 ### Signals and interpretation
 
-The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR, close-vs-average-price deviation, 5/20-session returns, and delivery percentage versus its preceding 20-session average.
+The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR and Money Flow Index (MFI), close-vs-average-price deviation, 5/20-session returns, and delivery percentage versus its preceding 20-session average.
 
 - **Accumulation / distribution scores:** transparent 0–100 rule-based screening scores. Scores of 65+ are strong candidates; 45–64 are watch candidates.
 - **Liquidity screen:** by default excludes stocks with less than ₹25 lakh turnover on the signal day. The dashboard has an option to include them.
@@ -81,7 +81,7 @@ A GitHub Actions schedule is included in `.github/workflows/swing-scanner.yml` f
 2. Corporate-action adjusted historical prices are not yet applied in the feature engine. Review splits, bonuses, demergers and symbol changes before relying on long-period results.
 3. The forward-return panel overlaps observations, does not account for fees/slippage/circuit exits, and is not an out-of-sample strategy backtest.
 4. The current rule-based weights and cutoffs are initial hypotheses. Validate them chronologically and separately by market-cap group before using the rankings in live decisions.
-5. The schema reserves fields for MFI and benchmark-relative strength; those are not currently populated by this first scoring version.
+5. The schema includes a field for benchmark-relative strength, which is not currently populated because the daily index-level benchmark series has not yet been added.
 
 ## 🏗️ Architecture
 
