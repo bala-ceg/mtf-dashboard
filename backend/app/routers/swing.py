@@ -68,9 +68,18 @@ async def get_scanner(
         limit_parameter = len(params)
 
         rows = await conn.fetch(f"""
-            SELECT f.*, sm.company_name, sm.sector, sm.market_cap_cr
+            SELECT f.*, coalesce(sm.company_name, ic.company_name) AS company_name,
+                   coalesce(sm.sector, ic.industry) AS sector, sm.market_cap_cr
             FROM swing_scanner_features f
             LEFT JOIN stocks_master sm ON upper(sm.symbol)=upper(f.symbol)
+            LEFT JOIN LATERAL (
+                SELECT ni.company_name, ni.industry
+                FROM nifty_index_constituents ni
+                WHERE upper(ni.symbol)=upper(f.symbol)
+                  AND upper(replace(ni.index_name, ' ', '_')) IN
+                      ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')
+                ORDER BY ni.last_updated DESC LIMIT 1
+            ) ic ON TRUE
             WHERE f.trade_date=$1
               AND greatest(f.accumulation_score, f.distribution_score) >= $2
               {signal_filter}
@@ -95,7 +104,7 @@ async def get_sector_flow(trade_date: date | None = None):
         if not effective_date:
             return {"trade_date": None, "results": []}
         rows = await conn.fetch("""
-            SELECT coalesce(sm.sector, 'Unclassified') AS sector,
+            SELECT coalesce(sm.sector, ic.industry, 'Unclassified') AS sector,
                    count(*) AS stocks,
                    round(avg(f.accumulation_score),1) AS avg_accumulation_score,
                    round(avg(f.distribution_score),1) AS avg_distribution_score,
@@ -105,6 +114,14 @@ async def get_sector_flow(trade_date: date | None = None):
                        ('DISTRIBUTION','DISTRIBUTION_WATCH')) AS distribution_stocks
             FROM swing_scanner_features f
             LEFT JOIN stocks_master sm ON upper(sm.symbol)=upper(f.symbol)
+            LEFT JOIN LATERAL (
+                SELECT ni.industry
+                FROM nifty_index_constituents ni
+                WHERE upper(ni.symbol)=upper(f.symbol)
+                  AND upper(replace(ni.index_name, ' ', '_')) IN
+                      ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')
+                ORDER BY ni.last_updated DESC LIMIT 1
+            ) ic ON TRUE
             WHERE f.trade_date=$1
               AND coalesce((f.data_quality->>'low_liquidity')::boolean, false) = false
             GROUP BY 1 ORDER BY avg_accumulation_score DESC NULLS LAST
@@ -119,9 +136,18 @@ async def get_stock_signal_history(
 ):
     async with get_db() as conn:
         rows = await conn.fetch("""
-            SELECT f.*, sm.company_name, sm.sector
+            SELECT f.*, coalesce(sm.company_name, ic.company_name) AS company_name,
+                   coalesce(sm.sector, ic.industry) AS sector
             FROM swing_scanner_features f
             LEFT JOIN stocks_master sm ON upper(sm.symbol)=upper(f.symbol)
+            LEFT JOIN LATERAL (
+                SELECT ni.company_name, ni.industry
+                FROM nifty_index_constituents ni
+                WHERE upper(ni.symbol)=upper(f.symbol)
+                  AND upper(replace(ni.index_name, ' ', '_')) IN
+                      ('NIFTY_TOTAL_MARKET','NIFTY_TOTALMARKET')
+                ORDER BY ni.last_updated DESC LIMIT 1
+            ) ic ON TRUE
             WHERE upper(f.symbol)=upper($1)
             ORDER BY f.trade_date DESC LIMIT $2
         """, symbol, limit)
