@@ -66,6 +66,7 @@ export const swingApi = {
   getScanner: ({ signal, minScore = 40, limit = 750, includeIlliquid = false } = {}) =>
     apiClient.get('/swing/scanner', { params: { signal, min_score: minScore, limit, include_illiquid: includeIlliquid } }),
   getSectors: () => apiClient.get('/swing/sectors'),
+  getPerformance: (signal) => apiClient.get('/swing/performance', { params: { signal } }),
   getStockHistory: (symbol, limit = 60) =>
     apiClient.get(`/swing/stock/${symbol}/history`, { params: { limit } }),
 };
