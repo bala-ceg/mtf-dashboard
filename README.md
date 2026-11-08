@@ -29,6 +29,7 @@ The dashboard now includes a cash-market swing scanner for the NIFTY Total Marke
 The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR and Money Flow Index (MFI), close-vs-average-price deviation, 5/20-session returns, delivery percentage versus its preceding 20-session average, and 20-session relative strength versus the NIFTY Total Market index when official index history is imported.
 
 - **Accumulation / distribution scores:** transparent 0–100 rule-based screening scores. Scores of 65+ are strong candidates; 45–64 are watch candidates.
+- **Score explainability:** each daily signal stores per-factor accumulation and distribution points, maximum factor weights, total scores and reason codes. Select a stock in the dashboard to view its 60-session score history and latest factor breakdown.
 - **Liquidity screen:** by default excludes stocks with less than ₹25 lakh turnover on the signal day. The dashboard has an option to include them.
 - **Delivery delta:** expressed in percentage points versus the preceding 20-session average.
 - **Forward-return diagnostics:** the API reports close-to-close 5/10/20-session returns and direction-adjusted hit rates for historical signals. These are descriptive diagnostics, not a fully costed or out-of-sample backtest.
