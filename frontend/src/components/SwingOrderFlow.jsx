@@ -9,6 +9,7 @@ const scoreClass = (value) => Number(value) >= 65 ? 'strong' : Number(value) >= 
 export default function SwingOrderFlow() {
   const [signal, setSignal] = useState('');
   const [minScore, setMinScore] = useState(40);
+  const [includeIlliquid, setIncludeIlliquid] = useState(false);
   const [results, setResults] = useState([]);
   const [sectors, setSectors] = useState([]);
   const [status, setStatus] = useState(null);
@@ -21,7 +22,7 @@ export default function SwingOrderFlow() {
     setError(null);
     try {
       const [scannerRes, sectorsRes, statusRes] = await Promise.all([
-        swingApi.getScanner({ signal: signal || undefined, minScore, limit: 750 }),
+        swingApi.getScanner({ signal: signal || undefined, minScore, limit: 750, includeIlliquid }),
         swingApi.getSectors(),
         swingApi.getStatus(),
       ]);
@@ -82,6 +83,10 @@ export default function SwingOrderFlow() {
           Minimum score: <b>{minScore}</b>
           <input type="range" min="0" max="80" step="5" value={minScore}
             onChange={e => setMinScore(Number(e.target.value))} />
+        </label>
+        <label className="swing-checkbox-label">
+          <input type="checkbox" checked={includeIlliquid} onChange={e => setIncludeIlliquid(e.target.checked)} />
+          Include illiquid stocks
         </label>
         <span className="swing-result-count">{results.length} stocks</span>
       </div>
