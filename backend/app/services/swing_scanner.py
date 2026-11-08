@@ -36,6 +36,11 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
                 sum(CASE WHEN c.high_price > c.low_price
                          THEN (((2*c.close_price-c.high_price-c.low_price)
                                  / NULLIF(c.high_price-c.low_price,0)) * c.total_traded_qty)
+                         ELSE 0 END) OVER (PARTITION BY c.symbol ORDER BY c.trade_date
+                         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS ad_line,
+                sum(CASE WHEN c.high_price > c.low_price
+                         THEN (((2*c.close_price-c.high_price-c.low_price)
+                                 / NULLIF(c.high_price-c.low_price,0)) * c.total_traded_qty)
                          ELSE 0 END)
                     OVER (PARTITION BY c.symbol ORDER BY c.trade_date
                     ROWS BETWEEN 19 PRECEDING AND CURRENT ROW) AS mfv_20,
@@ -99,14 +104,14 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
         INSERT INTO swing_scanner_features (
             trade_date, symbol, close_price, volume, turnover_lacs, delivery_qty,
             delivery_pct, avg_volume_20, relative_volume, avg_turnover_20,
-            relative_turnover, close_location_value, obv, obv_change_5, cmf_20,
+            relative_turnover, close_location_value, obv, obv_change_5, ad_line, cmf_20,
             atr_14, vwap_deviation_pct, return_5d_pct, return_20d_pct,
             delivery_pct_avg_20, delivery_pct_delta, accumulation_score,
             distribution_score, signal, reason_codes, data_quality, strategy_version
         )
         SELECT $1, symbol, close_price, total_traded_qty, turnover_lacs, deliv_qty,
-            deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv,
-            obv_change_5, cmf20, atr_14, vwap_deviation, ret5, ret20,
+            deliv_per, avg_volume_20, rvol, avg_turnover_20, rvalue, clv, obv, obv_change_5, ad_line,
+            cmf20, atr_14, vwap_deviation, ret5, ret20,
             avg_delivery_20, delivery_delta, least(100, acc_score),
             least(100, dist_score),
             CASE WHEN acc_score >= 65 AND acc_score > dist_score THEN 'ACCUMULATION'
@@ -141,7 +146,8 @@ async def compute_for_date(conn: asyncpg.Connection, trade_date: date) -> dict:
             relative_volume=EXCLUDED.relative_volume, avg_turnover_20=EXCLUDED.avg_turnover_20,
             relative_turnover=EXCLUDED.relative_turnover,
             close_location_value=EXCLUDED.close_location_value, obv=EXCLUDED.obv,
-            obv_change_5=EXCLUDED.obv_change_5, cmf_20=EXCLUDED.cmf_20,
+            obv_change_5=EXCLUDED.obv_change_5, ad_line=EXCLUDED.ad_line,
+            cmf_20=EXCLUDED.cmf_20,
             atr_14=EXCLUDED.atr_14, vwap_deviation_pct=EXCLUDED.vwap_deviation_pct,
             return_5d_pct=EXCLUDED.return_5d_pct, return_20d_pct=EXCLUDED.return_20d_pct,
             delivery_pct_avg_20=EXCLUDED.delivery_pct_avg_20,
