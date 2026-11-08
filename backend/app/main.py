@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from .config import get_settings
 from .database import init_db_pool, close_db_pool
-from .routers import market, stocks, shockers, indices
+from .routers import market, stocks, shockers, indices, swing
 
 settings = get_settings()
 
@@ -41,6 +41,7 @@ app.include_router(market.router, prefix=settings.API_PREFIX)
 app.include_router(stocks.router, prefix=settings.API_PREFIX)
 app.include_router(shockers.router, prefix=settings.API_PREFIX)
 app.include_router(indices.router, prefix=settings.API_PREFIX)
+app.include_router(swing.router, prefix=settings.API_PREFIX)
 
 
 @app.get("/")

@@ -7,6 +7,7 @@ import ContinuousMoversTable from './components/ContinuousMoversTable';
 import ShockersTable from './components/ShockersTable';
 import IndexMTFHoldings from './components/IndexMTFHoldings';
 import MTFPriceCorrelation from './components/MTFPriceCorrelation';
+import SwingOrderFlow from './components/SwingOrderFlow';
 import { formatDate } from './utils/formatters';
 import './App.css';
 
@@ -140,6 +141,10 @@ function App() {
           />
         </div>
 
+        {/* Swing order-flow scanner */}
+        <SwingOrderFlow />
+
+        {/* Existing MTF analytics */}
         {/* Top Movers */}
         <TopMoversTable 
           gainers={gainers}

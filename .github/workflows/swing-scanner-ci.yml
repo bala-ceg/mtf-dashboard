@@ -1,0 +1,91 @@
+name: Swing Scanner CI
+
+on:
+  push:
+    branches:
+      - feature/nifty-total-market-swing-scanner
+    paths:
+      - "backend/**"
+      - "etl/**"
+      - "sql/**"
+      - "frontend/**"
+      - "tests/**"
+      - ".github/workflows/swing-scanner-ci.yml"
+  pull_request:
+    paths:
+      - "backend/**"
+      - "etl/**"
+      - "sql/**"
+      - "frontend/**"
+      - "tests/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile-build-and-db-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: mtf_db
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d mtf_db"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: mtf_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      PYTHONPATH: .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Compile Python modules
+        run: python -m compileall -q backend etl config.py tests
+
+      - name: Apply scanner migrations to disposable PostgreSQL
+        run: |
+          PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" \
+            -v ON_ERROR_STOP=1 \
+            -f sql/15_nifty_index_constituents.sql \
+            -f sql/20_swing_scanner_schema.sql
+
+      - name: Run PostgreSQL feature-engine smoke test
+        run: python tests/swing_scanner_postgres_smoke.py
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: frontend
+        run: npm run build

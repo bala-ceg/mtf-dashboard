@@ -19,6 +19,80 @@ Fixed categories for consistent analysis:
 - Small-High (10,000-29,999 Cr), Small-Low (5,000-9,999 Cr)
 - Micro-High (5,000-9,999 Cr), Micro-Low (<5,000 Cr)
 
+
+## 📈 NIFTY Total Market Swing Order-Flow Scanner
+
+The dashboard now includes a cash-market swing scanner for the NIFTY Total Market universe. It analyses daily NSE full-security Bhavcopy and delivery statistics; it does not depend on MTF participation and therefore includes NIFTY Total Market EQ constituents that have no MTF record.
+
+### Signals and interpretation
+
+The scanner computes daily relative volume, relative traded value, close-location value, OBV and its five-session change, Accumulation/Distribution Line, 20-session Chaikin Money Flow, 14-session ATR and Money Flow Index (MFI), close-vs-average-price deviation, 5/20-session returns, delivery percentage versus its preceding 20-session average, and 20-session relative strength versus the NIFTY Total Market index when official index history is imported.
+
+- **Accumulation / distribution scores:** transparent 0–100 rule-based screening scores. Scores of 65+ are strong candidates; 45–64 are watch candidates.
+- **Score explainability:** each daily signal stores per-factor accumulation and distribution points, maximum factor weights, total scores and reason codes. Select a stock in the dashboard to view its 60-session score history and latest factor breakdown.
+- **Liquidity screen:** by default excludes stocks with less than ₹25 lakh turnover on the signal day. The dashboard has an option to include them.
+- **Delivery delta:** expressed in percentage points versus the preceding 20-session average.
+- **Forward-return diagnostics:** the API reports close-to-close 5/10/20-session returns and direction-adjusted hit rates for historical signals. These are descriptive diagnostics, not a fully costed or out-of-sample backtest.
+
+Bhavcopy is end-of-day data. The scanner cannot calculate intraday bid/ask delta, CVD, footprint charts, queue position or executed aggressor-side flow. It identifies accumulation/distribution *proxies*, not confirmed institutional activity. The 0–100 score includes a 10-point benchmark-relative-strength component and a liquidity component; without imported benchmark history, relative strength remains null and that component is not earned.
+
+### Initial setup
+
+The scanner reuses the project's PostgreSQL database and existing backend environment file. Ensure `backend/.env` has the correct database connection variables (including `DB_SSLMODE`, normally `prefer`). For shell commands, load those variables into your current shell first:
+
+From the repository root:
+
+```bash
+set -a
+source backend/.env
+set +a
+
+# 1. Download NIFTY index constituent files, including NIFTY_TOTAL_MARKET
+python -m etl.download_nifty_indices
+
+# 2. Load the downloaded constituent lists into PostgreSQL
+python -m etl.load_nifty_indices
+
+# 3. Create the additive cash-market, scanner, benchmark and dated-membership tables
+PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "${DB_PORT:-5432}" -U "$DB_USER" -d "$DB_NAME" -f sql/20_swing_scanner_schema.sql
+
+# 4. Optional but recommended: export NIFTY Total Market daily OHLC CSV from
+#    NSE Indices > Historical Data Reports, then import it for benchmark-relative strength
+python -m etl.load_index_history data/nifty_total_market.csv
+
+# 5. Backfill all local full-security Bhavcopy CSV files and calculate historical features
+python -m etl.backfill_swing_scanner
+```
+
+The backfill script reads the project's existing `data/data/clean/bhavcopy/sec_bhavdata_full_*.csv` archive (or `data/clean/bhavcopy`). To obtain more history, download the required date range before backfilling, for example `python etl/download_bhavcopy.py range 2025-01-01 2026-11-06`. Keep in mind that reliable 20-session averages require at least 21 trading sessions per stock.
+
+### Daily run
+
+```bash
+python -m etl.swing_daily_runner
+```
+
+This refreshes the official NIFTY Total Market constituent file, obtains the latest available NSE full-security Bhavcopy, loads EQ constituents into `cash_market_daily`, calculates features and updates `swing_scanner_runs`.
+
+A GitHub Actions schedule is included in `.github/workflows/swing-scanner.yml` for 19:00 IST on weekdays. Add repository Actions secrets `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`; optionally set `DB_SSLMODE` (defaults to `prefer`). The runner requires network access to NSE/Nifty Indices and database access from the GitHub-hosted runner. If your PostgreSQL server is private or IP-restricted, run the command from your own scheduled host instead.
+
+### Swing scanner API
+
+- `GET /api/swing/status` – universe size and latest cash-data / feature dates.
+- `GET /api/swing/scanner?min_score=40&limit=750` – ranked stock candidates; supports `signal`, `trade_date` and `include_illiquid`.
+- `GET /api/swing/sectors` – sector-level accumulation/distribution participation.
+- `GET /api/swing/stock/{symbol}/history` – recent signal and feature history for a stock.
+- `GET /api/swing/performance?signal=ACCUMULATION` – exploratory 5/10/20-session forward-return summary. Also accepts `DISTRIBUTION`, `ACCUMULATION_WATCH` and `DISTRIBUTION_WATCH`.
+
+### Research caveats
+
+1. Dated constituent snapshots are captured from the first successful daily universe refresh onward. Before the first snapshot date, historical backfills fall back to today's constituent list and remain exposed to survivorship bias.
+2. Corporate-action adjusted historical prices are not yet applied in the feature engine. Review splits, bonuses, demergers and symbol changes before relying on long-period results.
+3. The forward-return panel overlaps observations, does not account for fees/slippage/circuit exits, and is not an out-of-sample strategy backtest.
+4. The current rule-based weights and cutoffs are initial hypotheses. Validate them chronologically and separately by market-cap group before using the rankings in live decisions.
+5. Benchmark-relative strength is available only for dates with imported NIFTY Total Market index OHLC history. Export the official historical CSV and load it with `python -m etl.load_index_history <file.csv>`; without it, the relative-strength field is null.
+6. Confirm NSE / NSE Indices data-use and redistribution terms before commercial or public redistribution.
+
 ## 🏗️ Architecture
 
 ```
