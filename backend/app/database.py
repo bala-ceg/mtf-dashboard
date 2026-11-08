@@ -18,6 +18,7 @@ async def init_db_pool():
         database=settings.DB_NAME,
         user=settings.DB_USER,
         password=settings.DB_PASSWORD,
+        ssl=settings.DB_SSLMODE,
         min_size=2,
         max_size=10,
         command_timeout=60
