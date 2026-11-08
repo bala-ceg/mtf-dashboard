@@ -83,3 +83,36 @@ COMMENT ON TABLE cash_market_daily IS
     'Full NSE cash-market bhavcopy universe. Not restricted to MTF stocks.';
 COMMENT ON TABLE swing_scanner_features IS
     'Daily swing accumulation/distribution features derived from cash_market_daily.';
+
+
+-- Preserve observed index membership snapshots so future history can be
+-- evaluated using the membership known on each session. Historic dates before
+-- the first captured snapshot retain the current-universe fallback.
+CREATE TABLE IF NOT EXISTS nifty_index_constituent_snapshots (
+    snapshot_date DATE NOT NULL,
+    index_name VARCHAR(50) NOT NULL,
+    symbol VARCHAR(50) NOT NULL,
+    company_name VARCHAR(255),
+    industry VARCHAR(255),
+    series VARCHAR(10),
+    isin_code VARCHAR(20),
+    captured_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    PRIMARY KEY (snapshot_date, index_name, symbol)
+);
+CREATE INDEX IF NOT EXISTS idx_nifty_constituent_snapshots_lookup
+    ON nifty_index_constituent_snapshots(index_name, snapshot_date DESC, symbol);
+
+-- Optional official NIFTY Total Market daily index series for benchmark-relative strength.
+CREATE TABLE IF NOT EXISTS nifty_index_daily (
+    index_name VARCHAR(50) NOT NULL,
+    trade_date DATE NOT NULL,
+    open_value NUMERIC,
+    high_value NUMERIC,
+    low_value NUMERIC,
+    close_value NUMERIC NOT NULL,
+    source_file TEXT,
+    loaded_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    PRIMARY KEY (index_name, trade_date)
+);
+CREATE INDEX IF NOT EXISTS idx_nifty_index_daily_date
+    ON nifty_index_daily(index_name, trade_date DESC);
