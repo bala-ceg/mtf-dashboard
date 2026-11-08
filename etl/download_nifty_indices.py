@@ -1,60 +1,64 @@
-import requests
-import pandas as pd
-import os
+"""Download official NIFTY index constituent files from NSE archives."""
 from pathlib import Path
+import csv
+import requests
 
-def nsecsvfetch(payload):  
-    """Fetch CSV data from NSE/Nifty Indices website"""
-    try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
-        }
-        s = requests.Session()
-        s.get("https://nseindia.com", headers=headers)
-        response = s.get(payload, headers=headers)
-        response.raise_for_status()
-        return response
-    except requests.exceptions.RequestException as e:
-        print(f"An error occurred: {e}")
-        return None
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = ROOT / "data" / "nifty_indices"
+NSE_HOME = "https://www.nseindia.com"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+    "Accept": "text/csv,application/csv,text/plain,*/*",
+    "Referer": "https://www.nseindia.com/",
+    "Origin": "https://www.nseindia.com",
+}
+
+INDEX_FILES = {
+    "nifty50": "https://nsearchives.nseindia.com/content/indices/ind_nifty50list.csv",
+    "nifty_next50": "https://nsearchives.nseindia.com/content/indices/ind_niftynext50list.csv",
+    "nifty_smallcap50": "https://nsearchives.nseindia.com/content/indices/ind_niftysmallcap50list.csv",
+    "nifty_midcap50": "https://nsearchives.nseindia.com/content/indices/ind_niftymidcap50list.csv",
+    "nifty_total_market": "https://nsearchives.nseindia.com/content/indices/ind_niftytotalmarket_list.csv",
+}
 
 
 def download_nifty_indices():
-    """Download Nifty index constituent lists"""
-    
-    # Create data/nifty_indices directory if it doesn't exist
-    base_dir = Path(__file__).parent.parent / "data" / "nifty_indices"
-    base_dir.mkdir(parents=True, exist_ok=True)
-    
-    indices = {
-        "nifty50": "https://www.niftyindices.com/IndexConstituent/ind_nifty50list.csv",
-        "nifty_next50": "https://www.niftyindices.com/IndexConstituent/ind_niftynext50list.csv",
-        "nifty_smallcap50": "https://www.niftyindices.com/IndexConstituent/ind_niftysmallcap50list.csv",
-        "nifty_midcap50": "https://www.niftyindices.com/IndexConstituent/ind_niftymidcap50list.csv",
-        "nifty_total_market": "https://www.niftyindices.com/IndexConstituent/ind_niftytotalmarket_list.csv"
-    }
-    
-    downloaded_files = []
-    
-    for index_name, url in indices.items():
-        print(f"Downloading {index_name}...")
-        response = nsecsvfetch(url)
-        
-        if response:
-            data_text = response.text
-            output_file = base_dir / f"{index_name}.csv"
-            with open(output_file, 'w', encoding='utf-8') as f:
-                f.write(data_text)
-            
-            print(f"✓ Successfully downloaded {index_name} to {output_file}")
-            downloaded_files.append(output_file)
-        else:
-            print(f"✗ Failed to download {index_name}")
-    
-    return downloaded_files
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    session = requests.Session()
+    session.headers.update(HEADERS)
+    try:
+        session.get(NSE_HOME, timeout=15)
+        downloaded = []
+        errors = []
+        for name, url in INDEX_FILES.items():
+            output = OUTPUT_DIR / f"{name}.csv"
+            try:
+                response = session.get(url, timeout=30)
+                response.raise_for_status()
+                content = response.content.decode("utf-8-sig").strip()
+                if not content or "<html" in content[:500].lower():
+                    raise ValueError("Response was empty or HTML, not a CSV file")
+                header = next(csv.reader(content.splitlines()), [])
+                if "symbol" not in {item.strip().lower() for item in header}:
+                    raise ValueError(f"CSV header has no Symbol column: {header}")
+                temp = output.with_suffix(".csv.tmp")
+                temp.write_text(content + "\n", encoding="utf-8")
+                temp.replace(output)
+                downloaded.append(output)
+                print(f"Downloaded {name}: {output}")
+            except Exception as exc:
+                errors.append(f"{name}: {exc}")
+                print(f"Failed {name}: {exc}")
+        if not (OUTPUT_DIR / "nifty_total_market.csv").exists():
+            raise RuntimeError("Official NIFTY Total Market constituent file is unavailable")
+        if errors:
+            print("Optional lists not refreshed: " + "; ".join(errors))
+        return downloaded
+    finally:
+        session.close()
 
 
 if __name__ == "__main__":
-    print("Starting Nifty Indices download...")
     files = download_nifty_indices()
-    print(f"\nDownloaded {len(files)} index files successfully!")
+    print(f"Downloaded {len(files)} index constituent file(s).")
